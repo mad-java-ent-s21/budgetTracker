@@ -1,15 +1,16 @@
+# Budget Tracker
 This application will allow you to manage your budge.
 You may be able to input your expenses and income.
 
-Feature Ideas:
-<li>Sign in/out</li>
-<li>Track monthly budget</li>
-<li>Duplicate previous month budgets (such as expense/income/bills/individual items)</li>
-<li>Parameters to see overall breakdown (aggregates)</li>
-<li>Data analysis: pie charts / graphs / percentages</li>
-<li>Create your own categories for each entry</li>
-<li>Income/Expense ratio</li>
-<li>Search/filter transactions</li>
-<li>Enter expense/income</li>
-<li>Tips on saving</li>
-<li>Receipt split up (split and allocates to specific categories you want)</li>
+## Feature Ideas:
+1. Sign in/out
+1. Track monthly budget
+1. Duplicate previous month budgets (such as expense/income/bills/individual items)
+1. Parameters to see overall breakdown (aggregates)
+1. Data analysis: pie charts / graphs / percentages
+1. Create your own categories for each entry
+1. Income/Expense ratio
+1. Search/filter transactions
+1. Enter expense/income
+1. Tips on saving
+1. Receipt split up (split and allocates to specific categories you want)
