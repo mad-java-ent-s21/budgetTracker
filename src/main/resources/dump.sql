@@ -25,6 +25,7 @@ CREATE TABLE `user` (
         `password` varchar(255) NOT NULL,
         `first_name` varchar(25) NOT NULL,
         `last_name` varchar(25) NOT NULL,
+        `email` varchar(100) NOT NULL,
         `birthdate` DATE NOT NULL,
         PRIMARY KEY (`id`),
         UNIQUE KEY `user_id_uindex` (`id`)
@@ -32,7 +33,7 @@ CREATE TABLE `user` (
 
 -- delete only data --
 
-INSERT INTO `user` VALUES (1,'mikeyjones123','yoyojojo123', 'Mike', 'Jones', '1987-03-21');
+INSERT INTO `user` VALUES (1,'mikeyjones123','yoyojojo123', 'Mike', 'Jones', 'kingjones999@gmail.com', '1987-03-21');
 
 
 -- Entry Table --
