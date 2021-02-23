@@ -11,6 +11,6 @@
     <title>Entries</title>
 </head>
 <body>
-
+    <h1>Entries</h1>
 </body>
 </html>
