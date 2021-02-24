@@ -30,7 +30,7 @@ public class Category {
         this.color = color;
     }
 
-    public int getId() {
+    public int getId(int i) {
         return id;
     }
 

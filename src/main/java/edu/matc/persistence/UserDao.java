@@ -17,7 +17,6 @@ public class UserDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-
     public List<User> getAllUser() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -27,8 +26,6 @@ public class UserDao {
         session.close();
         return users;
     }
-
-
 
     public User getById(int id) {
         Session session = sessionFactory.openSession();
@@ -46,7 +43,6 @@ public class UserDao {
         session.close();
     }
 
-
     public int insert(User user) {
         int id = 0;
         Session session = sessionFactory.openSession();
@@ -57,7 +53,6 @@ public class UserDao {
         return id;
     }
 
-
     public void delete(User user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -65,8 +60,6 @@ public class UserDao {
         transaction.commit();
         session.close();
     }
-
-
 
     public List<User> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
@@ -82,7 +75,6 @@ public class UserDao {
         session.close();
         return users;
     }
-
 
     public List<User> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();

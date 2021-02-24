@@ -1,13 +1,18 @@
-package edu.matc.test;
+package edu.matc.persistence;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class EntryDaoTest {
+class UserDaoTest {
+
+    @BeforeEach
+    void setUp() {
+    }
 
     @Test
-    void getAllEntry() {
+    void getAllUser() {
     }
 
     @Test

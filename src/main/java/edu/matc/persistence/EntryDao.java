@@ -17,7 +17,6 @@ public class EntryDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-
     public List<Entry> getAllEntry() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -28,15 +27,14 @@ public class EntryDao {
         return entries;
     }
 
-
-
     public Entry getById(int id) {
+        logger.debug("Searching for Id: {}", id);
+
         Session session = sessionFactory.openSession();
         Entry entry = session.get(Entry.class, id);
         session.close();
         return entry;
     }
-
 
     public void saveOrUpdate(Entry entry) {
         Session session = sessionFactory.openSession();
@@ -45,7 +43,6 @@ public class EntryDao {
         transaction.commit();
         session.close();
     }
-
 
     public int insert(Entry entry) {
         int id = 0;
@@ -57,7 +54,6 @@ public class EntryDao {
         return id;
     }
 
-
     public void delete(Entry entry) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -65,8 +61,6 @@ public class EntryDao {
         transaction.commit();
         session.close();
     }
-
-
 
     public List<Entry> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
@@ -82,7 +76,6 @@ public class EntryDao {
         session.close();
         return entries;
     }
-
 
     public List<Entry> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();

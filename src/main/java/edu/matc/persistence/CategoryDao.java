@@ -17,7 +17,6 @@ public class CategoryDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-
     public List<Category> getAllCategory() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -28,15 +27,12 @@ public class CategoryDao {
         return categories;
     }
 
-
-
     public Category getById(int id) {
         Session session = sessionFactory.openSession();
         Category category = session.get(Category.class, id);
         session.close();
         return category;
     }
-
 
     public void saveOrUpdate(Category category) {
         Session session = sessionFactory.openSession();
@@ -45,7 +41,6 @@ public class CategoryDao {
         transaction.commit();
         session.close();
     }
-
 
     public int insert(Category category) {
         int id = 0;
@@ -57,7 +52,6 @@ public class CategoryDao {
         return id;
     }
 
-
     public void delete(Category category) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -65,7 +59,6 @@ public class CategoryDao {
         transaction.commit();
         session.close();
     }
-
 
 
     public List<Category> getByPropertyEqual(String propertyName, String value) {
@@ -83,7 +76,6 @@ public class CategoryDao {
         return categories;
     }
 
-
     public List<Category> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
@@ -100,5 +92,4 @@ public class CategoryDao {
         session.close();
         return categories;
     }
-
 }
