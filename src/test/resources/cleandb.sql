@@ -1,7 +1,7 @@
 
-DELETE FROM entry;
-DELETE FROM category;
-DELETE FROM user;
+DELETE FROM `entry`;
+DELETE FROM `category`;
+DELETE FROM `user`;
 
 -- Insert into category--
 INSERT INTO `category` VALUES (1,'Food - Dine Out','Dining out', '#FFFFFF'),(2,'Hobby','Anything that involves hobbies', '#FF8080'),(3,'Bills - House','House bills, utilities, internet, etc.','#CCFF99'),(4,'Work-Income','Paychecks, Bonuses, etc.','#00A63D');

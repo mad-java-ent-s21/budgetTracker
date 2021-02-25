@@ -45,6 +45,10 @@ public class Entry {
         this.userId = userId;
     }
 
+    public Entry(LocalDate parse, String something, String expense, double value, int id, int id1) {
+    }
+
+
     public int getId() {
         return id;
     }
