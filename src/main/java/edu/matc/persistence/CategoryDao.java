@@ -17,16 +17,6 @@ public class CategoryDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-    public List<Category> getAllCategory() {
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Category> query = builder.createQuery(Category.class);
-        Root<Category> root = query.from(Category.class);
-        List<Category> categories = session.createQuery(query).getResultList();
-        session.close();
-        return categories;
-    }
-
     public Category getById(int id) {
         Session session = sessionFactory.openSession();
         Category category = session.get(Category.class, id);
@@ -60,21 +50,6 @@ public class CategoryDao {
         session.close();
     }
 
-
-    public List<Category> getByPropertyEqual(String propertyName, String value) {
-        Session session = sessionFactory.openSession();
-
-        logger.debug("Searching for category with " + propertyName + " = " + value);
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Category> query = builder.createQuery( Category.class );
-        Root<Category> root = query.from( Category.class );
-        query.select(root).where(builder.equal(root.get(propertyName), value));
-        List<Category> categories = session.createQuery( query ).getResultList();
-
-        session.close();
-        return categories;
-    }
 
     public List<Category> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();

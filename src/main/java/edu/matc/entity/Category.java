@@ -21,6 +21,8 @@ public class Category {
 
     private String color;
 
+
+
     public Category() {
     }
 
