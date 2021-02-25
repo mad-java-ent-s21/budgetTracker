@@ -7,7 +7,10 @@
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
-.idea
+src/main/resources/database.properties
+src/test/resources/database.properties
+src/main/resources/hibernate.cfg.xml
+src/test/resources/hibernate.cfg.xml
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -16,7 +19,6 @@
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
-src/main/resources/hibernate.cfg.xml
 
 # Gradle:
 .idea/gradle.xml
