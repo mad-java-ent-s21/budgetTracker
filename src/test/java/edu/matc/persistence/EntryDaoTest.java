@@ -27,16 +27,12 @@ class EntryDaoTest {
     @Test
     void getById() {
         LocalDate localDate = LocalDate.parse("2021-02-23");
-//        Category category = new Category();
-//        User user = new User();
 
         Entry retrievedEntry = dao.getById(1);
         assertEquals(localDate, retrievedEntry.getDate());
         assertEquals("Walmart - Pizzas", retrievedEntry.getEntryName());
         assertEquals("Expense", retrievedEntry.getEntryType());
         assertEquals(Double.valueOf(10.50), Double.valueOf(retrievedEntry.getValue()));
-//        assertEquals(category.getId(1), retrievedEntry.getCategoryId());
-//        assertEquals(user.getId(1), retrievedEntry.getUserId());
     }
 
     @Test
@@ -68,18 +64,14 @@ class EntryDaoTest {
 
     @Test
     void delete() {
-        dao.delete(dao.getById(1));
-        assertNull(dao.getById(1));
-    }
-
-    @Test
-    void getByPropertyEqual() {
-        List<Entry> entry = dao.getByPropertyLike("entryName", "Walmart - Pizzas");
-        assertEquals(1, entry.size());
-        assertEquals(1, entry.get(0).getId());
+        dao.delete(dao.getById(2));
+        assertNull(dao.getById(2));
     }
 
     @Test
     void getByPropertyLike() {
+        List<Entry> entry = dao.getByPropertyLike("entryName", "Walmart - Pizzas");
+        assertEquals(1, entry.size());
+        assertEquals(1, entry.get(0).getId());
     }
 }

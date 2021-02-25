@@ -17,16 +17,6 @@ public class EntryDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-    public List<Entry> getAllEntry() {
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Entry> query = builder.createQuery(Entry.class);
-        Root<Entry> root = query.from(Entry.class);
-        List<Entry> entries = session.createQuery(query).getResultList();
-        session.close();
-        return entries;
-    }
-
     public Entry getById(int id) {
         logger.debug("Searching for Id: {}", id);
 
@@ -62,20 +52,7 @@ public class EntryDao {
         session.close();
     }
 
-    public List<Entry> getByPropertyEqual(String propertyName, String value) {
-        Session session = sessionFactory.openSession();
 
-        logger.debug("Searching for entry with " + propertyName + " = " + value);
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Entry> query = builder.createQuery( Entry.class );
-        Root<Entry> root = query.from( Entry.class );
-        query.select(root).where(builder.equal(root.get(propertyName), value));
-        List<Entry> entries = session.createQuery( query ).getResultList();
-
-        session.close();
-        return entries;
-    }
 
     public List<Entry> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();
