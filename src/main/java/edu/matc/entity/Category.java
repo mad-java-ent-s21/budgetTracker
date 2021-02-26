@@ -21,18 +21,21 @@ public class Category {
 
     private String color;
 
-
+    @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User userId;
 
     public Category() {
     }
 
-    public Category(String categoryName, String categoryDescription, String color) {
+    public Category(String categoryName, String categoryDescription, String color, User userId) {
         this.categoryName = categoryName;
         this.categoryDescription = categoryDescription;
         this.color = color;
+        this.userId = userId;
     }
 
-    public int getId(int i) {
+    public int getId() {
         return id;
     }
 
@@ -64,6 +67,14 @@ public class Category {
         this.color = color;
     }
 
+    public User getUserId() {
+        return userId;
+    }
+
+    public void setUserId(User userId) {
+        this.userId = userId;
+    }
+
     @Override
     public String toString() {
         return "Category{" +
@@ -71,6 +82,8 @@ public class Category {
                 ", categoryName='" + categoryName + '\'' +
                 ", categoryDescription='" + categoryDescription + '\'' +
                 ", color='" + color + '\'' +
+                ", userId=" + userId +
                 '}';
     }
+
 }

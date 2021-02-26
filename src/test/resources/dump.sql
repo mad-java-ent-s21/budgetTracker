@@ -1,22 +1,7 @@
 -- Drop All Tables --
-DROP TABLE IF EXISTS `category`;
-DROP TABLE IF EXISTS `user`;
 DROP TABLE IF EXISTS `entry`;
-
-
--- Category Table --
-CREATE TABLE `category` (
-        `id` int(11) NOT NULL AUTO_INCREMENT,
-        `category_name` varchar(50) NOT NULL,
-        `category_description` varchar(255),
-        `color` varchar(10) NOT NULL,
-        PRIMARY KEY (`id`),
-        UNIQUE KEY `category_id_uindex` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
-
--- delete only data --
-
-INSERT INTO `category` VALUES (1,'Food - Dine Out','Dining out', '#FFFFFF'),(2,'Hobby','Anything that involves hobbies', '#FF8080'),(3,'Bills - House','House bills, utilities, internet, etc.','#CCFF99'),(4,'Work-Income','Paychecks, Bonuses, etc.','#00A63D');
+DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `category`;
 
 
 -- User Table --
@@ -34,6 +19,24 @@ CREATE TABLE `user` (
 -- delete only data --
 
 INSERT INTO `user` VALUES (1,'mikeyjones123','yoyojojo123', 'Mike', 'Jones', '1987-03-21');
+
+-- Category Table --
+CREATE TABLE `category` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `category_name` varchar(50) NOT NULL,
+        `category_description` varchar(255),
+        `color` varchar(10) NOT NULL,
+        `user_id` int(11) NOT NULL,
+        PRIMARY KEY (`id`),
+        UNIQUE KEY `category_id_uindex` (`id`),
+
+        KEY `category_user_id_fk` (`user_id`),
+        CONSTRAINT `category_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+-- delete only data --
+
+INSERT INTO `category` VALUES (1,'Food - Dine Out','Dining out', '#FFFFFF', 1),(2,'Hobby','Anything that involves hobbies', '#FF8080', 1),(3,'Bills - House','House bills, utilities, internet, etc.','#CCFF99', 1),(4,'Work-Income','Paychecks, Bonuses, etc.','#00A63D', 1);
 
 
 -- Entry Table --
