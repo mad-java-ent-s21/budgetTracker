@@ -1,7 +1,7 @@
 -- Drop All Tables --
+DROP TABLE IF EXISTS `entry`;
 DROP TABLE IF EXISTS `category`;
 DROP TABLE IF EXISTS `user`;
-DROP TABLE IF EXISTS `entry`;
 
 -- Category Table --
 CREATE TABLE `category` (

@@ -39,7 +39,7 @@ public class User {
         this.birthdate = birthdate;
     }
 
-    public int getId(int i) {
+    public int getId() {
         return id;
     }
 

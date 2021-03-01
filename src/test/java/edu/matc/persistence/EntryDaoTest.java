@@ -4,7 +4,6 @@ import edu.matc.entity.Category;
 import edu.matc.entity.Entry;
 import edu.matc.entity.User;
 import edu.matc.testUtils.Database;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
