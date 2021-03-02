@@ -24,7 +24,7 @@ class UserDaoTest {
     void getById() {
         User retrievedUser = dao.getById(1);
         assertEquals("mikeyjones123", retrievedUser.getUsername());
-        assertEquals("Mike", retrievedUser.getLastName());
+        assertEquals("Mike", retrievedUser.getFirstName());
         assertEquals("Jones", retrievedUser.getLastName());
         assertEquals("1987-03-21", retrievedUser.getBirthdate());
     }
