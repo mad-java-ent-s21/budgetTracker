@@ -1,6 +1,9 @@
 # Budget Tracker
-This application will allow you to manage your budge.
-You may be able to input your expenses and income.
+Have you ever wanted to track your income and expenses but found it difficult keeping track of what you track.
+This Budget Tracker allows you to do just that, creating categories and to track what expense or income you
+are tracking. Enter every purchase through this application to keep track of your monthly and even yearly budget.
+Analyze your budget data in visualized information such as pie charts and graphs.
+
 
 ## Feature Ideas:
 1. Sign in/out
