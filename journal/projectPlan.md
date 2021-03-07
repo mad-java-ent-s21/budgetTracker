@@ -31,6 +31,7 @@
 - [ ] Fix design documents
 - [ ] Include more codes into jsp files
 - [ ] Add controller directory and files
+- [x] Implemented admin/auth in project, including role tables for users
 
 ### Week 8
 - [ ] 

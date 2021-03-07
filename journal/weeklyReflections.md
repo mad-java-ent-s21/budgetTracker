@@ -39,3 +39,11 @@ Will still need to rework some things, such as move to a generic dao until I nee
 ### 03/02/2021
 1. Updated weekly reflections to have complete reflections.
 1. Updated directory to have designDocuments and journal to separate designs/plans and overall reflections/time logs.
+
+### 03/07/2021
+1. Added GenericDao, did not implement it yet.
+1. Added admin directory with admin.jsp.
+1. Added and implemented content.xml and web.xml for admin access.
+1. Update to have admin roles and general roles in database.
+1. Issues with figuring out tomcat@localhost to allow access for admins, error was in the 'granting' access to the correct db.
+Used the wrong db (used the example one) when granting access.
