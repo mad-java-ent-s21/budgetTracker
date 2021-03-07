@@ -67,7 +67,7 @@ CREATE TABLE role
     id        INT AUTO_INCREMENT
         PRIMARY KEY,
     role_name VARCHAR(25) NOT NULL,
-    user_name VARCHAR(15) NOT NULL,
+    username VARCHAR(15) NOT NULL,
     user_id   INT         NOT NULL,
     CONSTRAINT role_id_uindex
         UNIQUE (id),
