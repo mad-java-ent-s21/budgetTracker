@@ -1,6 +1,7 @@
 -- Drop All Tables --
 DROP TABLE IF EXISTS `entry`;
 DROP TABLE IF EXISTS `category`;
+DROP TABLE IF EXISTS `role`;
 DROP TABLE IF EXISTS `user`;
 
 -- User Table --
@@ -17,7 +18,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 -- Insert user --
-INSERT INTO `user` VALUES (1,'mikeyjones123','yoyojojo123', 'Mike', 'Jones', 'kingjones999@gmail.com', '1987-03-21');
+INSERT INTO `user` VALUES (1,'mikeyjones123','yoyojojo123', 'Mike', 'Jones', 'kingjones999@gmail.com', '1987-03-21'),(2,'miraclet0909','p098', 'Miracle', 'Tianna', 'miracletiti@gmail.com', '1995-02-13');
 
 
 -- Category Table --
@@ -58,3 +59,28 @@ CREATE TABLE `entry` (
 
 -- Insert entry --
 INSERT INTO `entry` VALUES (1, '2021-02-23', 'Walmart - Pizzas', 'Expense', 10.50, 1, 1),(2, '2021-02-22', 'Target - Board Games', 'Expense', 25.55, 2, 1),(3, '2021-02-01', 'Apartment Rent', 'Expense', 999.99, 3, 1),(4, '2021-02-01', 'Paycheck', 'Income', 1500.00, 4, 1);
+
+
+-- Role Table --
+CREATE TABLE role
+(
+    id        INT AUTO_INCREMENT
+        PRIMARY KEY,
+    role_name VARCHAR(25) NOT NULL,
+    user_name VARCHAR(15) NOT NULL,
+    user_id   INT         NOT NULL,
+    CONSTRAINT role_id_uindex
+        UNIQUE (id),
+    CONSTRAINT role_user_user_id_fk
+        FOREIGN KEY (user_id) REFERENCES user (id)
+            ON UPDATE CASCADE
+            ON DELETE CASCADE
+)
+    ENGINE = InnoDB;
+
+CREATE INDEX role_user_user_id_fk
+   ON role (user_id);
+
+-- Insert Role --
+INSERT INTO `role` VALUES (1, 'admin', 'mikeyjones123', 1),(2, 'general', 'miraclet0909', 2);
+
