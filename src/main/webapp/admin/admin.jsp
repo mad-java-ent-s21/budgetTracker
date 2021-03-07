@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Admin</title>
 </head>
 <body>
+    <h1>Admin Page</h1>
+    <a href="/userSearch.jsp">Users</a>
+    <a href="/userEntries.jsp">Entries</a>
 
 </body>
 </html>
