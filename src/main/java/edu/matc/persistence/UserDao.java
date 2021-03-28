@@ -17,6 +17,10 @@ public class UserDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
+//    public UserDao(Class type) {
+//        this.type = type;
+//    }
+
     public List<User> getAllUser() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();

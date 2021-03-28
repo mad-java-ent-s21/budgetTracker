@@ -23,6 +23,10 @@ public class GenericDao<T> {
         this.type = type;
     }
 
+    public GenericDao() {
+
+    }
+
     public List<T> getAll() {
         Session session = getSession();
 

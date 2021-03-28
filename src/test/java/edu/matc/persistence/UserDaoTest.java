@@ -15,7 +15,7 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
         Database database = Database.getInstance();
-        database.runSQL("src/test/resources/cleandb.sql");
+        database.runSQL("cleandb.sql");
 
         dao = new UserDao();
     }
