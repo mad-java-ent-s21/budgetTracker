@@ -43,7 +43,7 @@ public class TestServiceClient {
         ObjectMapper mapper = new ObjectMapper();
 
         PetId petId = mapper.readValue(response, PetId.class);
-        assertEquals("Tica", petId.getName());
+        assertEquals("test", petId.getName());
         //assertEquals("???", response);
     }
 }
