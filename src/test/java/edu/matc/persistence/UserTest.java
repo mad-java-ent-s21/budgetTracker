@@ -19,14 +19,14 @@ class UserTest {
         dao = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-        users = dao.getAll();
+//        users = dao.getAll();
     }
 
     @Test
     void getAll() {
 //        assertTrue(users.size() > 0);
 //        assertFalse(users.get(0).getFirstName().equals(""));
-
+        users = dao.getAll();
         assertEquals(2, users.size());
     }
 

@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+
+import edu.matc.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 /**
@@ -30,12 +32,16 @@ public class SearchUser extends HttpServlet {
 
         GenericDao<User> dao = new GenericDao<>();
         String username = req.getParameter("username");
+        UserDao user = new UserDao();
 
-        if (username != null) {
-            req.setAttribute("users", dao.findByPropertyEqual("username", username));
-        } else {
-            req.setAttribute("users", dao.getAll());
-        }
+//        if (username != null) {
+//            req.setAttribute("users", dao.findByPropertyEqual("username", username));
+//        } else {
+//            req.setAttribute("users", dao.getAll());
+//        }
+
+        req.setAttribute("users", user.getAllUser());
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/userResults.jsp");
         dispatcher.forward(req, resp);
     }

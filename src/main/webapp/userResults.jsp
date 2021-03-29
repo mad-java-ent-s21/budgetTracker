@@ -9,26 +9,28 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-    <table id="userTable" class="display" cellspacing="0" width="100%">
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <table id="userTable" class="display" cellspacing="0" width="100%">
+            <thead>
+                <th>Name</th>
+                <th>User</th>
+            </thead>
 
-        <thead>
-            <th>Name</th>
-            <th>User</th>
-        </thead>
-
-        <tbody>
-            <c:forEach var="user" items="${users}">
-                <tr>
-                    <td>${user.firstName} ${user.lastName}</td>
-                    <td>${user.userName}</td>
-                </tr>
-            </c:forEach>
-        </tbody>
-
-    </table>
-</body>
+            <tbody>
+                <c:forEach var="user" items="${users}">
+                    <tr>
+                        <td>
+                                ${user.firstName} ${user.lastName}
+                        </td>
+                        <td>
+                                ${user.userName}
+                        </td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+        </table>
+    </body>
 </html>

@@ -21,6 +21,12 @@ class UserDaoTest {
     }
 
     @Test
+    void getAllUser() {
+        User retrieveAllUser = (User) dao.getAllUser();
+        assertEquals("", retrieveAllUser.getId());
+    }
+
+    @Test
     void getById() {
         User retrievedUser = dao.getById(1);
         assertEquals("mikeyjones123", retrievedUser.getUsername());
