@@ -1,6 +1,6 @@
 <nav>
     <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">Budget Tracker</a>
+        <a href="index.jsp" class="brand-logo">Budget Tracker</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.jsp">Home</a></li>
             <li><a href="admin/admin.jsp">Admin</a></li>

@@ -25,14 +25,18 @@
 - [x] Complete checkpoint 7
 
 ### Week 7
-- [ ] Implement generic dao instead of separate dao for each bean
-- [ ] Fix Readme.md
-- [ ] Update journals and plans
-- [ ] Fix design documents
-- [ ] Include more codes into jsp files
-- [ ] Add controller directory and files
 - [x] Implemented admin/auth in project, including role tables for users
 
 ### Week 8
-- [ ] 
-- [ ] 
+- [x] Complete on checkpoint 3 [NOT COMPLETED]
+- [x] Worked on api assignment
+
+### Week 9
+- [x] Implement generic dao instead of separate dao for each bean
+- [ ] Fix Readme.md
+- [x] Update journals and plans
+- [ ] Fix design documents
+- [x] Include more codes into jsp files
+- [x] Add controller directory and files
+- [x] Complete checkpoint 3
+- [ ] Work on 2nd api assignment

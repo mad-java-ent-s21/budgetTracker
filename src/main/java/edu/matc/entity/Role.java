@@ -4,6 +4,8 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+@Entity(name = "Role")
+@Table(name = "role")
 public class Role {
 
     @Id
@@ -15,6 +17,7 @@ public class Role {
     private String roleName;
 
     @OneToOne
-    private User username;
+    @Column(name = "username")
+    private User userName;
 
 }

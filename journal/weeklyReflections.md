@@ -47,3 +47,19 @@ Will still need to rework some things, such as move to a generic dao until I nee
 1. Update to have admin roles and general roles in database.
 1. Issues with figuring out tomcat@localhost to allow access for admins, error was in the 'granting' access to the correct db.
 Used the wrong db (used the example one) when granting access.
+
+## Week 8
+### 03/23/2021
+1. Struggled with api assignment, trying to figure out how to implement api. Figured out that I needed a key access to use the api.
+1. Worked on checkpoint 3, couldn't figure out AWS issue.
+
+## Week 9
+### 03/28/2021
+1. Figured out how to work the api for the assignment.
+1. Worked on adding more into project, working around the AWS issue at the moment. Return to it when I am less stressed about it.
+
+### 03/29/2021
+1. Slowly piecing how the AWS was working. Halted due to inability to ssh into my instance.
+1. Did something on AWS to make it work, not exactly sure.
+1. Had issues with having some data displayed. Had to work around, figured out my data won't display locally, but will display on my AWS.
+1. Finally, implemented my authentication into AWS version of my application.

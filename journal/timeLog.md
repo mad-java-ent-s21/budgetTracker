@@ -11,4 +11,8 @@
 | 3/1/21 | Updated user dao tests (last of the tests), updated dump sql for user table to have email | 2  |   | 
 | 3/2/21 | Updated directory to have designDocuments and journal, added projectPlan.md and timeLog.md to track, updated weeklyReflections | 2  |   | 
 | 3/6/21 | Worked on adding admin/auth for an admin user, added admin directory with admin.jsp | 3  |   |
+| 3/23/21 | Worked api assignment | 4  |   |
+| 3/28/21 | Finished up api assignment, added controller directory, added a few other files | 5  |   |
+| 3/29/21 | Worked on finishing up checkpoint, added jsp files, added entity folder, fixed AWS issues (unable to ssh into AWS) | 7  |   |
+| 3/_/21 |  | 0  |   |
 

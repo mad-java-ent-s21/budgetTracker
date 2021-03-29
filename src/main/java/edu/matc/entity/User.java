@@ -13,7 +13,8 @@ public class User {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
-    private String username;
+    @Column(name = "username")
+    private String userName;
 
     private String password;
 
@@ -30,8 +31,8 @@ public class User {
     public User() {
     }
 
-    public User(String username, String password, String firstName, String lastName, String email, String birthdate) {
-        this.username = username;
+    public User(String userName, String password, String firstName, String lastName, String email, String birthdate) {
+        this.userName = userName;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -47,12 +48,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String username) {
+        this.userName = username;
     }
 
     public String getPassword() {
@@ -99,7 +100,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
+                ", username='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
