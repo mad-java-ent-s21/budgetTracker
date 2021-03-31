@@ -63,3 +63,7 @@ Used the wrong db (used the example one) when granting access.
 1. Did something on AWS to make it work, not exactly sure.
 1. Had issues with having some data displayed. Had to work around, figured out my data won't display locally, but will display on my AWS.
 1. Finally, implemented my authentication into AWS version of my application.
+
+### 03/30/2021
+1. Solved my issue with mySQL not displaying data to my deployment. I asked for help in slack, and turns out to be time zone issue. Utilized other slack posts to figure out issue. 
+

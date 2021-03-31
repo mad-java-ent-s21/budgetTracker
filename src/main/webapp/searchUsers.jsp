@@ -13,5 +13,8 @@
         <jsp:include page="navbar.jsp" />
         <br>
         <a href = "searchUser">All Users</a>
+
+        <%-- SCRIPTS --%>
+        <jsp:include page="scripts.jsp" />
     </body>
 </html>

@@ -14,5 +14,5 @@
 | 3/23/21 | Worked api assignment | 4  |   |
 | 3/28/21 | Finished up api assignment, added controller directory, added a few other files | 5  |   |
 | 3/29/21 | Worked on finishing up checkpoint, added jsp files, added entity folder, fixed AWS issues (unable to ssh into AWS) | 7  |   |
-| 3/_/21 |  | 0  |   |
+| 3/30/21 | Able to get local database to connect again | 1  |   |
 

@@ -33,10 +33,22 @@
 
 ### Week 9
 - [x] Implement generic dao instead of separate dao for each bean
-- [ ] Fix Readme.md
 - [x] Update journals and plans
-- [ ] Fix design documents
 - [x] Include more codes into jsp files
 - [x] Add controller directory and files
 - [x] Complete checkpoint 3
+
+### Week 10
+- [ ] Fix Readme.md
+- [ ] Fix design documents
 - [ ] Work on 2nd api assignment
+------
+- [ ] Implement more controller files
+    - [ ] Sign in
+    - [ ] Sign out
+    - [ ] Entries
+  - [ ] Add Entry
+- [ ] Add code for Entries page
+- [ ] Add jsp file for Profile page
+- [ ] Move admin jsps into admin folder
+- [x] test branching

@@ -10,9 +10,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Title</title>
+        <jsp:include page="head.jsp" />
     </head>
     <body>
+        <%-- NAV BAR --%>
+        <jsp:include page="navbar.jsp" />
+
         <table id="userTable" class="display" cellspacing="0" width="100%">
             <thead>
                 <th>Name</th>
@@ -32,5 +35,8 @@
                 </c:forEach>
             </tbody>
         </table>
+
+        <%-- SCRIPTS --%>
+        <jsp:include page="scripts.jsp" />
     </body>
 </html>
