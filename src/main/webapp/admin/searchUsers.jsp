@@ -5,13 +5,15 @@
 
 <html>
     <head>
-        <jsp:include page="head.jsp" />
+        <jsp:include page="../head.jsp" />
     </head>
 
     <body>
         <%-- NAV BAR --%>
-        <jsp:include page="navbar.jsp" />
+<%--        <jsp:include page="../navbar.jsp" />--%>
         <br>
-        <a href = "searchUser">All Users</a>
+        <a href = "admin/searchUser">All Users</a>
+
+        <jsp:include page="../scripts.jsp" />
     </body>
 </html>
