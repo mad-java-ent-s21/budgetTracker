@@ -21,7 +21,7 @@ import org.apache.logging.log4j.Logger;
  */
 
 @WebServlet(
-        urlPatterns = {"/searchUser"}
+        urlPatterns = {"/admin/searchUser"}
 )
 
 public class SearchUser extends HttpServlet {
@@ -42,7 +42,7 @@ public class SearchUser extends HttpServlet {
 
         req.setAttribute("users", user.getAllUser());
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/userResults.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/userResults.jsp");
         dispatcher.forward(req, resp);
     }
 }

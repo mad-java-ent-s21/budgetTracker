@@ -5,7 +5,7 @@
             <li><a href="index.jsp">Home</a></li>
             <li><a href="admin/admin.jsp">Admin</a></li>
 <%--            <li><a href="entry.jsp">Entry</a></li>--%>
-            <li><a href="searchUsers.jsp">Search Users</a></li>
+            <li><a href="admin/searchUsers.jsp">Search Users</a></li>
         </ul>
     </div>
 </nav>
