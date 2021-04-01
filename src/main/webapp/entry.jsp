@@ -1,16 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: cvang
-  Date: 2/23/21
-  Time: 2:19 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<c:set var="title" value="Search"/>
+
+
 <html>
 <head>
-    <title>Entries</title>
+    <jsp:include page="head.jsp" />
 </head>
 <body>
     <h1>Entries</h1>
+
+    <jsp:include page="scripts.jsp" />
 </body>
 </html>

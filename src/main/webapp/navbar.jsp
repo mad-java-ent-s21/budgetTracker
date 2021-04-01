@@ -9,13 +9,3 @@
         </ul>
     </div>
 </nav>
-
-<%--<a href="admin/admin.jsp">--%>
-<%--    <button class="btn waves-effect">Admin</button>--%>
-<%--</a>--%>
-<%--<a href="entry.jsp">--%>
-<%--    <button class="btn waves-effect disabled">Entry</button>--%>
-<%--</a>--%>
-<%--<a href="searchUsers.jsp">--%>
-<%--    <button class="btn waves-effect">Search Users</button>--%>
-<%--</a>--%>
