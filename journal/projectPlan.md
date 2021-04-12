@@ -41,7 +41,6 @@
 ### Week 10
 - [ ] Fix Readme.md
 - [ ] Fix design documents
-- [ ] Work on 2nd api assignment
 ------
 - [ ] Implement more controller files
     - [ ] Sign in
@@ -52,3 +51,11 @@
 - [ ] Add jsp file for Profile page
 - [ ] Move admin jsps into admin folder
 - [x] test branching
+
+### Week 11
+
+### Week 12
+
+### Week 13
+
+### Week 14

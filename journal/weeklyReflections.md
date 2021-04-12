@@ -67,3 +67,7 @@ Used the wrong db (used the example one) when granting access.
 ### 03/30/2021
 1. Solved my issue with mySQL not displaying data to my deployment. I asked for help in slack, and turns out to be time zone issue. Utilized other slack posts to figure out issue. 
 
+
+## Week 10
+### 04/1/2021
+
