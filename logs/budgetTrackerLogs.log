@@ -1,4 +1,0 @@
-[ERROR] 2021-04-11 21:10:56.840 [main] Database - java.sql.SQLException: Can not issue empty query.
-[ERROR] 2021-04-11 21:11:08.400 [main] Database - java.sql.SQLException: Can not issue empty query.
-[ERROR] 2021-04-11 21:11:18.175 [main] Database - java.sql.SQLException: Can not issue empty query.
-[ERROR] 2021-04-11 21:11:30.285 [main] Database - java.sql.SQLException: Can not issue empty query.
