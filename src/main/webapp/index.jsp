@@ -12,17 +12,10 @@
     <%-- NAV BAR --%>
     <jsp:include page="navbar.jsp" />
 
+    <h3>Welcome to the Budget Tracker! Here you can track any expense and income. Make your finance matter!</h3>
 
-    <div class="log-form">
-        <h2>Login to your account</h2>
-        <form>
-            <input type="text" title="username" placeholder="username" />
-            <input type="password" title="username" placeholder="password" />
-            <button type="submit" class="btn">Login</button>
-            <a class="signUp" href="#">Sign Up</a>
-        </form>
 
-    </div>
+
     <jsp:include page="scripts.jsp" />
     </body>
 </html>

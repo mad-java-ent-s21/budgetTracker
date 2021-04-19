@@ -18,14 +18,11 @@ class UserDaoTest {
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-//        users = dao.getAll();
         dao = new GenericDao(User.class);
     }
 
     @Test
     void getAllSuccess() {
-//        assertTrue(users.size() > 0);
-//        assertFalse(users.get(0).getFirstName().equals(""));
         List<User> users = dao.getAll();
         assertEquals(2, users.size());
     }
@@ -69,7 +66,14 @@ class UserDaoTest {
     }
 
     @Test
-    void findByPropertyEqual() {
+    void findByPropertyEqualSuccess() {
+        String name = "Mike";
+        String column = "firstName";
+
+        List<User> userFirstName = dao.findByPropertyEqual(column, name);
+        for (User firstName: userFirstName) {
+            assertEquals(name, firstName.getFirstName());
+        }
     }
 
     @Test

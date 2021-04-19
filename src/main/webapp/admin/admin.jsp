@@ -13,7 +13,7 @@
         <div class="nav-wrapper">
             <a href="../index.jsp" class="brand-logo">Budget Tracker</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="../index.jsp">Return Home</a></li>
+                <li><a href="">Log Off</a></li>
             </ul>
         </div>
     </nav>

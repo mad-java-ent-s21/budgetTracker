@@ -40,6 +40,7 @@ public class SearchUser extends HttpServlet {
 //            req.setAttribute("users", dao.getAll());
 //        }
 
+//        req.setAttribute("users", dao.getAll());
         req.setAttribute("users", user.getAllUser());
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/userResults.jsp");

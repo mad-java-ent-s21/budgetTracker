@@ -39,22 +39,24 @@
 - [x] Complete checkpoint 3
 
 ### Week 10
+- [x] test branching
+
+### Week 11
+- [x] Move admin jsps into admin folder
+
+### Week 12
 - [ ] Fix Readme.md
 - [ ] Fix design documents
 ------
 - [ ] Implement more controller files
-    - [ ] Sign in
-    - [ ] Sign out
-    - [ ] Entries
+  - [ ] Sign in
+  - [ ] Sign out
+  - [ ] Entries
   - [ ] Add Entry
 - [ ] Add code for Entries page
+  - [ ] Design Entries page
 - [ ] Add jsp file for Profile page
-- [ ] Move admin jsps into admin folder
-- [x] test branching
 
-### Week 11
-
-### Week 12
 
 ### Week 13
 
