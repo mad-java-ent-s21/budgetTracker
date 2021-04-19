@@ -21,6 +21,52 @@ public class UserDao {
 //        this.type = type;
 //    }
 
+//    ------------------------------------------
+
+//    public void saveUser (User user) {
+//        Transaction transaction = null;
+//        try (Session session = SessionFactoryProvider.getSessionFactory().openSession()) {
+//            // Start transaction
+//            transaction = session.beginTransaction();
+//            // Save user object
+//            session.save(user);
+//            // Commit transaction
+//            transaction.commit();
+//        } catch (Exception e) {
+//            if (transaction != null) {
+//                transaction.rollback();
+//            }
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    public boolean validate (String userName, String password) {
+//        Transaction transaction = null;
+//        User user = null;
+//        try (Session session = SessionFactoryProvider.getSessionFactory().openSession()) {
+//            // Start transaction
+//            transaction = session.beginTransaction();
+//            // Get user object
+//            user = (User) session.createQuery("FROM User username WHERE username.userName = :userName").
+//                    setParameter("userName", userName).uniqueResult();
+//
+//            if (user != null && user.getPassword().equals(password)) {
+//                return true;
+//            }
+//            // Commit transaction
+//            transaction.commit();
+//        } catch (Exception e) {
+//            if (transaction != null) {
+//                transaction.rollback();
+//            }
+//            e.printStackTrace();
+//        }
+//        return false;
+//    }
+
+
+//    ------------------------------------------
+
     public List<User> getAllUser() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();

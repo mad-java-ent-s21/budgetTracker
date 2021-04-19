@@ -12,17 +12,21 @@
 <%-- NAV BAR --%>
 <jsp:include page="navbar.jsp" />
 
-
+<%--  TODO - create sign up controller  --%>
 <div class="log-form">
     <h2>Create an account</h2>
-    <form>
-<%--        <input type="text" title="username" placeholder="username" />--%>
-<%--        <input type="password" title="username" placeholder="password" />--%>
-<%--        <button type="submit" class="btn">Login</button>--%>
-<%--        <a class="signUp" href="#">Sign Up</a>--%>
-    </form>
 
+    <form id="userSignUp" action="${pageContext.request.contextPath}/userSignUp" method="post" data-toggle="validator">
+        <input type="text" title="userName" placeholder="Username" />
+        <input type="text" title="email" placeholder="Email" />
+        <input type="text" title="firstName" placeholder="First Name" />
+        <input type="text" title="lastName" placeholder="Last Name" />
+        <input type="password" title="password" placeholder="Password" />
+        <button type="submit" class="btn">Create Account</button>
+        <button type="reset" class="btn">Clear</button>
+    </form>
 </div>
+
 <jsp:include page="scripts.jsp" />
 </body>
 </html>

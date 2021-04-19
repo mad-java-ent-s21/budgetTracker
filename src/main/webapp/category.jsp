@@ -13,6 +13,9 @@
 
     <h1>Category</h1>
 
+<%--    TODO - Add category controller  --%>
+    <a href="#" class="waves-effect waves-light btn">Add Category</a>
+
 <%--    TODO Display categories for user   --%>
 <%--    TODO Display per color chosen   --%>
 <%--    Category Table for user   --%>
@@ -21,6 +24,7 @@
     <th>Category Name</th>
     <th>Description</th>
     <th>Color</th>
+    <th></th>
     </thead>
 
     <tbody>
@@ -34,6 +38,9 @@
             </td>
             <td>
                     ${category.color}
+            </td>
+            <td>
+                <a href="#" class="waves-effect waves-teal btn-flat">Edit</a>
             </td>
         </tr>
     </c:forEach>

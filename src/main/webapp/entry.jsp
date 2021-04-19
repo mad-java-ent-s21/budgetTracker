@@ -27,6 +27,9 @@
 
         <tbody>
         <c:forEach var="entry" items="${entry}">
+
+<%--  TODO - "if statement" that adjust according to Category color  --%>
+<%--            <tr class="green">   --%>
             <tr>
                 <td>
                         ${entry.date}
