@@ -66,6 +66,8 @@
             </tbody>
         </table>
 
+    <a href="userCategory">Customize Category</a>
+
 </div>
 <jsp:include page="scripts.jsp" />
 </body>

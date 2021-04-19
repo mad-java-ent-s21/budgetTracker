@@ -12,8 +12,13 @@
     <%-- NAV BAR --%>
     <jsp:include page="navbar.jsp" />
 
-    <h3>Welcome to the Budget Tracker! Here you can track any expense and income. Make your finance matter!</h3>
+    <h3>Welcome to the Budget Tracker!
+        Here you can track any expense and income.
+        Make your finance matter!</h3>
 
+<%--    TODO add buttons to log in and out   --%>
+    <a href="userLogin.jsp" class="waves-effect waves-light btn">Log In</a>
+    <a href="signup.jsp" class="waves-effect waves-light btn">Sign Up</a>
 
 
     <jsp:include page="scripts.jsp" />

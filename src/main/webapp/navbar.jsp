@@ -9,7 +9,7 @@
         <ul id="nav-mobile-user" class="right hide-on-med-and-down">
             <li><a href="index.jsp">Home</a></li>
             <li><a href="userEntry">Entry</a></li>
-            <li><a href="profile.jsp">Profile</a></li>
+            <li><a href="userProfile">Profile</a></li>
             <li><a href="">Log Out</a></li>
         </ul>
 <%--        <ul id="nav-mobile-admin" class="right hide-on-med-and-down">--%>

@@ -16,25 +16,23 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 @WebServlet(
-        urlPatterns = {"/userEntry"}
+        urlPatterns = {"/userProfile"}
 )
 
-public class UserEntry extends HttpServlet {
+public class UserProfile extends HttpServlet {
     final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//        GenericDao<Entry> dao = new GenericDao<>();
+//        GenericDao<User> dao = new GenericDao<>();
 //        List<Entry> entry = dao.getAll();
-        GenericDao dao = new GenericDao(Entry.class);
+        GenericDao dao = new GenericDao(User.class);
 
-        req.setAttribute("entry", dao.getAll());
+        req.setAttribute("user", dao.getAll());
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/entry.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/profile.jsp");
         dispatcher.forward(req, resp);
     }
 }

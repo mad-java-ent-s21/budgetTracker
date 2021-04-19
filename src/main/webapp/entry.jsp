@@ -8,46 +8,40 @@
     <jsp:include page="head.jsp" />
 </head>
 <body>
+    <%-- NAV BAR --%>
+    <jsp:include page="navbar.jsp" />
+
     <h1>Entries</h1>
 
-<%--    User Table   --%>
-<%--    <table id="userTable" class="display" cellspacing="0" width="100%">--%>
-<%--        <thead>--%>
-<%--        <th>Name</th>--%>
-<%--        <th>User</th>--%>
-<%--        </thead>--%>
-
-<%--        <tbody>--%>
-<%--        <c:forEach var="user" items="${users}">--%>
-<%--            <tr>--%>
-<%--                <td>--%>
-<%--                        ${user.firstName} ${user.lastName}--%>
-<%--                </td>--%>
-<%--                <td>--%>
-<%--                        ${user.userName}--%>
-<%--                </td>--%>
-<%--            </tr>--%>
-<%--        </c:forEach>--%>
-<%--        </tbody>--%>
-<%--    </table>--%>
-
-
 <%--    TODO Display entries for user   --%>
+<%--    TODO Display based on color of category  --%>
 <%--    Entries Table for user   --%>
     <table id="userTable" class="display" cellspacing="0" width="100%">
         <thead>
+        <th>Date</th>
         <th>Entry Name</th>
         <th>Value</th>
+        <th>Type</th>
+        <th>Category</th>
         </thead>
 
         <tbody>
         <c:forEach var="entry" items="${entry}">
             <tr>
                 <td>
-                        ${entry.entry_name}
+                        ${entry.date}
+                </td>
+                <td>
+                        ${entry.entryName}
                 </td>
                 <td>
                         ${entry.value}
+                </td>
+                <td>
+                        ${entry.entryType}
+                </td>
+                <td>
+                        ${entry.categoryId.categoryName}
                 </td>
             </tr>
         </c:forEach>

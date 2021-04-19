@@ -1,7 +1,7 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Category;
 import edu.matc.entity.Entry;
-import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import edu.matc.persistence.PropertiesLoader;
 import org.apache.logging.log4j.LogManager;
@@ -14,15 +14,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @WebServlet(
-        urlPatterns = {"/userEntry"}
+        urlPatterns = {"/userCategory"}
 )
 
-public class UserEntry extends HttpServlet {
+public class UserCategory extends HttpServlet {
     final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
@@ -30,11 +27,11 @@ public class UserEntry extends HttpServlet {
 
 //        GenericDao<Entry> dao = new GenericDao<>();
 //        List<Entry> entry = dao.getAll();
-        GenericDao dao = new GenericDao(Entry.class);
+        GenericDao dao = new GenericDao(Category.class);
 
-        req.setAttribute("entry", dao.getAll());
+        req.setAttribute("category", dao.getAll());
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/entry.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/category.jsp");
         dispatcher.forward(req, resp);
     }
 }
