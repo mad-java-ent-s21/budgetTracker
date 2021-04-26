@@ -67,16 +67,34 @@ class UserDaoTest {
 
     @Test
     void findByPropertyEqualSuccess() {
-        String name = "Mike";
-        String column = "firstName";
+//        String name = "Mike";
+//        String column = "firstName";
+//
+//        List<User> userFirstName = dao.findByPropertyEqual(column, name);
+//        for (User firstName: userFirstName) {
+//            assertEquals(name, firstName.getFirstName());
+//        }
 
-        List<User> userFirstName = dao.findByPropertyEqual(column, name);
-        for (User firstName: userFirstName) {
-            assertEquals(name, firstName.getFirstName());
+        String username = "mikeyjones123";
+
+        List<User> findUser = dao.findByPropertyEqual("userName", username);
+        for (User user: findUser) {
+            assertEquals(username, user.getUserName());
         }
     }
 
     @Test
     void testFindByPropertyEqual() {
+    }
+
+    @Test
+    void persistUser() {
+        String username = "mikeyjones123";
+
+        List<User> findUser = dao.findByPropertyEqual("username", username);
+        for (User user: findUser) {
+            assertEquals(username, user.getUserName());
+        }
+
     }
 }

@@ -17,22 +17,22 @@ public class UserDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-    public void saveUser(User user) {
-        Transaction transaction = null;
-        try (Session session = SessionFactoryProvider.getSessionFactory().openSession()) {
-            // start a transaction
-            transaction = session.beginTransaction();
-            // save the student object
-            session.save(user);
-            // commit transaction
-            transaction.commit();
-        } catch (Exception e) {
-            if (transaction != null) {
-                transaction.rollback();
-            }
-            e.printStackTrace();
-        }
-    }
+//    public void saveUser(User user) {
+//        Transaction transaction = null;
+//        try (Session session = SessionFactoryProvider.getSessionFactory().openSession()) {
+//            // start a transaction
+//            transaction = session.beginTransaction();
+//            // save the student object
+//            session.save(user);
+//            // commit transaction
+//            transaction.commit();
+//        } catch (Exception e) {
+//            if (transaction != null) {
+//                transaction.rollback();
+//            }
+//            e.printStackTrace();
+//        }
+//    }
 
     public boolean validate(String userName, String password) {
 
@@ -57,6 +57,23 @@ public class UserDao {
             e.printStackTrace();
         }
         return false;
+    }
+
+    public void persistUser(User user) {
+        Transaction transaction = null;
+        try (Session session = SessionFactoryProvider.getSessionFactory().openSession()) {
+            // start a transaction
+            transaction = session.beginTransaction();
+            // save the student object
+            session.persist(user);
+            // commit transaction
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
     }
 
 //    public UserDao(Class type) {

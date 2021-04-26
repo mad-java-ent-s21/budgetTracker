@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="title" value="Search"/>
+<%@ page import="edu.matc.entity.User" %>
 
 
 <html>
@@ -21,7 +22,7 @@
     <br><br><br>
 
     <a href="" class="waves-effect waves-light btn">Edit Profile</a><br>
-    <c:forEach var="user" items="${users}">--%>
+    <c:forEach var="user" items="${users}">
         <p>Username: ${user.username}</p><br>
         <p>Name: ${user.firstName} ${user.lastName}</p><br>
         <p>Email: ${user.email}</p><br>
@@ -30,13 +31,32 @@
 
 
 <%--    <%! String username=session.getAttribute("username"); %>--%>
-    <form action="editinfo" method="post">
-        <table>
-            <tr>
-                <td>Username: </td><td><input type="text" value="<%= session.getAttribute("username") %>" /></td>
-            </tr>
-        </table>
-    </form>
+
+    <%
+//        String username = request.getParameter("username");
+        HttpSession sessionAtt = request.getSession();
+
+        if(session.getAttribute("user") != null) {
+    %>
+
+            <form action="editinfo" method="post">
+                <table>
+                    <tr>
+                        <td>Username: </td><td><input type="text" value="<%= session.getAttribute("user") %>" /></td>
+                    </tr>
+                </table>
+            </form>
+
+        <%}
+    %>
+
+<%--    <form action="editinfo" method="post">--%>
+<%--        <table>--%>
+<%--            <tr>--%>
+<%--                <td>Username: </td><td><input type="text" value="<%= session.getAttribute("user") %>" /></td>--%>
+<%--            </tr>--%>
+<%--        </table>--%>
+<%--    </form>--%>
 
 
 

@@ -19,10 +19,18 @@
 
 <%--    TODO add buttons to log in and out   --%>
 <%--    TODO only display when NOT logged in  --%>
-<%--    <c: if test="${not empty loggedInUser}">--%>
+    <%
+        if (session.getAttribute("user") == null) {
+    %>
         <a href="userLogin.jsp" class="waves-effect waves-light btn">Log In</a>
         <a href="signup.jsp" class="waves-effect waves-light btn">Sign Up</a>
-<%--    </c:>--%>
+    <%
+        } else {
+    %>
+        View your entries!!
+    <%
+        }
+    %>
 
     <jsp:include page="scripts.jsp" />
     </body>

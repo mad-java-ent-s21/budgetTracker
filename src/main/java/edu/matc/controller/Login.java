@@ -68,14 +68,16 @@ public class Login extends HttpServlet {
             throws Exception {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
+        List<User> foundByUsername = dao.findByPropertyEqual("userName", username);
+        User user = foundByUsername.get(0);
 
         if (login.validate(username, password)) {
             HttpSession session = req.getSession();
-//            List<User> foundByUsername = dao.findByPropertyEqual("username", username);
-//            User user = foundByUsername.get(0);
-//            req.setAttribute("username", username);
-//            req.setAttribute("user", user);
-            session.setAttribute("username", username);
+
+            req.setAttribute("username", username);
+            req.setAttribute("password", password);
+            session.setAttribute("username", user.getUserName());
+            session.setAttribute("user", user);
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("loginSuccess.jsp");
             dispatcher.forward(req, resp);
