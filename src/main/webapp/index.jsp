@@ -17,8 +17,6 @@
         Here you can track any expense and income.<br>
         Make your finance matter!</h3>
 
-<%--    TODO add buttons to log in and out   --%>
-<%--    TODO only display when NOT logged in  --%>
     <%
         if (session.getAttribute("user") == null) {
     %>

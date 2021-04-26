@@ -17,12 +17,12 @@
 <div class="log-form">
     <h2>Create an account</h2>
 
-    <form id="userSignUp" action="${pageContext.request.contextPath}/userSignUp" method="post" data-toggle="validator">
-        <input type="text" title="userName" placeholder="Username" />
-        <input type="text" title="email" placeholder="Email" />
-        <input type="text" title="firstName" placeholder="First Name" />
-        <input type="text" title="lastName" placeholder="Last Name" />
-        <input type="password" title="password" placeholder="Password" />
+    <form id="userSignUp" action="userSignUp" method="post" data-toggle="validator">
+        <input id="username" name="username" type="text" title="username" placeholder="Username" />
+        <input id="email" name="email" type="text" title="email" placeholder="Email" />
+        <input id="firstName" name="firstName" type="text" title="firstName" placeholder="First Name" />
+        <input id="lastName" name="lastName" type="text" title="lastName" placeholder="Last Name" />
+        <input id="password" name="password" type="password" title="password" placeholder="Password" />
         <button type="submit" class="btn">Create Account</button>
         <button type="reset" class="btn">Clear</button>
     </form>

@@ -25,7 +25,7 @@ public class Logout extends HttpServlet {
         protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         try {
-            remove(req, resp);
+            removeSession(req, resp);
             resp.sendRedirect("index.jsp");
         } catch (Exception e) {
             e.printStackTrace();
@@ -41,7 +41,7 @@ public class Logout extends HttpServlet {
 //        }
 //    }
 
-    private void remove(HttpServletRequest req, HttpServletResponse resp)
+    private void removeSession(HttpServletRequest req, HttpServletResponse resp)
             throws Exception {
 
         if (req.getSession() != null) {
