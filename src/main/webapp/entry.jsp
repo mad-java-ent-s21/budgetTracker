@@ -5,6 +5,7 @@
 
 <html>
 <head>
+    <title>Entries</title>
     <jsp:include page="head.jsp" />
 </head>
 <body>

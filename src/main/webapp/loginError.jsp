@@ -9,8 +9,11 @@
 <html>
 <head>
     <title>Login Failed</title>
+    <jsp:include page="head.jsp" />
 </head>
 <body>
+<%-- NAV BAR --%>
+<jsp:include page="navbar.jsp" />
 Log-in Failed!
 </body>
 </html>
