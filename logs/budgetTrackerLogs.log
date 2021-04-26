@@ -1,34 +1,18 @@
-[DEBUG] 2021-04-26 05:48:20.957 [http-nio-8080-exec-4] UserSignUp - User{id=0, username='mranderson', password='ma', firstName='Mister', lastName='Anderson', birthdate='null'} user added.
-[INFO ] 2021-04-26 05:48:20.969 [http-nio-8080-exec-4] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 05:51:04.156 [http-nio-8080-exec-9] UserSignUp - User{id=0, username='mranderson', password='yoyojojo123', firstName='', lastName='', birthdate='null'} user added.
-[INFO ] 2021-04-26 05:51:04.164 [http-nio-8080-exec-9] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 05:52:13.863 [http-nio-8080-exec-8] UserSignUp - User{id=0, username='mranderson', password='ma', firstName='Mister', lastName='Anderson', birthdate='null'} user added.
-[INFO ] 2021-04-26 05:52:13.865 [http-nio-8080-exec-8] UserSignUp - Failed Captcha
-[ERROR] 2021-04-26 05:53:34.903 [main] Database - java.sql.SQLException: Can not issue empty query.
-[ERROR] 2021-04-26 05:58:55.416 [main] Database - java.sql.SQLException: Can not issue empty query.
-[ERROR] 2021-04-26 06:06:35.608 [main] Database - java.sql.SQLException: Can not issue empty query.
-[DEBUG] 2021-04-26 06:07:23.822 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='mranderson', password='', firstName='', lastName='', birthdate='null'} user added.
-[INFO ] 2021-04-26 06:07:23.835 [http-nio-8080-exec-3] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 06:08:01.244 [http-nio-8080-exec-9] UserSignUp - User{id=0, username='loli', password='loli@mad.edu', firstName='Lo', lastName='Li', birthdate='null'} user added.
-[INFO ] 2021-04-26 06:08:01.246 [http-nio-8080-exec-9] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 06:12:20.315 [http-nio-8080-exec-4] UserSignUp - User{id=0, username='mono', password='monoman@mono.com', firstName='Mo', lastName='No', birthdate='null'} user added.
-[INFO ] 2021-04-26 06:12:20.479 [http-nio-8080-exec-4] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 06:14:10.301 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='betatester', password='bt@bt.com', firstName='Beta', lastName='Tester', birthdate='null'} user added.
-[DEBUG] 2021-04-26 06:14:13.958 [http-nio-8080-exec-3] UserSignUp - Unable to add User{id=0, username='betatester', password='bt@bt.com', firstName='Beta', lastName='Tester', birthdate='null'}
-[DEBUG] 2021-04-26 06:15:31.382 [http-nio-8080-exec-2] UserSignUp - User{id=0, username='betatester', password='bt@bt.com', firstName='Beta', lastName='Tester', birthdate='null'} user added.
-[DEBUG] 2021-04-26 06:15:35.119 [http-nio-8080-exec-2] UserSignUp - Unable to add User{id=0, username='betatester', password='bt@bt.com', firstName='Beta', lastName='Tester', birthdate='null'}
-[DEBUG] 2021-04-26 06:18:10.115 [http-nio-8080-exec-4] UserSignUp - User{id=0, username='betatester', password='beta@bt.com', firstName='Beta', lastName='Tester', birthdate=''} user added.
-[DEBUG] 2021-04-26 06:18:13.811 [http-nio-8080-exec-4] UserSignUp - Unable to add User{id=0, username='betatester', password='beta@bt.com', firstName='Beta', lastName='Tester', birthdate=''}
-[DEBUG] 2021-04-26 06:21:31.241 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='betatester', password='bt@bt.com', firstName='Beta', lastName='Tester', birthdate=''} user added.
-[DEBUG] 2021-04-26 06:21:34.933 [http-nio-8080-exec-3] UserSignUp - Unable to add User{id=0, username='betatester', password='bt@bt.com', firstName='Beta', lastName='Tester', birthdate=''}
-[ERROR] 2021-04-26 06:24:41.758 [main] Database - java.sql.SQLException: Can not issue empty query.
-[ERROR] 2021-04-26 06:25:39.396 [main] Database - java.sql.SQLException: Can not issue empty query.
-[ERROR] 2021-04-26 06:27:20.309 [main] Database - java.sql.SQLException: Can not issue empty query.
-[DEBUG] 2021-04-26 06:28:35.992 [http-nio-8080-exec-2] UserSignUp - Adding User: User{id=0, username='betatester', password='bt', firstName='Beta', lastName='Tester', birthdate=''}
-[INFO ] 2021-04-26 06:28:36.115 [http-nio-8080-exec-2] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 06:29:50.270 [http-nio-8080-exec-5] UserSignUp - Adding User: User{id=0, username='asdf', password='asdf', firstName='asdf', lastName='asdf', birthdate=''}
-[INFO ] 2021-04-26 06:29:50.277 [http-nio-8080-exec-5] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 06:33:19.839 [http-nio-8080-exec-3] UserSignUp - Adding User: User{id=0, username='asdf', password='asdf', firstName='asdf', lastName='asdf', birthdate=''}
-[INFO ] 2021-04-26 06:33:19.989 [http-nio-8080-exec-3] UserSignUp - Failed Captcha
-[DEBUG] 2021-04-26 06:44:37.994 [http-nio-8080-exec-4] UserSignUp - Adding User: User{id=0, username='asdf', password='asdf', firstName='asdf', lastName='asdf', birthdate=''}
-[INFO ] 2021-04-26 06:44:38.154 [http-nio-8080-exec-4] UserSignUp - Failed Captcha
+[DEBUG] 2021-04-26 09:08:49.914 [http-nio-8080-exec-3] UserSignUp - Adding User: User{id=0, username='betatester', password='bt', firstName='Beta', lastName='Tester', birthdate=''}
+[DEBUG] 2021-04-26 09:08:53.656 [http-nio-8080-exec-3] UserSignUp - Unable to add User{id=0, username='betatester', password='bt', firstName='Beta', lastName='Tester', birthdate=''}
+[DEBUG] 2021-04-26 09:12:43.540 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='mranderson', password='mand@gmail.com', firstName='Mister', lastName='Anderson', birthdate=''} user added.
+[DEBUG] 2021-04-26 09:15:49.745 [http-nio-8080-exec-5] UserSignUp - User{id=0, username='mranderson', password='mand@gmail.com', firstName='Mister', lastName='Anderson', birthdate=''} user added.
+[DEBUG] 2021-04-26 09:17:19.236 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='mranderson', password='mand@gmail.com', firstName='Mister', lastName='Anderson', birthdate='null'} user added.
+[DEBUG] 2021-04-26 09:21:07.334 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='mranderson', password='mister', firstName='Mister', lastName='Anderson', birthdate='null'} user added.
+[DEBUG] 2021-04-26 09:24:09.280 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='mranderson', password='mister', firstName='Mister', lastName='Anderson', birthdate='2021-01-01'} user added.
+[DEBUG] 2021-04-26 09:29:54.125 [http-nio-8080-exec-2] UserSignUp - User{id=0, username='mranderson', password='mister', firstName='Mister', lastName='Anderson', birthdate='2021-01-01'} user added.
+[ERROR] 2021-04-26 09:44:44.651 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-04-26 09:49:00.802 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-04-26 09:57:54.764 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-04-26 10:05:55.970 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2021-04-26 10:07:10.773 [http-nio-8080-exec-2] UserSignUp - User{id=0, username='mranderson', password='mister', firstName='Mister', lastName='Anderson', birthdate='2021-01-01'} user added.
+[DEBUG] 2021-04-26 10:15:05.059 [http-nio-8080-exec-3] UserSignUp - User{id=0, username='mranderson', password='mister', firstName='Mister', lastName='Anderson', birthdate='2021-01-01'} user added.
+[DEBUG] 2021-04-26 10:15:09.009 [http-nio-8080-exec-3] UserSignUp - Unable to add User{id=0, username='mranderson', password='mister', firstName='Mister', lastName='Anderson', birthdate='2021-01-01'}
+[DEBUG] 2021-04-26 10:15:26.149 [http-nio-8080-exec-6] UserSignUp - User{id=0, username='betatester', password='bt', firstName='Beta', lastName='Tester', birthdate='2021-01-01'} user added.
+[DEBUG] 2021-04-26 10:15:26.153 [http-nio-8080-exec-6] UserSignUp - Unable to add User{id=0, username='betatester', password='bt', firstName='Beta', lastName='Tester', birthdate='2021-01-01'}
+[DEBUG] 2021-04-26 10:17:47.080 [http-nio-8080-exec-5] UserSignUp - User{id=0, username='betatester', password='bt', firstName='Beta', lastName='Tester', birthdate='2021-01-01'} user added.

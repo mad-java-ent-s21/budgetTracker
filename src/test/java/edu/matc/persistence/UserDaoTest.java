@@ -46,35 +46,35 @@ class UserDaoTest {
 
     @Test
     void insertSuccess() {
-//        User newUser;
-//        newUser = new User("NewGuy", "newguy", "New", "Guy", "newguy@some.com", "2000-02-16");
-//        int id = dao.insert(newUser);
-//        assertNotEquals(0,id);
-//        User insertedUser = (User) dao.getById(id);
-//        assertEquals(id, insertedUser.getId());
-//        assertEquals("New", insertedUser.getFirstName());
+        User newUser;
+        newUser = new User("NewGuy", "newguy", "New", "Guy", "newguy@some.com", "2000-02-16");
+        int id = dao.insert(newUser);
+        assertNotEquals(0,id);
+        User insertedUser = (User) dao.getById(id);
+        assertEquals(id, insertedUser.getId());
+        assertEquals("New", insertedUser.getFirstName());
 
-        String uname = "somelady";
-        String pass = "pass";
-        String fname = "some";
-        String lname = "lady";
-        String email = "emaillady@l.com";
-        String bday = "2001-03-04";
-
-        User newU = new User();
-        newU.setUserName(uname);
-        newU.setPassword(pass);
-        newU.setFirstName(fname);
-        newU.setLastName(lname);
-        newU.setEmail(email);
-        newU.setBirthdate(bday);
-
-        GenericDao userDao = FactoryDao.createDao(User.class);
-
-        int idNew = userDao.insert(newU);
-
-        User insertedUser2 = (User) dao.getById(idNew);
-        assertEquals("somelady", insertedUser2.getUserName());
+//        String uname = "somelady";
+//        String pass = "pass";
+//        String fname = "some";
+//        String lname = "lady";
+//        String email = "emaillady@l.com";
+//        String bday = "2001-03-04";
+//
+//        User newU = new User();
+//        newU.setUserName(uname);
+//        newU.setPassword(pass);
+//        newU.setFirstName(fname);
+//        newU.setLastName(lname);
+//        newU.setEmail(email);
+//        newU.setBirthdate(bday);
+//
+//        GenericDao userDao = FactoryDao.createDao(User.class);
+//
+//        int idNew = userDao.insert(newU);
+//
+//        User insertedUser2 = (User) dao.getById(idNew);
+//        assertEquals("somelady", insertedUser2.getUserName());
     }
 
     @Test
