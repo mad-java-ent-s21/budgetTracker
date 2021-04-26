@@ -5,6 +5,7 @@
 
 <html>
     <head>
+        <title>User Search</title>
         <jsp:include page="../head.jsp" />
     </head>
 
