@@ -16,8 +16,8 @@
 <div class="log-form">
     <h2>Login to your account</h2>
     <form action="login" method="post">
-        <input type="text" title="username" placeholder="username" />
-        <input type="password" title="username" placeholder="password" />
+        <input id="userName" type="text" title="username" name="username" placeholder="username" required />
+        <input id="password" type="password" title="password" name="password" placeholder="password" required />
         <button type="submit" class="btn">Login</button>
         <a class="signUp" href="signup.jsp">Sign Up</a>
     </form>

@@ -29,6 +29,16 @@
     </c:forEach>
 
 
+<%--    <%! String username=session.getAttribute("username"); %>--%>
+    <form action="editinfo" method="post">
+        <table>
+            <tr>
+                <td>Username: </td><td><input type="text" value="<%= session.getAttribute("username") %>" /></td>
+            </tr>
+        </table>
+    </form>
+
+
 
 </div>
 <jsp:include page="scripts.jsp" />

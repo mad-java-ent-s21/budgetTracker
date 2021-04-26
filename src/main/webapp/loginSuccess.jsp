@@ -12,6 +12,7 @@
 <%-- NAV BAR --%>
 <jsp:include page="navbar.jsp" />
 
+<%--<% request.getSession().getAttribute("username"); %>--%>
 <p>Log in successful!</p>
 
 <jsp:include page="scripts.jsp" />
