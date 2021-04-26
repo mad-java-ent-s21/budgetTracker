@@ -23,37 +23,14 @@ public class Login extends HttpServlet {
     private GenericDao dao = new GenericDao(User.class);
     private final Logger log = LogManager.getLogger(this.getClass());
 
-
-
-//    @Override
-//    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws
-//            ServletException, IOException {
-//
-//        HttpSession session = req.getSession();
-//
-//        String userName = req.getRemoteUser();
-//
-//        log.info(userName + " successfully logged in");
-//
-//        List<User> userFound = (List<User>) dao.findByPropertyEqual("userName", userName);
-//        User user = userFound.get(1);
-//
-//        req.setAttribute("userName", userName);
-//        req.setAttribute("userLogin", user);
-//        session.setAttribute("userLogin", user);
-//
-//        RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpSuccess.jsp");
-//        dispatcher.forward(req, resp);
-//    }
-
     public void init() {
         login = new UserDao();
     }
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        resp.sendRedirect("userLogin.jsp");
-    }
+//    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+//            throws ServletException, IOException {
+//        resp.sendRedirect("userLogin.jsp");
+//    }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {

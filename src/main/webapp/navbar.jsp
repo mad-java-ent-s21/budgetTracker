@@ -9,7 +9,7 @@
                 <li><a href="index.jsp">Home</a></li>
                 <li><a href="userEntry">Entry</a></li>
                 <li><a href="userProfile">Profile</a></li>
-                <li><a href="">Log Out</a></li>
+                <li><a href="logout">Log Out</a></li>
             </ul>
         <%
             } else {
