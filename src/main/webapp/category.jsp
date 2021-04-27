@@ -11,7 +11,9 @@
 <body>
     <%-- NAV BAR --%>
     <jsp:include page="navbar.jsp" />
+    <jsp:include page="bodyTop.jsp" />
 
+    <div class="center align">
     <h1>Category</h1>
 
 <%--    TODO - Add category controller  --%>
@@ -47,7 +49,8 @@
     </c:forEach>
     </tbody>
 </table>
-
+</div>
 <jsp:include page="scripts.jsp" />
+<jsp:include page="bodyBottom.jsp" />
 </body>
 </html>

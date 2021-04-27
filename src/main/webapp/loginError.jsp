@@ -14,6 +14,10 @@
 <body>
 <%-- NAV BAR --%>
 <jsp:include page="navbar.jsp" />
-Log-in Failed!
+<jsp:include page="bodyTop.jsp" />
+<br>
+<h4 class="center-align">Log-in Failed!</h4>
+<jsp:include page="scripts.jsp" />
+<jsp:include page="bodyBottom.jsp" />
 </body>
 </html>

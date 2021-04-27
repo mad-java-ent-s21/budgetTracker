@@ -11,10 +11,13 @@
 <body>
 <%-- NAV BAR --%>
 <jsp:include page="navbar.jsp" />
+<jsp:include page="bodyTop.jsp" />
 
 <%--<% request.getSession().getAttribute("username"); %>--%>
-<p>Log in successful!</p>
+<br>
+<h4 class="center-align">Log in successful!</h4>
 
 <jsp:include page="scripts.jsp" />
+<jsp:include page="bodyBottom.jsp" />
 </body>
 </html>

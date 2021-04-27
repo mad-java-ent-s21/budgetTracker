@@ -44,7 +44,7 @@ public class UserSignUp extends HttpServlet {
         userDao.insert(user);
 
 
-//        if () {
+//        if (user.getUserName() != null || user.getUserName() != "") {
 //
 //            userDao.insert(user);
 //

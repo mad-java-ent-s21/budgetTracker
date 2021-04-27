@@ -10,7 +10,10 @@
 <body>
 <%-- NAV BAR --%>
 <jsp:include page="navbar.jsp" />
+<jsp:include page="bodyTop.jsp" />
 
+<div class="row">
+<div class="col s6 push-s3">
 <FORM ACTION="j_security_check" METHOD="POST">
 <%--    <TABLE>--%>
         User name: <INPUT TYPE="TEXT" NAME="j_username">
@@ -19,7 +22,9 @@
 <%--        <a class="signUp" href="signup.jsp">Sign Up</a>--%>
 <%--    </TABLE>--%>
 </FORM>
-
-
+<jsp:include page="scripts.jsp" />
+<jsp:include page="bodyBottom.jsp" />
+</div>
+</div>
 </body>
 </html>

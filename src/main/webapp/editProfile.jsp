@@ -12,9 +12,10 @@
 <body>
 <%-- NAV BAR --%>
 <jsp:include page="navbar.jsp" />
+<jsp:include page="bodyTop.jsp" />
 
 
-<div class="log-form">
+<div class="log-form center-align">
     <h2>Your Profile</h2>
 
     <a href="userCategory" class="waves-effect waves-light btn">Customize Category</a>
@@ -45,5 +46,6 @@
 
 </div>
 <jsp:include page="scripts.jsp" />
+<jsp:include page="bodyBottom.jsp" />
 </body>
 </html>
