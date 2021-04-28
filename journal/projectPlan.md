@@ -48,16 +48,35 @@
 - [ ] Fix Readme.md
 - [ ] Fix design documents
 ------
-- [ ] Implement more controller files
-  - [ ] Sign in
-  - [ ] Sign out
-  - [ ] Entries
-  - [ ] Add Entry
-- [ ] Add code for Entries page
+- [x] Added more controller files
+  - [x] Sign in
+  - [x] Sign out
+  - [x] Entries
+  - [x] Add Entry
+- [x] Add code for Entries page
   - [ ] Design Entries page
-- [ ] Add jsp file for Profile page
+- [x] Add jsp file for Profile page
 
 
 ### Week 13
+- [x] Add jsp + designs files:
+  - [x] Profile
+  - [x] Login
+  - [x] Logout
+  - [x] Signup
+  - [x] Entry
+- [x] Login Controller
+- [x] Sign out Controller
+- [x] 
 
 ### Week 14
+- [ ] Signup (username & email) uniqueness
+- [ ] Entries controller
+  - [ ] Add
+  - [ ] Delete
+  - [ ] Edit
+- [ ] Prep for presentation
+  
+### Week 15
+- [ ] Work on API
+- [ ] Finish all projects

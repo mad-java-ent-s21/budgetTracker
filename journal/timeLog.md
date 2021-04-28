@@ -14,5 +14,10 @@
 | 3/23/21 | Worked api assignment | 4  |   |
 | 3/28/21 | Finished up api assignment, added controller directory, added a few other files | 5  |   |
 | 3/29/21 | Worked on finishing up checkpoint, added jsp files, added entity folder, fixed AWS issues (unable to ssh into AWS) | 7  |   |
-| 3/30/21 | Able to get local database to connect again | 1  |   |
-
+| 4/3/21 |  | 1 |   |
+| 4/10/21 |  | 1 |   |
+| 4/18/21 | Updated jsp files, include basic coding | 4.5 |   |
+| 4/23/21 | Added JSP designs/css | 1 |   |
+| 4/24/21 | Working on Login/Logout | 5 |   |
+| 4/25/21 | Able to get Login/Logout to work | 5 |   |
+| 4/26/21 | Able to get sign up to work | 4 |   |

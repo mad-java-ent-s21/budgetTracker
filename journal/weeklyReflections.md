@@ -69,5 +69,24 @@ Used the wrong db (used the example one) when granting access.
 
 
 ## Week 10
-### 04/1/2021
+### 04/3/2021
 
+## Week 11
+### 04/10/2021
+
+## Week 12
+### 04/17/2021
+1. Worked on Sign in/sign out -- Unable to get it working, struggling to understand concept.
+### 04/18/2021
+1. 
+
+## Week 13
+### 04/23/2021
+1. Worked on Sign in/sign out -- Still unable to get it to work
+### 04/24/2021
+1. Worked on front-end -- stylizing using materialize css on all jsp pages
+
+## Week 14
+### 04/1/2021
+1. Worked on Sign in/sign out -- Able to get it working, cleaning up some code. Utilized some sources (url:)
+1. 
