@@ -128,7 +128,7 @@
     <br>
     <div class="row">
         <div class="col s2 center-align">
-            <a class="waves-effect waves-light btn yellow black-text">Add Entry</a>
+            <a href="entryAddition" class="waves-effect waves-light btn yellow black-text">Add Entry</a>
         </div>
         <div class="col s8"></div>
         <div class="col s2 center-align">
@@ -181,6 +181,7 @@
                         ${entry.categoryId.categoryName}
                 </td>
                 <td>
+                    <%--   TODO potentially use MODAL to popup display for edit or delete   --%>
                     <a class="waves-effect waves-teal btn-flat">Edit</a>   <a class="waves-effect waves-light btn red">Delete</a>
                 </td>
             </tr>

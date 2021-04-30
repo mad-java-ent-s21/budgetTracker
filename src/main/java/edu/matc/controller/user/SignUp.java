@@ -1,4 +1,4 @@
-package edu.matc.controller;
+package edu.matc.controller.user;
 
 import edu.matc.entity.Role;
 import edu.matc.entity.User;
@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.util.Date;
 
 @WebServlet("/userSignUp")
-public class UserSignUp extends HttpServlet {
+public class SignUp extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

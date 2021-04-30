@@ -1,9 +1,8 @@
-package edu.matc.controller;
+package edu.matc.controller.user;
 
-import edu.matc.entity.Entry;
 import edu.matc.entity.User;
-import edu.matc.persistence.GenericDao;
 import edu.matc.persistence.PropertiesLoader;
+import edu.matc.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,16 +20,24 @@ import java.util.List;
 )
 
 public class UserProfile extends HttpServlet {
-    final Logger logger = LogManager.getLogger(PropertiesLoader.class);
+    private final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//        GenericDao<User> dao = new GenericDao<>();
-//        List<Entry> entry = dao.getAll();
-        GenericDao dao = new GenericDao(User.class);
+//        GenericDao userDao = new GenericDao(User.class);
+//        HttpSession session = req.getSession();
+//
+//        String username = (String) session.getAttribute("username");
+//        List<User> users = userDao.findByPropertyEqual("userName", username);
 
-        req.setAttribute("user", dao.getAll());
+        UserDao retrieveUser = new UserDao();
+        String username = retrieveUser.retrieveSessionUsername(req);
+        List<User> users = retrieveUser.retrieveUser(username);
+
+        req.setAttribute("user", users);
+
+        logger.debug("Retrieving users profile information.");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/profile.jsp");
         dispatcher.forward(req, resp);

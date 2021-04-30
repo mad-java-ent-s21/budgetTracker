@@ -43,7 +43,7 @@
                     ${category.color}
             </td>
             <td>
-                <a href="#" class="waves-effect waves-teal btn-flat">Edit</a>
+                <a href="#" class="waves-effect waves-teal btn-flat">Edit</a>   <a class="waves-effect waves-light btn red">Delete</a>
             </td>
         </tr>
     </c:forEach>

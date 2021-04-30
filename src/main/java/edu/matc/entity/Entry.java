@@ -14,6 +14,27 @@ public class Entry {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
+    public Entry() {
+    }
+
+    public Entry(String entryName, String entryType, Double value, Category categoryId, User userId) {
+        this.entryName = entryName;
+        this.entryType = entryType;
+        this.value = value;
+        this.categoryId = categoryId;
+        this.userId = userId;
+    }
+
+    public Entry(int id, LocalDate date, String entryName, String entryType, Double value, Category categoryId, User userId) {
+        this.id = id;
+        this.date = date;
+        this.entryName = entryName;
+        this.entryType = entryType;
+        this.value = value;
+        this.categoryId = categoryId;
+        this.userId = userId;
+    }
+
     @Column
     private LocalDate date;
 
@@ -33,7 +54,7 @@ public class Entry {
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User userId;
 
-    public Entry() {
+    public Entry(String date, String entryName, String entryType, Double value, String categoryId) {
     }
 
     public Entry(LocalDate date, String entryName, String entryType, Double value, Category categoryId, User userId) {
@@ -44,10 +65,6 @@ public class Entry {
         this.categoryId = categoryId;
         this.userId = userId;
     }
-
-    public Entry(LocalDate parse, String something, String expense, double value, int id, int id1) {
-    }
-
 
     public int getId() {
         return id;

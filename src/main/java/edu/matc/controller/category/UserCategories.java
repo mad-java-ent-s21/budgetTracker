@@ -1,4 +1,4 @@
-package edu.matc.controller;
+package edu.matc.controller.category;
 
 import edu.matc.entity.Category;
 import edu.matc.entity.Entry;
@@ -19,7 +19,7 @@ import java.io.IOException;
         urlPatterns = {"/userCategory"}
 )
 
-public class UserCategory extends HttpServlet {
+public class UserCategories extends HttpServlet {
     final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
@@ -27,7 +27,7 @@ public class UserCategory extends HttpServlet {
 
 //        GenericDao<Entry> dao = new GenericDao<>();
 //        List<Entry> entry = dao.getAll();
-        GenericDao dao = new GenericDao(Category.class);
+        GenericDao dao = new GenericDao(edu.matc.entity.Category.class);
 
         req.setAttribute("category", dao.getAll());
 

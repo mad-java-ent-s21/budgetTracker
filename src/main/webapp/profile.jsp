@@ -1,7 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="title" value="Search"/>
-<%@ page import="edu.matc.entity.User" %>
 
 
 <html>
@@ -18,19 +17,31 @@
 
 <div class="log-form center-align">
     <h2>Your Profile</h2>
+    <br>
+    <a href="" class="waves-effect waves-light btn light-blue darken-2">Edit Profile</a>
+    <a href="userCategory" class="waves-effect waves-light btn teal darken-2">Customize Category</a>
+    <br><br>
 
-    <a href="userCategory" class="waves-effect waves-light btn">Customize Category</a>
-    <br><br><br>
-
-    <a href="" class="waves-effect waves-light btn">Edit Profile</a><br>
-    <c:forEach var="user" items="${users}">
-        <p>Username: ${user.username}</p><br>
-        <p>Name: ${user.firstName} ${user.lastName}</p><br>
-        <p>Email: ${user.email}</p><br>
-        <p>${user.birthdate}</p>
-    </c:forEach>
-
-
+    <div class="row">
+        <div class="col s6 push-s3">
+            <table>
+            <c:forEach var="user" items="${user}">
+                <tr>
+                    <td>Username: </td><td>${user.userName}</td>
+                </tr>
+                <tr>
+                    <td>Name: </td><td>${user.firstName} ${user.lastName}</td>
+                </tr>
+                <tr>
+                    <td>Email: </td><td>${user.email}</td>
+                </tr>
+                <tr>
+                    <td>Birthdate: </td><td>${user.birthdate}</td>
+                </tr>
+            </c:forEach>
+            </table>
+        </div>
+    </div>
 <%--    <%! String username=session.getAttribute("username"); %>--%>
 
     <%
@@ -40,13 +51,14 @@
         if(session.getAttribute("user") != null) {
     %>
 
-            <form action="editinfo" method="post">
-                <table>
-                    <tr>
-                        <td>Username: </td><td><input type="text" value="<%= session.getAttribute("user") %>" /></td>
-                    </tr>
-                </table>
-            </form>
+<%--            <form action="editinfo" method="post">--%>
+<%--                <table>--%>
+<%--                    <tr>--%>
+<%--                        <td>Username: </td><td><input type="text" value="<%= session.getAttribute("user") %>" /></td>--%>
+<%--                    </tr>--%>
+<%--                </table>--%>
+<%--            </form>--%>
+            testing
 
         <%}
     %>

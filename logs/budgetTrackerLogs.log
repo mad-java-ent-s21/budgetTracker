@@ -1,0 +1,33 @@
+[DEBUG] 2021-04-29 19:37:17.095 [http-nio-8080-exec-5] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-29 19:38:47.083 [http-nio-8080-exec-5] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-29 19:51:56.469 [http-nio-8080-exec-6] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-29 19:53:41.127 [http-nio-8080-exec-5] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-29 19:53:46.235 [http-nio-8080-exec-6] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-29 20:01:30.616 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-29 20:33:45.151 [http-nio-8080-exec-5] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-29 20:33:47.216 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-29 20:36:45.138 [http-nio-8080-exec-6] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-29 20:36:46.114 [http-nio-8080-exec-7] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-29 20:40:40.199 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-29 20:40:48.160 [http-nio-8080-exec-10] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-29 20:44:50.719 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 03:30:04.569 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 03:30:11.846 [http-nio-8080-exec-6] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-30 03:30:13.832 [http-nio-8080-exec-8] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-04-30 03:42:34.125 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 03:42:35.966 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-04-30 03:45:56.960 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 03:45:58.687 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-04-30 03:52:54.096 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 03:52:55.678 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-04-30 03:56:30.981 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 03:56:35.387 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-04-30 04:48:28.082 [http-nio-8080-exec-7] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 04:48:29.715 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-04-30 05:08:42.587 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-04-30 05:08:49.202 [http-nio-8080-exec-7] PropertiesLoader - Retrieving user categories.
+[ERROR] 2021-04-30 05:33:22.845 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-04-30 05:34:36.098 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-04-30 05:59:22.163 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-04-30 06:01:02.896 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-04-30 06:01:18.619 [main] Database - java.lang.NullPointerException

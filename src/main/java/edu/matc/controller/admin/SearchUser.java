@@ -1,4 +1,4 @@
-package edu.matc.controller;
+package edu.matc.controller.admin;
 
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
