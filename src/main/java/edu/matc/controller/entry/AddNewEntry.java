@@ -45,8 +45,13 @@ public class AddNewEntry extends HttpServlet {
         // Retrieve Category selection
         String category = req.getParameter("category");
         List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
-
-        int categoryId = findCategory.get(0).getId();
+        int categoryId = -1;
+        for (Category found: findCategory) {
+            if (found.getUserId() == user) {
+                categoryId = found.getId();
+            }
+        }
+//        int categoryId = findCategory.get(0).getId();
         Category useCategory = (Category) categoryDao.getById(categoryId);
 
         Entry insertEntry = new Entry(
@@ -57,6 +62,10 @@ public class AddNewEntry extends HttpServlet {
                 useCategory,
                 user
         );
+
+        // Insert entry
+        entryDao.insert(insertEntry);
+
         logger.debug("Entry added: " + insertEntry.getEntryName());
 //        req.setAttribute("entry", entryList);
 

@@ -1,10 +1,7 @@
 package edu.matc.controller.user;
 
-import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
-import edu.matc.util.FactoryDao;
-import edu.matc.util.VerifyRecaptcha;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,7 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet("/userSignUp")
 public class SignUp extends HttpServlet {
@@ -36,64 +34,43 @@ public class SignUp extends HttpServlet {
                 firstName,
                 lastName,
                 email,
-                "2021-01-01"
+                "0001-01-01"
         );
-        logger.debug(user + " user added.");
 
-        // TODO check to make login username unique
-        userDao.insert(user);
+        List<User> allUsers = userDao.getAll();
+        List<String> usernameList = new ArrayList<>();
+        List<String> emailList = new ArrayList<>();
 
+        for (User eachUser : allUsers) {
+            usernameList.add(eachUser.getUserName());
+        }
 
-//        if (user.getUserName() != null || user.getUserName() != "") {
-//
-//            userDao.insert(user);
-//
-//        } else {
-//            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpFailure.jsp");
-//            dispatcher.forward(req, resp);
-//            logger.debug("Unable to add " + user);
-//        }
+        for (User eachUser : allUsers) {
+            emailList.add(eachUser.getEmail());
+        }
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpSuccess.jsp");
-        dispatcher.forward(req, resp);
+        if (usernameList.contains(username)) {
+
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpFailure.jsp");
+            dispatcher.forward(req, resp);
+            logger.debug("Unable to add " + user + " by username/email.");
+
+        } else if (emailList.contains(email)) {
+
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpFailure.jsp");
+            dispatcher.forward(req, resp);
+            logger.debug("Unable to add " + user + " by username/email.");
+
+        } else {
+
+            userDao.insert(user);
+            logger.debug(user + " user added.");
+
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpSuccess.jsp");
+            dispatcher.forward(req, resp);
+        }
     }
 }
 
-
-//    @Override
-//    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-////        GenericDao userDao;
-////        userDao = new GenericDao(User.class);
-//        User user = new User();
-//        user.setUserName(req.getParameter("userName"));
-//        user.setEmail(req.getParameter("email"));
-//        user.setFirstName(req.getParameter("firstName"));
-//        user.setLastName(req.getParameter("lastName"));
-//        user.setPassword(req.getParameter("password"));
-//        logger.debug("Adding User: " + user);
-//
-//        Role role = new Role();
-//        role.setUserName(user);
-//        role.setRoleName("general");
-////        user.addRole(role);
-//
-//
-//        String gRecaptchaResponse = req.getParameter("g-recaptcha-response");
-//        System.out.println(gRecaptchaResponse);
-//        boolean isVerified = VerifyRecaptcha.verify(gRecaptchaResponse);
-//
-//        if (isVerified) {
-//            GenericDao userDao = FactoryDao.createDao(User.class);
-//            userDao.insert(user);
-//
-//            GenericDao roleDao = new GenericDao(Role.class);
-//            roleDao.insert(role);
-//        } else {
-//            req.setAttribute("errorMessage", "Failed Captcha - Please try again");
-//            logger.info("Failed Captcha");
-//        }
-//        RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpSuccess.jsp");
-//        dispatcher.forward(req, resp);
-//    }
 
 
