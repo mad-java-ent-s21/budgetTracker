@@ -70,12 +70,19 @@
 - [x] 
 
 ### Week 14
-- [ ] Signup (username & email) uniqueness
+- [x] Signup (username & email) uniqueness
 - [ ] Entries controller
   - [ ] Add
   - [ ] Delete
   - [ ] Edit
+- [ ] Category controller
+  - [ ] Add
+  - [ ] Delete
+  - [ ] Edit
+- [ ] User controller
+  - [ ] Edit Profile
 - [ ] Prep for presentation
+- [ ] Implement API
   
 ### Week 15
 - [ ] Work on API

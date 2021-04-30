@@ -136,7 +136,6 @@
         </div>
     </div>
 
-<%--    TODO Display entries for user   --%>
 <%--    TODO Display based on color of category  --%>
 <%--    Entries Table for user   --%>
 
@@ -166,28 +165,65 @@
 <%--            <tr class="green">   --%>
             <tr>
                 <td>
-                        ${entry.date}
+                    ${entry.date}
+                    <div style="display: none;">${entry.id}</div>
                 </td>
                 <td>
-                        ${entry.entryName}
+                    ${entry.entryName}
+                </td>
+                <td class="currency">
+                    ${entry.value}
                 </td>
                 <td>
-                        ${entry.value}
+                    ${entry.entryType}
                 </td>
                 <td>
-                        ${entry.entryType}
-                </td>
-                <td>
-                        ${entry.categoryId.categoryName}
+                    ${entry.categoryId.categoryName}
                 </td>
                 <td>
                     <%--   TODO potentially use MODAL to popup display for edit or delete   --%>
-                    <a class="waves-effect waves-teal btn-flat">Edit</a>   <a class="waves-effect waves-light btn red">Delete</a>
+<%--                    <a class="waves-effect waves-teal btn-flat">Edit</a>   <a class="waves-effect waves-light btn red">Delete</a>--%>
+                    <a class="waves-effect waves-light btn-flat modal-trigger" href="#modalEdit">Edit</a>
+                    <a class="waves-effect waves-light btn red">Delete</a>
+
+                    <!-- Modal Structure -->
+                    <div id="modalEdit" class="modal">
+                        <div class="modal-content">
+                            <form id="editEntry" action="editEntry" method="post" data-toggle="validator">
+                                <input id="entryDate" name="entryDate" type="date" title="entryDate" value="${entry.date}" required />
+                                <input id="entryName" name="entryName" type="text" title="entryName" value="${entry.entryName}" required />
+                                <input id="value" name="value" type="number" title="value" value="${entry.value}" />
+                                <input id="entryType" name="entryType" type="text" title="entryType" value="${entry.entryType}" />
+                                <input id="categoryName" name="categoryName" type="text" title="categoryName" value="${entry.categoryId.categoryName}" required />
+
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn">Save</button>
+                                    <button type="reset" class="btn">Clear</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                 </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
+
+
+    <!-- Modal Trigger -->
+<%--    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>--%>
+
+    <!-- Modal Structure -->
+<%--    <div id="modalEdit" class="modal">--%>
+<%--        <div class="modal-content">--%>
+<%--            <h4>Modal Header</h4>--%>
+<%--            <p>A bunch of text</p>--%>
+<%--        </div>--%>
+<%--        <div class="modal-footer">--%>
+<%--            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 
     <jsp:include page="scripts.jsp" />
     <jsp:include page="bodyBottom.jsp" />

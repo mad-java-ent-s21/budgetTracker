@@ -47,8 +47,8 @@ public class Entries extends HttpServlet {
         // retrieve user
         UserDao retrieveUser = new UserDao();
         String username = retrieveUser.retrieveSessionUsername(req);
-        List<User> users = retrieveUser.retrieveUser(username);
-        User user = retrieveUser.retrieveUserId(users);
+        List<User> users = retrieveUser.retrieveUserListSession(username);
+        User user = retrieveUser.retrieveUserFromUserListSession(users);
 
         // find entries by user id
         List<Entry> entryList = entryDao.findByPropertyEqual("userId", user);

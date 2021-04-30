@@ -1,7 +1,6 @@
 package edu.matc.controller.entry;
 
 import edu.matc.entity.Category;
-import edu.matc.entity.Entry;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import edu.matc.persistence.PropertiesLoader;
@@ -30,8 +29,8 @@ public class EntryAddition extends HttpServlet {
         // retrieve user
         UserDao retrieveUser = new UserDao();
         String username = retrieveUser.retrieveSessionUsername(req);
-        List<User> users = retrieveUser.retrieveUser(username);
-        User user = retrieveUser.retrieveUserId(users);
+        List<User> users = retrieveUser.retrieveUserListSession(username);
+        User user = retrieveUser.retrieveUserFromUserListSession(users);
 
         // find entries by user id
         List<Category> categoryList = categoryDao.findByPropertyEqual("userId", user);

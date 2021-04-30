@@ -1,4 +1,3 @@
-// console.log("test");
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.dropdown-trigger');
   var options = {
@@ -13,4 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
   var instances = M.FormSelect.init(elems, options);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.modal');
+  var options = {
+
+  }
+  var instances = M.Modal.init(elems, options);
 });

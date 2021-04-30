@@ -33,7 +33,7 @@ public class UserProfile extends HttpServlet {
 
         UserDao retrieveUser = new UserDao();
         String username = retrieveUser.retrieveSessionUsername(req);
-        List<User> users = retrieveUser.retrieveUser(username);
+        List<User> users = retrieveUser.retrieveUserListSession(username);
 
         req.setAttribute("user", users);
 

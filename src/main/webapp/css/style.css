@@ -1,0 +1,7 @@
+.currency:before {
+    content: "$";
+}
+
+.currency {
+
+}

@@ -17,8 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 @WebServlet("/addNewEntry")
 
@@ -31,10 +29,12 @@ public class AddNewEntry extends HttpServlet {
         GenericDao categoryDao = new GenericDao(Category.class);
 
         // retrieve user
-        UserDao retrieveUser = new UserDao();
-        String username = retrieveUser.retrieveSessionUsername(req);
-        List<User> users = retrieveUser.retrieveUser(username);
-        User user = retrieveUser.retrieveUserId(users);
+//        UserDao retrieveUser = new UserDao();
+//        String username = retrieveUser.retrieveSessionUsername(req);
+//        List<User> users = retrieveUser.retrieveUserListSession(username);
+//        User user = retrieveUser.retrieveUserFromUserListSession(users);
+        UserDao userDao = new UserDao();
+        User user = userDao.getUserFromSession(req);
 
         // Retrieve from form
         LocalDate date = LocalDate.parse(req.getParameter("date"));
@@ -43,16 +43,15 @@ public class AddNewEntry extends HttpServlet {
         Double value = Double.parseDouble(req.getParameter("value"));
 
         // Retrieve Category selection
-        String category = req.getParameter("category");
+        String category = req.getParameter("categoryName");
+        // TODO retrieve category based on user
+        // find category by categoryName
         List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
-        int categoryId = -1;
-        for (Category found: findCategory) {
-            if (found.getUserId() == user) {
-                categoryId = found.getId();
-            }
-        }
-//        int categoryId = findCategory.get(0).getId();
+        // find category object by the category id
+        int categoryId = findCategory.get(0).getId();
         Category useCategory = (Category) categoryDao.getById(categoryId);
+
+//        Category useCategory = findCategoryByUser(user, category);
 
         Entry insertEntry = new Entry(
                 date,
@@ -69,7 +68,29 @@ public class AddNewEntry extends HttpServlet {
         logger.debug("Entry added: " + insertEntry.getEntryName());
 //        req.setAttribute("entry", entryList);
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/entry.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/newEntrySuccess.jsp");
         dispatcher.forward(req, resp);
+    }
+
+    // TODO -- POTENTIAL CODE FOR "retrieve category based on user"
+    public Category findCategoryByUser(User user, String category) {
+        GenericDao categoryDao = new GenericDao(Category.class);
+
+        // initialize category id
+        int categoryId = -1;
+        // find category by categoryName
+        List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
+
+        // loop through category to ensure it is made by the user
+        // then grab category id
+        for (Category found : findCategory) {
+            if (found.getUserId() == user && found.getCategoryName() == category) {
+                categoryId = found.getId();
+            }
+        }
+
+        Category useCategory = (Category) categoryDao.getById(categoryId);
+
+        return useCategory;
     }
 }

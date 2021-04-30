@@ -4,7 +4,6 @@ import edu.matc.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import javax.servlet.ServletException;
@@ -51,7 +50,7 @@ public class UserDao {
         return username;
     }
 
-    public List<User> retrieveUser(String username) {
+    public List<User> retrieveUserListSession(String username) {
         GenericDao userDao = new GenericDao(User.class);
 
         // retrieve user from database by username
@@ -60,7 +59,7 @@ public class UserDao {
         return users;
     }
 
-    public User retrieveUserId(List<User> users) {
+    public User retrieveUserFromUserListSession(List<User> users) {
         GenericDao userDao = new GenericDao(User.class);
 
         // retrieve user by User entity
@@ -70,4 +69,13 @@ public class UserDao {
         return user;
     }
 
+    public User getUserFromSession(HttpServletRequest req) throws ServletException, IOException {
+        // retrieve user
+        UserDao retrieveUser = new UserDao();
+        String username = retrieveUser.retrieveSessionUsername(req);
+        List<User> users = retrieveUser.retrieveUserListSession(username);
+        User user = retrieveUser.retrieveUserFromUserListSession(users);
+
+        return user;
+    }
 }

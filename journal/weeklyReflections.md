@@ -87,6 +87,12 @@ Used the wrong db (used the example one) when granting access.
 1. Worked on front-end -- stylizing using materialize css on all jsp pages
 
 ## Week 14
-### 04/1/2021
+### 04/25/2021
 1. Worked on Sign in/sign out -- Able to get it working, cleaning up some code. Utilized some sources (url:)
-1. 
+### 04/26/2021
+1. Worked on Sign up -- Able to get it working, still need to implement uniqueness for username and email
+### 04/29/2021
+1. Able to get some functionalities of the add entry. Struggling with implementing user's category.
+### 04/30/2021
+1. Able to implement uniqueness into sign up, it will require a unique username and email
+

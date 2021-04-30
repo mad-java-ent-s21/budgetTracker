@@ -21,3 +21,5 @@
 | 4/24/21 | Working on Login/Logout | 5 |   |
 | 4/25/21 | Able to get Login/Logout to work | 5 |   |
 | 4/26/21 | Able to get sign up to work | 4 |   |
+| 4/29/21 | Added add entry functionality - not completely working yet | 3 |   |
+| 4/30/21 | Sign up now requires a unique username and password | 2 |   |
