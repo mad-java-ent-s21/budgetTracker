@@ -1,6 +1,7 @@
 package edu.matc.controller.entry;
 
 import edu.matc.entity.Category;
+import edu.matc.entity.Entry;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import edu.matc.persistence.PropertiesLoader;
@@ -10,33 +11,38 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/entryAddition")
-
-public class EntryAddition extends HttpServlet {
+public class DeleteEntry extends HttpServlet {
     private final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        GenericDao categoryDao = new GenericDao(Category.class);
+        GenericDao entryDao = new GenericDao(Entry.class);
+//        GenericDao categoryDao = new GenericDao(Category.class);
 
         // retrieve user
         UserDao userDao = new UserDao();
         User user = userDao.getUserFromSession(req);
 
-        // find entries by user id
-        List<Category> categoryList = categoryDao.findByPropertyEqual("userId", user);
+        // Retrieve from form
+        String entryId = req.getParameter("entryId");
+        // Retrieve entry
+        List<Entry> entrySelection = entryDao.findByPropertyEqual("id", entryId);
+        // set attribute for entry
+        req.setAttribute("entry", entrySelection);
+        logger.debug("Retrieving entry.");
 
-        req.setAttribute("category", categoryList);
-        logger.debug("Retrieving user categories.");
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/addEntry.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/deleteEntry.jsp");
         dispatcher.forward(req, resp);
+    }
+
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        GenericDao entryDao = new GenericDao(Entry.class);
+
     }
 }

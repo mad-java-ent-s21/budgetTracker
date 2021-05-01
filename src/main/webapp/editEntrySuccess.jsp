@@ -15,7 +15,7 @@
 
 <div class="center-align">
     <br>
-    <h4>Successfully entered a entry.</h4>
+    <h4>Successfully edited the entry.</h4>
     <a href="userEntry" class="waves-effect waves-light btn">See Entries</a>
 </div>
 

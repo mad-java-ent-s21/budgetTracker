@@ -25,7 +25,7 @@
             <br>
             <%--  Entry Type  List selection --%>
             <div>
-                <select id="entryType" name="entryType">
+                <select id="entryType" name="entryType" required>
                     <option value="entryType" disabled selected>Choose your entry type</option>
                     <option value="expense">Expense</option>
                     <option value="income">Income</option>
@@ -37,7 +37,7 @@
             <br>
             <%--  Category selection --%>
             <div>
-                <select id="categoryName" name="categoryName" class="select">
+                <select id="categoryName" name="categoryName" class="select" required>
                     <option value="categoryName" disabled selected>Choose your category</option>
 
                     <c:forEach items="${category}" var="category">

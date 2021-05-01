@@ -36,6 +36,7 @@ public class AddNewCategory extends HttpServlet {
         String categoryDescription = req.getParameter("categoryDescription");
         String color = req.getParameter("color");
 
+        // TODO grab categories by user only -- connects with AddNewEntry
         // Category name has to be unique
         List<Category> allCategoryList = categoryDao.getAll();
         List<String> categoryList = new ArrayList<>();
@@ -63,7 +64,7 @@ public class AddNewCategory extends HttpServlet {
 
             logger.debug("Category added: " + insertCategory.getCategoryName());
 
-            RequestDispatcher dispatcher = req.getRequestDispatcher("addCategorySuccessful.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("addCategorySuccess.jsp");
             dispatcher.forward(req, resp);
         }
     }

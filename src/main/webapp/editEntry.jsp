@@ -14,26 +14,54 @@
 <jsp:include page="navbar.jsp" />
 <jsp:include page="bodyTop.jsp" />
 <div>
+    <br>
+    <a href="userEntry" class="waves-effect waves-light btn">Return to Entries</a>
+    <br>
     <form id="editEntry" action="editEntry" method="post" data-toggle="validator">
-        <input id="entryDate" name="entryDate" type="date" title="entryDate" value="${entry.date}" required />
-        <label for="entryDate">Date</label>
+        <c:forEach var="entry" items="${entry}">
+            <input id="entryId" name="entryId" type="number" title="entryId" value="${entry.id}" style="display: none;"/>
 
-        <input id="entryName" name="entryName" type="text" title="entryName" value="${entry.entryName}" required />
-        <label for="entryName">Entry Name</label>
+            <input id="entryDate" name="entryDate" type="date" title="entryDate" value="${entry.date}" required />
+            <label for="entryDate">Date</label>
 
-        <input id="value" name="value" type="number" title="value" value="${entry.value}" />
-        <label for="value">Value</label>
+            <input id="entryName" name="entryName" type="text" title="entryName" value="${entry.entryName}" required />
+            <label for="entryName">Entry Name</label>
 
-        <input id="entryType" name="entryType" type="text" title="entryType" value="${entry.entryType}" />
-        <label for="entryType">Entry Type</label>
+            <%--  Entry Type  List selection --%>
+            <div>
+                <select id="entryType" name="entryType" required>
+                        <option value="entryType" disabled>Choose your entry type</option>
+<%--                    <optgroup label="Original Selection">--%>
+<%--                        <option value="entryType" disabled>Choose your entry type</option>--%>
+<%--                    </optgroup>--%>
+                    <option value="expense">Expense</option>
+                    <option value="income">Income</option>
+                </select>
+                <label>Entry Type Selection</label>
+            </div>
 
-        <input id="categoryName" name="categoryName" type="text" title="categoryName" value="${entry.categoryId.categoryName}" required />
-        <label for="categoryName">Category</label>
+            <input id="value" name="value" type="number" title="value" value="${entry.value}" />
+            <label for="value">Value</label>
 
-<%--        <div class="modal-footer">--%>
-            <button type="submit" class="btn">Save</button>
-            <button type="reset" class="btn">Clear</button>
-<%--        </div>--%>
+            <%--  Category selection --%>
+            <div>
+                <select id="categoryName" name="categoryName" class="select" required>
+                        <option value="categoryName" disabled>Choose your category</option>
+<%--                    <optgroup label="Original Selection">--%>
+<%--                        <option value="categoryName" selected>${catgory.categoryName}</option>--%>
+<%--                    </optgroup>--%>
+                    <c:forEach items="${category}" var="category">
+                        <option value="${category.categoryName}">${category.categoryName}</option>
+                    </c:forEach>
+
+                </select>
+                <label>Category Selection</label>
+            </div>
+        </c:forEach>
+
+        <br>
+        <button type="submit" class="btn">Save</button>
+        <button type="reset" class="btn">Clear</button>
     </form>
 </div>
 <jsp:include page="scripts.jsp" />

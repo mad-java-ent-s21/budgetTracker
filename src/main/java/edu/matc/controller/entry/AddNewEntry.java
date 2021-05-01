@@ -29,10 +29,6 @@ public class AddNewEntry extends HttpServlet {
         GenericDao categoryDao = new GenericDao(Category.class);
 
         // retrieve user
-//        UserDao retrieveUser = new UserDao();
-//        String username = retrieveUser.retrieveSessionUsername(req);
-//        List<User> users = retrieveUser.retrieveUserListSession(username);
-//        User user = retrieveUser.retrieveUserFromUserListSession(users);
         UserDao userDao = new UserDao();
         User user = userDao.getUserFromSession(req);
 
@@ -44,53 +40,61 @@ public class AddNewEntry extends HttpServlet {
 
         // Retrieve Category selection
         String category = req.getParameter("categoryName");
-        // TODO retrieve category based on user
+        // TODO retrieve category based on user -- other users may have same category name
         // find category by categoryName
         List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
         // find category object by the category id
         int categoryId = findCategory.get(0).getId();
         Category useCategory = (Category) categoryDao.getById(categoryId);
 
-//        Category useCategory = findCategoryByUser(user, category);
+        if (useCategory == null) {
 
-        Entry insertEntry = new Entry(
-                date,
-                entryName,
-                entryType,
-                value,
-                useCategory,
-                user
-        );
+            logger.debug("Failed to add a new entry.");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/addEntryFailure.jsp");
+            dispatcher.forward(req, resp);
 
-        // Insert entry
-        entryDao.insert(insertEntry);
+        } else {
 
-        logger.debug("Entry added: " + insertEntry.getEntryName());
-//        req.setAttribute("entry", entryList);
+            Entry insertEntry = new Entry(
+                    date,
+                    entryName,
+                    entryType,
+                    value,
+                    useCategory,
+                    user
+            );
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/newEntrySuccess.jsp");
-        dispatcher.forward(req, resp);
+            // Insert entry
+            entryDao.insert(insertEntry);
+            logger.debug("Entry added: " + insertEntry.getEntryName());
+
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/addEntrySuccess.jsp");
+            dispatcher.forward(req, resp);
+
+        }
     }
+
+
 
     // TODO -- POTENTIAL CODE FOR "retrieve category based on user"
-    public Category findCategoryByUser(User user, String category) {
-        GenericDao categoryDao = new GenericDao(Category.class);
-
-        // initialize category id
-        int categoryId = -1;
-        // find category by categoryName
-        List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
-
-        // loop through category to ensure it is made by the user
-        // then grab category id
-        for (Category found : findCategory) {
-            if (found.getUserId() == user && found.getCategoryName() == category) {
-                categoryId = found.getId();
-            }
-        }
-
-        Category useCategory = (Category) categoryDao.getById(categoryId);
-
-        return useCategory;
-    }
+//    public Category findCategoryByUser(User user, String category) {
+//        GenericDao categoryDao = new GenericDao(Category.class);
+//
+//        // initialize category id
+//        int categoryId = -1;
+//        // find category by categoryName
+//        List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
+//
+//        // loop through category to ensure it is made by the user
+//        // then grab category id
+//        for (Category found : findCategory) {
+//            if (found.getUserId() == user && found.getCategoryName() == category) {
+//                categoryId = found.getId();
+//            }
+//        }
+//
+//        Category useCategory = (Category) categoryDao.getById(categoryId);
+//
+//        return useCategory;
+//    }
 }
