@@ -17,7 +17,7 @@
     <h1>Category</h1>
 
 <%--    TODO - Add category controller  --%>
-    <a href="#" class="waves-effect waves-light btn">Add Category</a>
+    <a href="addCategory.jsp" class="waves-effect waves-light btn">Add Category</a>
 
 <%--    TODO Display categories for user   --%>
 <%--    TODO Display per color chosen   --%>
@@ -43,7 +43,7 @@
                     ${category.color}
             </td>
             <td>
-                <a href="#" class="waves-effect waves-teal btn-flat">Edit</a>   <a class="waves-effect waves-light btn red">Delete</a>
+                <a href="#" class="waves-effect waves-teal btn-flat disabled">Edit</a>   <a class="waves-effect waves-light btn red disabled">Delete</a>
             </td>
         </tr>
     </c:forEach>

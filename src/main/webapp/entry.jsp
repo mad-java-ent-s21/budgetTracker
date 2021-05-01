@@ -132,7 +132,7 @@
         </div>
         <div class="col s8"></div>
         <div class="col s2 center-align">
-            <a class="waves-effect waves-light btn disabled">View Data</a>
+            <a class="waves-effect waves-light btn disabled">Export Data</a>
         </div>
     </div>
 
@@ -184,23 +184,44 @@
                     <%--   TODO potentially use MODAL to popup display for edit or delete   --%>
 <%--                    <a class="waves-effect waves-teal btn-flat">Edit</a>   <a class="waves-effect waves-light btn red">Delete</a>--%>
                     <a class="waves-effect waves-light btn-flat modal-trigger" href="#modalEdit">Edit</a>
-                    <a class="waves-effect waves-light btn red">Delete</a>
+                    <a class="waves-effect waves-light btn red modal-trigger" href="#modalDelete">Delete</a>
 
                     <!-- Modal Structure -->
                     <div id="modalEdit" class="modal">
                         <div class="modal-content">
                             <form id="editEntry" action="editEntry" method="post" data-toggle="validator">
                                 <input id="entryDate" name="entryDate" type="date" title="entryDate" value="${entry.date}" required />
+                                <label for="entryDate">Date</label>
+
                                 <input id="entryName" name="entryName" type="text" title="entryName" value="${entry.entryName}" required />
+                                <label for="entryName">Entry Name</label>
+
                                 <input id="value" name="value" type="number" title="value" value="${entry.value}" />
+                                <label for="value">Value</label>
+
                                 <input id="entryType" name="entryType" type="text" title="entryType" value="${entry.entryType}" />
+                                <label for="entryType">Entry Type</label>
+
                                 <input id="categoryName" name="categoryName" type="text" title="categoryName" value="${entry.categoryId.categoryName}" required />
+                                <label for="categoryName">Category</label>
 
                                 <div class="modal-footer">
                                     <button type="submit" class="btn">Save</button>
                                     <button type="reset" class="btn">Clear</button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal Structure -->
+                    <div id="modalDelete" class="modal">
+                        <div class="modal-content">
+                            <h4>Delete your entry?</h4>
+                            <p>You may not recover your entry after deleting.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="modal-close waves-effect waves-green btn-flat">Yes</a>
+                            <a href="#" class="modal-close waves-effect waves-green btn-flat">No</a>
                         </div>
                     </div>
 

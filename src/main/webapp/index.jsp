@@ -13,6 +13,9 @@
         <%-- NAV BAR --%>
         <jsp:include page="navbar.jsp" />
         <jsp:include page="bodyTop.jsp" />
+        <%
+            if (session.getAttribute("user") == null) {
+        %>
         <div class="row">
             <div class="col s10 push-s1">
                 <div class="center-align">
@@ -33,20 +36,32 @@
                     <p>Make your finance matter!</p>
                     <br>
                 </div>
+            </div>
+        </div>
         <div class="center-align">
-            <%
-                if (session.getAttribute("user") == null) {
-            %>
-                <a href="userLogin.jsp" class="waves-effect waves-light btn">Log In</a>
-                <a href="signup.jsp" class="waves-effect waves-light btn">Sign Up</a>
+
+            <a href="userLogin.jsp" class="waves-effect waves-light btn">Log In</a>
+            <a href="signup.jsp" class="waves-effect waves-light btn">Sign Up</a>
+        </div>
             <%
                 } else {
             %>
-                View your entries!!
+        <div class="center-align">
+            <h3>Budget Tracker</h3>
+            <h4>Home Hub</h4>
+            <br>
+            <a href="userProfile" class="waves-effect waves-light btn light-blue darken-2">Profile</a>
+            <br><br><br>
+            <a href="userEntry" class="waves-effect waves-light btn  green darken-2">Entries</a>
+            <br><br><br>
+            <a class="waves-effect waves-light btn disabled">Export Data</a>
+            <br><br><br>
+            <a href="userCategory" class="waves-effect waves-light btn teal darken-2">Customize Categories</a>
+            <br><br><br>
+        </div>
             <%
                 }
             %>
-        </div>
         <jsp:include page="scripts.jsp" />
         <jsp:include page="bodyBottom.jsp" />
 <%--            </div>--%>
