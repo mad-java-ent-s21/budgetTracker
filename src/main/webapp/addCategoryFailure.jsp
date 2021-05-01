@@ -15,8 +15,9 @@
 
 <div class="center-align">
     <br>
-    <h4>Successfully entered a entry.</h4>
-    <a href="userEntry" class="waves-effect waves-light btn">See Entries</a>
+    <h4>Fail to add a category.</h4>
+    <p>Category name has to be unique.</p>
+    <a href="userCategory" class="waves-effect waves-light btn">Go to Categories</a>
 </div>
 
 <jsp:include page="scripts.jsp" />

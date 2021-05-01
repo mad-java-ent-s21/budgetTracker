@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet("/addNewCategory")
 
@@ -34,20 +36,35 @@ public class AddNewCategory extends HttpServlet {
         String categoryDescription = req.getParameter("categoryDescription");
         String color = req.getParameter("color");
 
-        Category insertCategory = new Category(
-                categoryName,
-                categoryDescription,
-                color,
-                user
-        );
+        // Category name has to be unique
+        List<Category> allCategoryList = categoryDao.getAll();
+        List<String> categoryList = new ArrayList<>();
+        for (Category list : allCategoryList) {
+            categoryList.add(list.getCategoryName());
+        }
 
-        // Insert entry
-        categoryDao.insert(insertCategory);
+        if (categoryList.contains(categoryName)) {
+            logger.debug("Failed to add a new category");
 
-        logger.debug("Category added: " + insertCategory.getCategoryName());
-//        req.setAttribute("entry", entryList);
+            RequestDispatcher dispatcher = req.getRequestDispatcher("addCategoryFailure.jsp");
+            dispatcher.forward(req, resp);
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/userCategory");
-        dispatcher.forward(req, resp);
+        } else {
+
+            Category insertCategory = new Category(
+                    categoryName,
+                    categoryDescription,
+                    color,
+                    user
+            );
+
+            // Insert entry
+            categoryDao.insert(insertCategory);
+
+            logger.debug("Category added: " + insertCategory.getCategoryName());
+
+            RequestDispatcher dispatcher = req.getRequestDispatcher("addCategorySuccessful.jsp");
+            dispatcher.forward(req, resp);
+        }
     }
 }

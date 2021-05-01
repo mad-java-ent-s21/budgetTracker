@@ -15,8 +15,14 @@
 <%-- NAV BAR --%>
 <jsp:include page="navbar.jsp" />
 <jsp:include page="bodyTop.jsp" />
-<br>
-<h4 class="center-align">Log-in Failed!</h4>
+
+<div class="center-align">
+    <br>
+    <h4 class="center-align">Log-in Failed!</h4>
+    <a href="userLogin.jsp" class="waves-effect waves-light btn">Log In</a>
+    <a href="signup.jsp" class="waves-effect waves-light btn">Sign Up</a>
+</div>
+
 <jsp:include page="scripts.jsp" />
 <jsp:include page="bodyBottom.jsp" />
 </body>

@@ -124,3 +124,36 @@
 [DEBUG] 2021-04-30 23:24:52.526 [http-nio-8080-exec-7] PropertiesLoader - Retrieving users profile information.
 [DEBUG] 2021-04-30 23:25:26.208 [http-nio-8080-exec-2] PropertiesLoader - Category added: Test
 [DEBUG] 2021-04-30 23:29:15.164 [http-nio-8080-exec-9] PropertiesLoader - Category added: Test
+[DEBUG] 2021-05-01 04:44:46.314 [http-nio-8080-exec-1] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 04:44:58.645 [http-nio-8080-exec-4] PropertiesLoader - Category added: Test
+[DEBUG] 2021-05-01 04:49:13.837 [http-nio-8080-exec-9] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 04:51:13.910 [http-nio-8080-exec-7] PropertiesLoader - Category added: Its working
+[DEBUG] 2021-05-01 04:54:11.862 [http-nio-8080-exec-9] PropertiesLoader - Category added: something
+[DEBUG] 2021-05-01 05:00:17.642 [http-nio-8080-exec-9] PropertiesLoader - Category added: yoyo
+[DEBUG] 2021-05-01 05:10:27.382 [http-nio-8080-exec-8] PropertiesLoader - Category added: yoyo
+[DEBUG] 2021-05-01 05:13:37.120 [http-nio-8080-exec-6] PropertiesLoader - Failed to add a new category
+[DEBUG] 2021-05-01 05:15:59.314 [http-nio-8080-exec-1] PropertiesLoader - Failed to add a new category
+[DEBUG] 2021-05-01 05:16:10.191 [http-nio-8080-exec-3] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:16:13.720 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-05-01 05:16:51.681 [http-nio-8080-exec-8] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:16:54.260 [http-nio-8080-exec-10] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:16:58.461 [http-nio-8080-exec-2] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:17:26.014 [http-nio-8080-exec-7] SignUp - User{id=45, username='cvang', password='07191990', firstName='Chris', lastName='Vang', birthdate='0001-01-01'} user added.
+[DEBUG] 2021-05-01 05:19:37.165 [http-nio-8080-exec-6] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:24:04.397 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:24:07.233 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-05-01 05:24:30.105 [http-nio-8080-exec-2] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:24:33.699 [http-nio-8080-exec-3] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:25:01.880 [http-nio-8080-exec-9] PropertiesLoader - Category added: TCG
+[DEBUG] 2021-05-01 05:25:04.967 [http-nio-8080-exec-1] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:25:05.785 [http-nio-8080-exec-2] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-05-01 05:25:16.576 [http-nio-8080-exec-3] PropertiesLoader - Entry added: Walmart - Pokemon Cards
+[DEBUG] 2021-05-01 05:25:17.674 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:25:41.839 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:25:43.610 [http-nio-8080-exec-10] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:25:48.524 [http-nio-8080-exec-1] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-01 05:25:49.969 [http-nio-8080-exec-2] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:25:52.486 [http-nio-8080-exec-3] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:25:53.201 [http-nio-8080-exec-4] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:25:53.727 [http-nio-8080-exec-5] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-01 05:25:56.478 [http-nio-8080-exec-6] PropertiesLoader - Retrieving users profile information.

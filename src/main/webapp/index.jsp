@@ -48,11 +48,11 @@
             %>
         <div class="center-align">
             <h3>Budget Tracker</h3>
-            <h4>Home Hub</h4>
+            <h4>Home</h4>
             <br>
             <a href="userProfile" class="waves-effect waves-light btn light-blue darken-2">Profile</a>
             <br><br><br>
-            <a href="userEntry" class="waves-effect waves-light btn  green darken-2">Entries</a>
+            <a href="userEntry" class="waves-effect waves-light btn green darken-2">Entries</a>
             <br><br><br>
             <a class="waves-effect waves-light btn disabled">Export Data</a>
             <br><br><br>

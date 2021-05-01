@@ -15,8 +15,8 @@
 
 <div class="center-align">
     <br>
-    <h4>Successfully entered a entry.</h4>
-    <a href="userEntry" class="waves-effect waves-light btn">See Entries</a>
+    <h4 class="center-align">Successfully added a category.</h4>
+    <a href="userCategory" class="waves-effect waves-light btn">See Categories</a>
 </div>
 
 <jsp:include page="scripts.jsp" />

@@ -28,32 +28,16 @@ public class Entries extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-//        GenericDao entryDao = new GenericDao(edu.matc.entity.Entry.class);
-//        GenericDao userDao = new GenericDao(User.class);
-//        HttpSession session = req.getSession();
-//
-//        String username = (String) session.getAttribute("username");
-//        List<User> users = userDao.findByPropertyEqual("userName", username);
-//        int userId = users.get(0).getId();
-//        User user = (User) userDao.getById(userId);
-//
-//        List<Entry> entryList = entryDao.findByPropertyEqual("userId", user);
-
-
-
         GenericDao entryDao = new GenericDao(Entry.class);
 
         // retrieve user
-        UserDao retrieveUser = new UserDao();
-        String username = retrieveUser.retrieveSessionUsername(req);
-        List<User> users = retrieveUser.retrieveUserListSession(username);
-        User user = retrieveUser.retrieveUserFromUserListSession(users);
+        UserDao userDao = new UserDao();
+        User user = userDao.getUserFromSession(req);
 
         // find entries by user id
-        List<Entry> entryList = entryDao.findByPropertyEqual("userId", user);
+        List<Entry> userEntries = entryDao.findByPropertyEqual("userId", user);
 
-        req.setAttribute("entry", entryList);
+        req.setAttribute("entry", userEntries);
         logger.debug("Retrieving user entries.");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/entry.jsp");
