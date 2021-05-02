@@ -11,11 +11,14 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+
+@WebServlet("/deleteEntry")
 
 public class DeleteEntry extends HttpServlet {
     private final Logger logger = LogManager.getLogger(PropertiesLoader.class);
@@ -23,7 +26,6 @@ public class DeleteEntry extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao entryDao = new GenericDao(Entry.class);
-//        GenericDao categoryDao = new GenericDao(Category.class);
 
         // retrieve user
         UserDao userDao = new UserDao();
@@ -44,5 +46,14 @@ public class DeleteEntry extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao entryDao = new GenericDao(Entry.class);
 
+        // Retrieve from form
+        int entryId = Integer.parseInt(req.getParameter("entryId"));
+
+        // delete entry
+        entryDao.delete(entryDao.getById(entryId));
+        logger.debug("Deleted entry: " + entryDao.getById(entryId));
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/deleteEntrySuccess.jsp");
+        dispatcher.forward(req, resp);
     }
 }

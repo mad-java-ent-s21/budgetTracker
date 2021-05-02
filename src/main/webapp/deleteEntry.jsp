@@ -15,14 +15,17 @@
 <jsp:include page="bodyTop.jsp" />
 <div>
     <br>
-    <a href="userEntry" class="waves-effect waves-light btn">Return to Entries</a>
-    <br>
+    <div class="center-align">
+        <a href="userEntry" class="waves-effect waves-light btn">Return to Entries</a>
+    </div>
+    <br><br>
     <form id="deleteEntry" action="deleteEntry" method="post" data-toggle="validator">
         <div class="center-align">
             <c:forEach var="entry" items="${entry}">
-                <span>Delete "${entry.entryName}" entry?</span>
+                <input id="entryId" name="entryId" type="number" title="entryId" value="${entry.id}" style="display: none;"/>
+                <h4>Delete "${entry.entryName}" entry?</h4>
             </c:forEach>
-            <br>
+            <br><br>
             <button type="submit" class="btn">Yes</button>
             <a href="userEntry" class="btn red">No</a>
         </div>

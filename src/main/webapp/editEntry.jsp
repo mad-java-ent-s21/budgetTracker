@@ -15,7 +15,9 @@
 <jsp:include page="bodyTop.jsp" />
 <div>
     <br>
-    <a href="userEntry" class="waves-effect waves-light btn">Return to Entries</a>
+    <div class="center-align">
+        <a href="userEntry" class="waves-effect waves-light btn">Return to Entries</a>
+    </div>
     <br>
     <form id="editEntry" action="editEntry" method="post" data-toggle="validator">
         <c:forEach var="entry" items="${entry}">
@@ -60,8 +62,10 @@
         </c:forEach>
 
         <br>
-        <button type="submit" class="btn">Save</button>
-        <button type="reset" class="btn">Clear</button>
+        <div class="center-align">
+            <button type="submit" class="btn">Save</button>
+            <button type="reset" class="btn">Clear</button>
+        </div>
     </form>
 </div>
 <jsp:include page="scripts.jsp" />
