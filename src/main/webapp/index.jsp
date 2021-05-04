@@ -5,7 +5,6 @@
 
 <html>
     <head>
-        <title>Budget Tracker</title>
         <jsp:include page="head.jsp" />
     </head>
 

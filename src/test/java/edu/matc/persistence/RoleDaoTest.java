@@ -11,44 +11,30 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RoleDaoTest {
-
-    GenericDao userDao;
-    GenericDao roleDao;
+    GenericDao dao;
 
     @BeforeEach
     public void setUp() {
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-        userDao = new GenericDao(User.class);
-        roleDao = new GenericDao(Role.class);
+        dao = new GenericDao(User.class);
     }
 
     @Test
-    void getAll() {
+    void getAllSuccess() {
     }
 
     @Test
-    void getById() {
+    void getByIdSuccess() {
     }
 
     @Test
-    void delete() {
+    void deleteSuccess() {
     }
 
     @Test
-    void insert() {
-//        // insert new user
-//        User newUser;
-//        newUser = new User("NewGuy", "newguy", "New", "Guy", "newguy@some.com", "2000-02-16");
-//        userDao.insert(newUser);
-//
-//        String roleName = "general";
-//        String userName = newUser.getUserName();
-//        Role role = new Role();
-//        role.addRole(roleName, userName, newUser);
-//
-//        assertEquals("NewGuy", role.getUserName());
+    void insertSuccess() {
     }
 
     @Test

@@ -18,6 +18,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
+
+/**
+ * The class adds a new entry for the user.
+ */
 @WebServlet("/addNewEntry")
 
 public class AddNewEntry extends HttpServlet {
@@ -40,10 +44,9 @@ public class AddNewEntry extends HttpServlet {
 
         // Retrieve Category selection
         String category = req.getParameter("categoryName");
-        // TODO retrieve category based on user -- other users may have same category name
         // find category by categoryName
-//        List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
-        List<Category> findCategory = categoryDao.findByTwoPropertiesEqual("categoryName", category, "userId", user);
+        List<Category> findCategory = categoryDao.findByTwoPropertiesEqual("categoryName", category,
+                "userId", user);
         // find category object by the category id
         int categoryId = findCategory.get(0).getId();
         Category useCategory = (Category) categoryDao.getById(categoryId);
@@ -74,28 +77,4 @@ public class AddNewEntry extends HttpServlet {
 
         }
     }
-
-
-
-    // TODO -- POTENTIAL CODE FOR "retrieve category based on user"
-//    public Category findCategoryByUser(User user, String category) {
-//        GenericDao categoryDao = new GenericDao(Category.class);
-//
-//        // initialize category id
-//        int categoryId = -1;
-//        // find category by categoryName
-//        List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
-//
-//        // loop through category to ensure it is made by the user
-//        // then grab category id
-//        for (Category found : findCategory) {
-//            if (found.getUserId() == user && found.getCategoryName() == category) {
-//                categoryId = found.getId();
-//            }
-//        }
-//
-//        Category useCategory = (Category) categoryDao.getById(categoryId);
-//
-//        return useCategory;
-//    }
 }

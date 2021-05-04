@@ -16,11 +16,13 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The class logouts user in session.
+ */
 @WebServlet("/logout")
 
 public class Logout extends HttpServlet {
-    private static final long serialVersionUID = 1;
-    private final Logger log = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
         protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
@@ -28,18 +30,9 @@ public class Logout extends HttpServlet {
             removeSession(req, resp);
             resp.sendRedirect("index.jsp");
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.debug(e);
         }
     }
-
-//    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-//            throws ServletException, IOException {
-//        try {
-//            remove(req, resp);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
 
     private void removeSession(HttpServletRequest req, HttpServletResponse resp)
             throws Exception {
@@ -51,13 +44,14 @@ public class Logout extends HttpServlet {
             req.removeAttribute("password");
             session.removeAttribute("username");
             session.removeAttribute("user");
+            logger.debug("Removed user from session.");
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
             dispatcher.forward(req, resp);
         } else {
             RequestDispatcher dispatcher = req.getRequestDispatcher("logoutError.jsp");
             dispatcher.forward(req, resp);
-            throw new Exception("Login not successful..");
+            throw new Exception("Logout not successful..");
         }
     }
 }

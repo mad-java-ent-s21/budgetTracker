@@ -5,7 +5,6 @@
 
 <html>
 <head>
-    <title>Categories</title>
     <jsp:include page="head.jsp" />
 </head>
 <body>

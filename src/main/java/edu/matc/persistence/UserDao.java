@@ -12,9 +12,19 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The class for User dao.
+ */
 public class UserDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * Validate username and password.
+     *
+     * @param userName the user name
+     * @param password the password
+     * @return the boolean
+     */
     public boolean validate(String userName, String password) {
 
         Transaction transaction = null;
@@ -41,6 +51,14 @@ public class UserDao {
         return false;
     }
 
+    /**
+     * Retrieve session username string.
+     *
+     * @param req the req
+     * @return the string
+     * @throws ServletException the servlet exception
+     * @throws IOException      the io exception
+     */
     public String retrieveSessionUsername(HttpServletRequest req) throws ServletException, IOException {
 
         // retrieve username from session
@@ -50,6 +68,12 @@ public class UserDao {
         return username;
     }
 
+    /**
+     * Retrieve user list session list.
+     *
+     * @param username the username
+     * @return the list
+     */
     public List<User> retrieveUserListSession(String username) {
         GenericDao userDao = new GenericDao(User.class);
 
@@ -59,6 +83,12 @@ public class UserDao {
         return users;
     }
 
+    /**
+     * Retrieve user from user list session user.
+     *
+     * @param users the users
+     * @return the user
+     */
     public User retrieveUserFromUserListSession(List<User> users) {
         GenericDao userDao = new GenericDao(User.class);
 
@@ -69,6 +99,14 @@ public class UserDao {
         return user;
     }
 
+    /**
+     * Gets user from session.
+     *
+     * @param req the req
+     * @return the user from session
+     * @throws ServletException the servlet exception
+     * @throws IOException      the io exception
+     */
     public User getUserFromSession(HttpServletRequest req) throws ServletException, IOException {
         // retrieve user
         UserDao retrieveUser = new UserDao();

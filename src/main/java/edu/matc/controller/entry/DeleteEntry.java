@@ -18,6 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The class deletes an entry from user.
+ */
 @WebServlet("/deleteEntry")
 
 public class DeleteEntry extends HttpServlet {

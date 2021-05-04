@@ -5,7 +5,6 @@
 
 <html>
 <head>
-    <title>Your Profile</title>
     <jsp:include page="head.jsp" />
 </head>
 

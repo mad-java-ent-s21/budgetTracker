@@ -15,6 +15,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The class allows new user signups.
+ */
 @WebServlet("/userSignUp")
 public class SignUp extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());

@@ -16,28 +16,26 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The class login for users.
+ */
 @WebServlet("/login")
 public class Login extends HttpServlet {
     private static final long serialVersionUID = 1;
     private UserDao login;
     private GenericDao dao = new GenericDao(User.class);
-    private final Logger log = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     public void init() {
         login = new UserDao();
     }
-
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-//            throws ServletException, IOException {
-//        resp.sendRedirect("userLogin.jsp");
-//    }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         try {
             authenticate(req, resp);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.debug(e);
         }
     }
 
@@ -55,6 +53,7 @@ public class Login extends HttpServlet {
             req.setAttribute("password", password);
             session.setAttribute("username", user.getUserName());
             session.setAttribute("user", user);
+            logger.debug("setting " + user.getUserName() + " and " + user + " to session.");
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("loginSuccess.jsp");
             dispatcher.forward(req, resp);

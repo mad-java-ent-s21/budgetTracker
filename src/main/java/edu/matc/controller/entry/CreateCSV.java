@@ -18,56 +18,72 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParseException;
 import java.util.List;
 
 @WebServlet("/exportCSV")
 
 public class CreateCSV extends HttpServlet {
     private final Logger logger = LogManager.getLogger(PropertiesLoader.class);
-    
-    public void CreateCSV(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, FileNotFoundException {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, FileNotFoundException {
         GenericDao entryDao = new GenericDao(Entry.class);
 
         // retrieve all users
         UserDao userDao = new UserDao();
         User user = userDao.getUserFromSession(req);
 
-        // retrieve all entries
-        List<Entry> entryList = entryDao.findByPropertyEqual("userId", user);
+        // retrieve all entries in date range
+        // retrieve from form
+        String startDate = req.getParameter("startDate");
+        String endDate = req.getParameter("endDate");
 
+        List<Entry> entryList = null;
         try {
-            // TODO send file to google api
-            PrintWriter printWriter = new PrintWriter(new File("/home/student"));
-            StringBuilder stringBuilder = new StringBuilder();
+            entryList = entryDao.findByPropertyLocalDateRange("date",
+                    startDate,endDate,
+                    "userId", user);
 
-            stringBuilder.append("date");
-            stringBuilder.append(",");
-            stringBuilder.append("entry name");
-            stringBuilder.append(",");
-            stringBuilder.append("entry type");
-            stringBuilder.append(",");
-            stringBuilder.append("value");
-            stringBuilder.append(",");
-            stringBuilder.append("category");
-            stringBuilder.append("\r\n");
+            try {
+                // TODO send file to google api
+                // TODO allow user to download file
+                PrintWriter printWriter = new PrintWriter(new File("/home"));
+                StringBuilder stringBuilder = new StringBuilder();
 
-            for (Entry entries : entryList) {
-                stringBuilder.append(entries.getDate());
+                stringBuilder.append("date");
                 stringBuilder.append(",");
-                stringBuilder.append(entries.getEntryName());
+                stringBuilder.append("entry name");
                 stringBuilder.append(",");
-                stringBuilder.append(entries.getEntryType());
+                stringBuilder.append("entry type");
                 stringBuilder.append(",");
-                stringBuilder.append(entries.getValue());
+                stringBuilder.append("value");
                 stringBuilder.append(",");
-                stringBuilder.append(entries.getCategoryId());
+                stringBuilder.append("category");
                 stringBuilder.append("\r\n");
+
+                for (Entry entries : entryList) {
+                    stringBuilder.append(entries.getDate());
+                    stringBuilder.append(",");
+                    stringBuilder.append(entries.getEntryName());
+                    stringBuilder.append(",");
+                    stringBuilder.append(entries.getEntryType());
+                    stringBuilder.append(",");
+                    stringBuilder.append(entries.getValue());
+                    stringBuilder.append(",");
+                    stringBuilder.append(entries.getCategoryId());
+                    stringBuilder.append("\r\n");
+                }
+
+                printWriter.write(stringBuilder.toString());
+                printWriter.close();
+                logger.debug("Created csv file.");
+
+            } catch (Exception e) {
+                logger.debug(e);
             }
 
-            printWriter.write(stringBuilder.toString());
-            printWriter.close();
-            logger.debug("finished");
-        } catch (Exception e) {
+        } catch (ParseException e) {
             logger.debug(e);
         }
 

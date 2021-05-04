@@ -19,6 +19,9 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.util.List;
 
+/**
+ * The class searches a date range for user entries.
+ */
 @WebServlet ("/searchEntry")
 
 public class SearchEntry extends HttpServlet {
@@ -48,9 +51,7 @@ public class SearchEntry extends HttpServlet {
                 logger.debug(e);
             }
 
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/entry.jsp");
         dispatcher.forward(req, resp);
-
     }
 }

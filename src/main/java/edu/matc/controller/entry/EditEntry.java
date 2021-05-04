@@ -19,6 +19,9 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * The class edits an entry from user.
+ */
 @WebServlet("/editEntry")
 
 public class EditEntry extends HttpServlet {

@@ -15,36 +15,26 @@ import java.io.IOException;
 import edu.matc.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 /**
  * A simple servlet to welcome the user.
+ *
  * @author pwaite
  */
-
 @WebServlet(
         urlPatterns = {"/admin/searchUser"}
 )
 
 public class SearchUser extends HttpServlet {
-    final Logger logger = LogManager.getLogger(PropertiesLoader.class);
+    private final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-//        GenericDao<User> dao = new GenericDao<>();
-//        String username = req.getParameter("username");
-//        UserDao user = new UserDao();
-
         GenericDao dao = new GenericDao(User.class);
 
-
-//        if (username != null) {
-//            req.setAttribute("users", dao.findByPropertyEqual("username", username));
-//        } else {
-//            req.setAttribute("users", dao.getAll());
-//        }
-
         req.setAttribute("users", dao.getAll());
-//        req.setAttribute("users", user.getAllUser());
+        logger.debug("Grabbing all users");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/userResults.jsp");
         dispatcher.forward(req, resp);

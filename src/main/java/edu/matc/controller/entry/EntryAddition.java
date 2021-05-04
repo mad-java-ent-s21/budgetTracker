@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The class retrieves entry information for adding new entry.
+ */
 @WebServlet("/entryAddition")
 
 public class EntryAddition extends HttpServlet {
@@ -32,7 +35,6 @@ public class EntryAddition extends HttpServlet {
 
         // find entries by user id
         List<Category> categoryList = categoryDao.findByPropertyEqual("userId", user);
-
         req.setAttribute("category", categoryList);
         logger.debug("Retrieving user categories.");
 

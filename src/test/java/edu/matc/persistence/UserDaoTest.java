@@ -6,6 +6,11 @@ import edu.matc.util.FactoryDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,6 +18,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDaoTest {
 
     GenericDao dao;
+    User user;
+    UserDao userDao;
 
     @BeforeEach
     public void setUp() {
@@ -20,6 +27,8 @@ class UserDaoTest {
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
         dao = new GenericDao(User.class);
+        user = new User("NewGuy", "newguy", "New", "Guy", "newguy@some.com", "2000-02-16");
+        userDao = new UserDao();
     }
 
     @Test
@@ -30,12 +39,10 @@ class UserDaoTest {
 
     @Test
     void getByIdSuccess() {
-        User retrievedUser = (User) dao.getById(1);
-        assertEquals("mikeyjones123", retrievedUser.getUserName());
-//        assertEquals("Mike", retrievedUser.getFirstName());
-//        assertEquals("Jones", retrievedUser.getLastName());
-//        assertEquals("1987-03-21", retrievedUser.getBirthdate());
-//        assertNotNull(retrievedUser);
+        int id = dao.insert(user);
+        User retrievedUser = (User) dao.getById(id);
+        assertEquals(user.toString(), retrievedUser.toString());
+        assertNotNull(retrievedUser);
     }
 
     @Test
@@ -46,35 +53,11 @@ class UserDaoTest {
 
     @Test
     void insertSuccess() {
-        User newUser;
-        newUser = new User("NewGuy", "newguy", "New", "Guy", "newguy@some.com", "2000-02-16");
-        int id = dao.insert(newUser);
+        int id = dao.insert(user);
         assertNotEquals(0,id);
         User insertedUser = (User) dao.getById(id);
         assertEquals(id, insertedUser.getId());
-        assertEquals("New", insertedUser.getFirstName());
-
-//        String uname = "somelady";
-//        String pass = "pass";
-//        String fname = "some";
-//        String lname = "lady";
-//        String email = "emaillady@l.com";
-//        String bday = "2001-03-04";
-//
-//        User newU = new User();
-//        newU.setUserName(uname);
-//        newU.setPassword(pass);
-//        newU.setFirstName(fname);
-//        newU.setLastName(lname);
-//        newU.setEmail(email);
-//        newU.setBirthdate(bday);
-//
-//        GenericDao userDao = FactoryDao.createDao(User.class);
-//
-//        int idNew = userDao.insert(newU);
-//
-//        User insertedUser2 = (User) dao.getById(idNew);
-//        assertEquals("somelady", insertedUser2.getUserName());
+        assertEquals(user.toString(), insertedUser.toString());
     }
 
     @Test
@@ -90,14 +73,6 @@ class UserDaoTest {
 
     @Test
     void findByPropertyEqualSuccess() {
-//        String name = "Mike";
-//        String column = "firstName";
-//
-//        List<User> userFirstName = dao.findByPropertyEqual(column, name);
-//        for (User firstName: userFirstName) {
-//            assertEquals(name, firstName.getFirstName());
-//        }
-
         String username = "mikeyjones123";
 
         List<User> findUser = dao.findByPropertyEqual("userName", username);
@@ -107,22 +82,7 @@ class UserDaoTest {
     }
 
     @Test
-    void testFindByPropertyEqual() {
-    }
-
-    @Test
-    void persistUser() {
-        String username = "mikeyjones123";
-
-        List<User> findUser = dao.findByPropertyEqual("username", username);
-        for (User user: findUser) {
-            assertEquals(username, user.getUserName());
-        }
-
-    }
-
-    @Test
-    void findByTwoPropertiesEqual() {
+    void findByTwoPropertiesEqualSuccess() {
         String username = "mikeyjones123";
         int id = 1;
 
@@ -132,4 +92,37 @@ class UserDaoTest {
             assertEquals(id, user.getId());
         }
     }
+
+    @Test
+    void validateSuccess() {
+        int id = dao.insert(user);
+        User newUser = (User) dao.getById(id);
+        assertTrue(userDao.validate(newUser.getUserName(), newUser.getPassword()));
+    }
+
+    @Test
+    void retrieveSessionUsernameSuccess() {
+        int id = dao.insert(user);
+        User newUser = (User) dao.getById(id);
+        String username = newUser.getUserName();
+        assertEquals(user.getUserName(), newUser.getUserName());
+    }
+
+    @Test
+    void retrieveUserListSessionSuccess() {
+        int id = dao.insert(user);
+        User newUser = (User) dao.getById(id);
+        List<User> userList = userDao.retrieveUserListSession(newUser.getUserName());
+        assertEquals(user.toString(), userList.get(0).toString());
+    }
+
+    @Test
+    void retrieveUserFromUserListSessionSuccess() {
+        int id = dao.insert(user);
+        User newUser = (User) dao.getById(id);
+        List<User> userList = userDao.retrieveUserListSession(newUser.getUserName());
+        User retrieveUser = userDao.retrieveUserFromUserListSession(userList);
+        assertEquals(user.toString(), retrieveUser.toString());
+    }
+
 }

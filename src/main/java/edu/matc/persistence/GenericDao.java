@@ -14,19 +14,37 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+/**
+ * The class for the Generic dao.
+ *
+ * @param <T> the type parameter
+ */
 public class GenericDao<T> {
 
     private Class<T> type;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * Instantiates a new Generic dao.
+     *
+     * @param type the type
+     */
     public GenericDao(Class<T> type) {
         this.type = type;
     }
 
+    /**
+     * Instantiates a new Generic dao.
+     */
     public GenericDao() {
 
     }
 
+    /**
+     * Gets all.
+     *
+     * @return the all
+     */
     public List<T> getAll() {
         Session session = getSession();
 
@@ -39,6 +57,13 @@ public class GenericDao<T> {
         return list;
     }
 
+    /**
+     * Gets by id.
+     *
+     * @param <T> the type parameter
+     * @param id  the id
+     * @return the by id
+     */
     public <T> T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
@@ -46,6 +71,11 @@ public class GenericDao<T> {
         return entity;
     }
 
+    /**
+     * Delete.
+     *
+     * @param entity the entity
+     */
     public void delete(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
@@ -54,6 +84,12 @@ public class GenericDao<T> {
         session.close();
     }
 
+    /**
+     * Insert int.
+     *
+     * @param entity the entity
+     * @return the int
+     */
     public int insert(T entity) {
         int id = 0;
         Session session = getSession();
@@ -64,6 +100,11 @@ public class GenericDao<T> {
         return id;
     }
 
+    /**
+     * Save or update.
+     *
+     * @param entity the entity
+     */
     public void saveOrUpdate(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
@@ -72,6 +113,13 @@ public class GenericDao<T> {
         session.close();
     }
 
+    /**
+     * Find by property equal list.
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the list
+     */
     public List<T> findByPropertyEqual(String propertyName, Object value) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -82,6 +130,12 @@ public class GenericDao<T> {
         return session.createQuery(query).getResultList();
     }
 
+    /**
+     * Find by property equal list.
+     *
+     * @param propertyMap the property map
+     * @return the list
+     */
     public List<T> findByPropertyEqual(Map<String, Object> propertyMap) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -96,6 +150,15 @@ public class GenericDao<T> {
         return session.createQuery(query).getResultList();
     }
 
+    /**
+     * Find by two properties equal list.
+     *
+     * @param propertyName    the property name
+     * @param value           the value
+     * @param propertyNameTwo the property name two
+     * @param valueTwo        the value two
+     * @return the list
+     */
     public List<T> findByTwoPropertiesEqual(String propertyName, Object value, String propertyNameTwo, Object valueTwo) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -107,6 +170,17 @@ public class GenericDao<T> {
         return session.createQuery(query).getResultList();
     }
 
+    /**
+     * Find by property local date range list by specific property.
+     *
+     * @param propertyName    the property name
+     * @param value           the value
+     * @param valueTwo        the value two
+     * @param propertyNameTwo the property name two
+     * @param valueThree      the value three
+     * @return the list
+     * @throws ParseException the parse exception
+     */
     public List<T> findByPropertyLocalDateRange(String propertyName, Object value, Object valueTwo,
                                                 String propertyNameTwo, Object valueThree) throws ParseException {
         Session session = getSession();

@@ -5,7 +5,6 @@
 
 <html>
 <head>
-    <title>Sign Up Success</title>
     <jsp:include page="head.jsp" />
 </head>
 

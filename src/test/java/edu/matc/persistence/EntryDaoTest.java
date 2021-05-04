@@ -13,7 +13,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EntryDaoTest {
-//    EntryDao dao;
     GenericDao dao;
 
     @BeforeEach
@@ -21,34 +20,21 @@ class EntryDaoTest {
         Database database = Database.getInstance();
         database.runSQL("src/test/resources/cleandb.sql");
 
-//        dao = new EntryDao();
         dao = new GenericDao(Entry.class);
     }
 
     @Test
-    void getById() {
+    void getByIdSuccess() {
         LocalDate localDate = LocalDate.parse("2021-02-23");
-
-//        Entry retrievedEntry = dao.getById(1);
-//        assertEquals(localDate, retrievedEntry.getDate());
-//        assertEquals("Walmart - Pizzas", retrievedEntry.getEntryName());
-//        assertEquals("Expense", retrievedEntry.getEntryType());
-//        assertEquals(Double.valueOf(10.50), Double.valueOf(retrievedEntry.getValue()));
     }
 
     @Test
-    void saveOrUpdate() {
+    void saveOrUpdateSuccess() {
         String newEntryName = "Update Entry";
-
-//        Entry entryUpdate = dao.getById(1);
-//        entryUpdate.setEntryName(newEntryName);
-//        dao.saveOrUpdate(entryUpdate);
-//        Entry retrieveEntry = dao.getById(1);
-//        assertEquals(newEntryName, retrieveEntry.getEntryName());
     }
 
     @Test
-    void insert() {
+    void insertSuccess() {
         Category category = new Category();
         category.setId(1);
 
@@ -64,13 +50,13 @@ class EntryDaoTest {
     }
 
     @Test
-    void delete() {
-//        dao.delete(dao.getById(2));
-//        assertNull(dao.getById(2));
+    void deleteSuccess() {
+        dao.delete(dao.getById(2));
+        assertNull(dao.getById(2));
     }
 
     @Test
-    void getByPropertyLike() {
+    void getByPropertyLikeSuccess() {
         List<Entry> entry = dao.findByPropertyEqual("entryName", "Walmart - Pizzas");
         assertEquals(1, entry.size());
         assertEquals(1, entry.get(0).getId());

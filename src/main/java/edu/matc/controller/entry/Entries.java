@@ -20,12 +20,15 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * The class displays all user entries.
+ */
 @WebServlet(
         urlPatterns = {"/userEntry"}
 )
 
 public class Entries extends HttpServlet {
-    final Logger logger = LogManager.getLogger(PropertiesLoader.class);
+    private final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -38,14 +41,11 @@ public class Entries extends HttpServlet {
 
         // retrieve entries by user id
         List<Entry> userEntries = entryDao.findByPropertyEqual("userId", user);
-
         req.setAttribute("entry", userEntries);
         logger.debug("Retrieving user entries.");
 
-
         // retrieve categories for form
         List<Category> categoryList = categoryDao.findByPropertyEqual("userId", user);
-
         req.setAttribute("category", categoryList);
         logger.debug("Retrieving user categories");
 

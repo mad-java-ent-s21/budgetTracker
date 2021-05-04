@@ -13,7 +13,6 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CategoryDaoTest {
-//    CategoryDao dao;
     GenericDao dao;
 
     @BeforeEach
@@ -21,17 +20,11 @@ class CategoryDaoTest {
         Database database = Database.getInstance();
         database.runSQL("src/test/resources/cleandb.sql");
 
-//        dao = new CategoryDao();
         dao = new GenericDao(Category.class);
     }
 
     @Test
-    void getById() {
-//        Category retrievedCategory = dao.getById(1);
-//        assertEquals("Food - Dine Out", retrievedCategory.getCategoryName());
-//        assertEquals("Dining out", retrievedCategory.getCategoryDescription());
-//        assertEquals("#FFFFFF", retrievedCategory.getColor());
-
+    void getByIdSuccess() {
         Category retrievedCategory = (Category) dao.getById(1);
         assertEquals("Food - Dine Out", retrievedCategory.getCategoryName());
         assertEquals("Dining out", retrievedCategory.getCategoryDescription());
@@ -39,53 +32,28 @@ class CategoryDaoTest {
     }
 
     @Test
-    void saveOrUpdate() {
-//        String newCategoryName = "Update Category";
-//
-////        Category categoryUpdate = dao.getById(1);
-//        categoryUpdate.setCategoryName(newCategoryName);
-//        dao.saveOrUpdate(categoryUpdate);
-//        Category retrieveCategory = dao.getById(1);
-//        assertEquals(newCategoryName, retrieveCategory.getCategoryName());
+    void saveOrUpdateSuccess() {
     }
 
     @Test
-    void insert() {
-//        User user = new User();
-//        user.setId(1);
-//
-//        Category newCategory;
-//        newCategory = new Category("Essentials","Toilet paper, paper towels, etc.","#000000",user);
-//        int id = dao.insert(newCategory);
-//        assertNotEquals(0,id);
-//        Category insertedCategory = dao.getById(id);
-//        assertEquals(id, insertedCategory.getId());
+    void insertSuccess() {
     }
 
     @Test
-    void delete() {
-//        dao.delete(dao.getById(2));
-//        assertNull(dao.getById(2));
+    void deleteSuccess() {
+        dao.delete(dao.getById(2));
+        assertNull(dao.getById(2));
     }
 
     @Test
-    void getByPropertyLike() {
-//        List<Category> category = dao.findByPropertyEqual("categoryName", "Food - Dine Out");
-//        assertEquals(1, category.size());
-//        assertEquals(1, category.get(0).getId());
-
+    void getByPropertyLikeSuccess() {
         List<Category> category = dao.findByPropertyEqual("categoryName", "Hobby");
         assertEquals(1, category.size());
         assertEquals(2, category.get(0).getId());
     }
 
     @Test
-    void getByPropertyLikeByUsername() {
-//        GenericDao userDao = new GenericDao(User.class);
-//        User getUser = (User) userDao.getById(1);
+    void getByPropertyLikeByUsernameSuccess() {
 
-//        List<Category> category = dao.findByPropertyEqual("entryName", "Food - Dine Out");
-//
-//
     }
 }

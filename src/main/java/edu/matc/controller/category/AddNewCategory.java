@@ -18,6 +18,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The class adds new category for users.
+ */
 @WebServlet("/addNewCategory")
 
 public class AddNewCategory extends HttpServlet {
@@ -36,9 +39,7 @@ public class AddNewCategory extends HttpServlet {
         String categoryDescription = req.getParameter("categoryDescription");
         String color = req.getParameter("color");
 
-        // TODO grab categories by user only -- connects with AddNewEntry
         // Category name has to be unique
-//        List<Category> allCategoryList = categoryDao.getAll();
         List<Category> allCategoryList = categoryDao.findByPropertyEqual("userId", user);
         List<String> categoryList = new ArrayList<>();
         for (Category list : allCategoryList) {
@@ -62,7 +63,6 @@ public class AddNewCategory extends HttpServlet {
 
             // Insert entry
             categoryDao.insert(insertCategory);
-
             logger.debug("Category added: " + insertCategory.getCategoryName());
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("addCategorySuccess.jsp");

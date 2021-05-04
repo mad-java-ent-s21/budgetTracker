@@ -15,6 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * The class retrieves user information.
+ */
 @WebServlet(
         urlPatterns = {"/userProfile"}
 )
@@ -24,12 +27,6 @@ public class UserProfile extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-//        GenericDao userDao = new GenericDao(User.class);
-//        HttpSession session = req.getSession();
-//
-//        String username = (String) session.getAttribute("username");
-//        List<User> users = userDao.findByPropertyEqual("userName", username);
 
         UserDao retrieveUser = new UserDao();
         String username = retrieveUser.retrieveSessionUsername(req);

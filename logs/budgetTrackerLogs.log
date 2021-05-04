@@ -467,3 +467,56 @@
 [DEBUG] 2021-05-04 07:42:55.226 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user categories.
 [DEBUG] 2021-05-04 07:42:58.815 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user entries.
 [DEBUG] 2021-05-04 07:42:58.839 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 08:04:57.211 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 08:04:57.230 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 08:06:52.939 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 08:06:52.963 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 08:07:04.211 [http-nio-8080-exec-7] PropertiesLoader - java.io.FileNotFoundException: /home/student (Is a directory)
+[DEBUG] 2021-05-04 08:15:17.242 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 08:15:17.266 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 08:15:29.316 [http-nio-8080-exec-7] PropertiesLoader - java.io.FileNotFoundException: /home (Is a directory)
+[DEBUG] 2021-05-04 16:25:21.262 [http-nio-8080-exec-9] PropertiesLoader - Retrieving users profile information.
+[ERROR] 2021-05-04 17:03:08.030 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:08:47.144 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:09:46.334 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:10:12.760 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:10:28.554 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:02.376 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:56.283 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:58.525 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:58.736 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:58.800 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:58.848 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:58.896 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:11:58.962 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:17:35.819 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:19:09.232 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:21:37.689 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:22:10.343 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:22:29.027 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:24:13.211 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:29:20.234 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:29:54.011 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:15.985 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.201 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.268 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.470 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.524 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.603 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.668 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.725 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.781 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.846 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.899 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:18.956 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:48.715 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:51.116 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:51.210 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:51.505 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:51.603 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:51.718 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:51.836 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:51.913 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:52.002 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:52.106 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:30:52.189 [main] Database - java.sql.SQLException: Can not issue empty query.
