@@ -19,7 +19,7 @@
         <a href="userEntry" class="waves-effect waves-light btn">Return to Entries</a>
     </div>
     <br>
-    <form id="editEntry" action="editEntry" method="post" data-toggle="validator">
+    <form id="editEntry" action="editEntry" method="post">
         <c:forEach var="entry" items="${entry}">
             <input id="entryId" name="entryId" type="number" title="entryId" value="${entry.id}" style="display: none;"/>
 
@@ -32,26 +32,21 @@
             <%--  Entry Type  List selection --%>
             <div>
                 <select id="entryType" name="entryType" required>
-                        <option value="entryType" disabled>Choose your entry type</option>
-<%--                    <optgroup label="Original Selection">--%>
-<%--                        <option value="entryType" disabled>Choose your entry type</option>--%>
-<%--                    </optgroup>--%>
-                    <option value="expense">Expense</option>
-                    <option value="income">Income</option>
+                    <option value="entryType" disabled>Choose your entry type</option>
+                    <option value="Expense">Expense</option>
+                    <option value="Income">Income</option>
                 </select>
                 <label>Entry Type Selection</label>
             </div>
 
-            <input id="value" name="value" type="number" title="value" value="${entry.value}" />
+            <input id="value" name="value" type="number" title="value" value="${entry.value}" required/>
             <label for="value">Value</label>
 
             <%--  Category selection --%>
             <div>
                 <select id="categoryName" name="categoryName" class="select" required>
-                        <option value="categoryName" disabled>Choose your category</option>
-<%--                    <optgroup label="Original Selection">--%>
-<%--                        <option value="categoryName" selected>${catgory.categoryName}</option>--%>
-<%--                    </optgroup>--%>
+                    <option value="categoryName" disabled>Choose your category</option>
+
                     <c:forEach items="${category}" var="category">
                         <option value="${category.categoryName}">${category.categoryName}</option>
                     </c:forEach>

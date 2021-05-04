@@ -11,6 +11,8 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class EntryDao {
@@ -70,4 +72,24 @@ public class EntryDao {
         session.close();
         return entries;
     }
+
+//    public List<Entry> findByPropertyRange(Object value, Object valueTwo) {
+//        Session session = sessionFactory.openSession();
+//        CriteriaBuilder builder = session.getCriteriaBuilder();
+//        CriteriaQuery<Entry> query = builder.createQuery(Entry.class);
+//        Root<Entry> entry = query.from(Entry.class);
+////        query.select(root).where(builder.greaterThan(root.get(propertyName), value));
+////        query.select(root).where(builder.between(root.get(propertyName), value, valueTwo));
+//        List<Entry> dates = new ArrayList<>();
+//        query.select(entry);
+//        query.where(builder.between(entry.<Entry>get("date"), value, valueTwo));
+//        query.orderBy(builder.desc(entry.get("date")));
+//
+////        query.where(builder.between(root.get(propertyName), value, valueTwo));
+//
+//
+////        query.select(root).where(builder.equal(root.get(propertyName),value));
+//
+//        return session.createQuery(query).getResultList();
+//    }
 }

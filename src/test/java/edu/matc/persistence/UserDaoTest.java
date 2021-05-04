@@ -120,4 +120,16 @@ class UserDaoTest {
         }
 
     }
+
+    @Test
+    void findByTwoPropertiesEqual() {
+        String username = "mikeyjones123";
+        int id = 1;
+
+        List<User> findUser = dao.findByTwoPropertiesEqual("userName", username, "id", id);
+        for (User user: findUser) {
+            assertEquals(username, user.getUserName());
+            assertEquals(id, user.getId());
+        }
+    }
 }

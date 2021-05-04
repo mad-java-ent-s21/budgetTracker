@@ -39,6 +39,8 @@
     <jersey-version>2.29.1</jersey-version>
 
     <jackson-version>2.10.0</jackson-version>
+
+
   </properties>
 
   <dependencies>
@@ -150,6 +152,13 @@
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
       <version>${jackson-version}</version>
+    </dependency>
+
+<!--    Google API -->
+    <dependency>
+      <groupId>com.google.apis</groupId>
+      <artifactId>google-api-services-driveactivity</artifactId>
+      <version>v2-rev20210319-1.31.0</version>
     </dependency>
 
   </dependencies>

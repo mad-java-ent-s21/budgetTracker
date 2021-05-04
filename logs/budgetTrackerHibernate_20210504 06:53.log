@@ -1,0 +1,1127 @@
+[DEBUG] 2021-05-04 06:53:11.990 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-05-04 06:53:12.005 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-05-04 06:53:12.014 [http-nio-8080-exec-3] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-05-04 06:53:12.178 [http-nio-8080-exec-3] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-05-04 06:53:12.181 [http-nio-8080-exec-3] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-05-04 06:53:12.469 [http-nio-8080-exec-3] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2021-05-04 06:53:12.470 [http-nio-8080-exec-3] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2021-05-04 06:53:12.502 [http-nio-8080-exec-3] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-05-04 06:53:13.136 [http-nio-8080-exec-3] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-05-04 06:53:13.174 [http-nio-8080-exec-3] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-05-04 06:53:13.179 [http-nio-8080-exec-3] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-05-04 06:53:13.225 [http-nio-8080-exec-3] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-05-04 06:53:13.283 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6b14768a
+[DEBUG] 2021-05-04 06:53:13.283 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6b14768a
+[DEBUG] 2021-05-04 06:53:13.283 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6b14768a
+[DEBUG] 2021-05-04 06:53:13.286 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@16704a31
+[DEBUG] 2021-05-04 06:53:13.287 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@389eaa
+[DEBUG] 2021-05-04 06:53:13.288 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@3c5a5394
+[DEBUG] 2021-05-04 06:53:13.290 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@45d468c6
+[DEBUG] 2021-05-04 06:53:13.290 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@45d468c6
+[DEBUG] 2021-05-04 06:53:13.290 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@45d468c6
+[DEBUG] 2021-05-04 06:53:13.291 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@5d1692db
+[DEBUG] 2021-05-04 06:53:13.293 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@5d1692db
+[DEBUG] 2021-05-04 06:53:13.294 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@5d1692db
+[DEBUG] 2021-05-04 06:53:13.299 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1247fdb4
+[DEBUG] 2021-05-04 06:53:13.299 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1247fdb4
+[DEBUG] 2021-05-04 06:53:13.300 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1247fdb4
+[DEBUG] 2021-05-04 06:53:13.300 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@27e7c72f
+[DEBUG] 2021-05-04 06:53:13.300 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@27e7c72f
+[DEBUG] 2021-05-04 06:53:13.300 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@27e7c72f
+[DEBUG] 2021-05-04 06:53:13.302 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@669227ef
+[DEBUG] 2021-05-04 06:53:13.302 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@669227ef
+[DEBUG] 2021-05-04 06:53:13.302 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@669227ef
+[DEBUG] 2021-05-04 06:53:13.306 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@60d3cb8a
+[DEBUG] 2021-05-04 06:53:13.306 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@60d3cb8a
+[DEBUG] 2021-05-04 06:53:13.306 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@60d3cb8a
+[DEBUG] 2021-05-04 06:53:13.307 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3f447273
+[DEBUG] 2021-05-04 06:53:13.307 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3f447273
+[DEBUG] 2021-05-04 06:53:13.308 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3f447273
+[DEBUG] 2021-05-04 06:53:13.309 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@47cbeef1
+[DEBUG] 2021-05-04 06:53:13.309 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@47cbeef1
+[DEBUG] 2021-05-04 06:53:13.309 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2c542593
+[DEBUG] 2021-05-04 06:53:13.310 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2c542593
+[DEBUG] 2021-05-04 06:53:13.310 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@47b42e55
+[DEBUG] 2021-05-04 06:53:13.310 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@47b42e55
+[DEBUG] 2021-05-04 06:53:13.311 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@657bb470
+[DEBUG] 2021-05-04 06:53:13.312 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@c82f1fe
+[DEBUG] 2021-05-04 06:53:13.312 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6f30ce37
+[DEBUG] 2021-05-04 06:53:13.312 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6f30ce37
+[DEBUG] 2021-05-04 06:53:13.313 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@1ef70e0e
+[DEBUG] 2021-05-04 06:53:13.313 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1ef70e0e
+[DEBUG] 2021-05-04 06:53:13.316 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@7457eb88
+[DEBUG] 2021-05-04 06:53:13.316 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7457eb88
+[DEBUG] 2021-05-04 06:53:13.317 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@149d5dbf
+[DEBUG] 2021-05-04 06:53:13.317 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@149d5dbf
+[DEBUG] 2021-05-04 06:53:13.317 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@8c9d2c2
+[DEBUG] 2021-05-04 06:53:13.317 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@8c9d2c2
+[DEBUG] 2021-05-04 06:53:13.319 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7786eac7
+[DEBUG] 2021-05-04 06:53:13.319 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7786eac7
+[DEBUG] 2021-05-04 06:53:13.320 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6adcdacc
+[DEBUG] 2021-05-04 06:53:13.320 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6adcdacc
+[DEBUG] 2021-05-04 06:53:13.321 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5df7a85c
+[DEBUG] 2021-05-04 06:53:13.321 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5df7a85c
+[DEBUG] 2021-05-04 06:53:13.322 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@692f56f0
+[DEBUG] 2021-05-04 06:53:13.322 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@692f56f0
+[DEBUG] 2021-05-04 06:53:13.323 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@68f36175
+[DEBUG] 2021-05-04 06:53:13.324 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@68f36175
+[DEBUG] 2021-05-04 06:53:13.324 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@45bc15a1
+[DEBUG] 2021-05-04 06:53:13.324 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@45bc15a1
+[DEBUG] 2021-05-04 06:53:13.326 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@1956c00f
+[DEBUG] 2021-05-04 06:53:13.326 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@1956c00f
+[DEBUG] 2021-05-04 06:53:13.326 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@1956c00f
+[DEBUG] 2021-05-04 06:53:13.328 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@575ba69f
+[DEBUG] 2021-05-04 06:53:13.329 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@1e9d0ad8
+[DEBUG] 2021-05-04 06:53:13.329 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1e9d0ad8
+[DEBUG] 2021-05-04 06:53:13.329 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1e9d0ad8
+[DEBUG] 2021-05-04 06:53:13.330 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5b78ac31
+[DEBUG] 2021-05-04 06:53:13.331 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@52fc4bc3
+[DEBUG] 2021-05-04 06:53:13.331 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@52fc4bc3
+[DEBUG] 2021-05-04 06:53:13.331 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5817042b
+[DEBUG] 2021-05-04 06:53:13.331 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5817042b
+[DEBUG] 2021-05-04 06:53:13.334 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@5d6407b8
+[DEBUG] 2021-05-04 06:53:13.334 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@5d6407b8
+[DEBUG] 2021-05-04 06:53:13.334 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@30f779b9
+[DEBUG] 2021-05-04 06:53:13.334 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@30f779b9
+[DEBUG] 2021-05-04 06:53:13.335 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3cce4512
+[DEBUG] 2021-05-04 06:53:13.335 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3cce4512
+[DEBUG] 2021-05-04 06:53:13.335 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5b97b0f8
+[DEBUG] 2021-05-04 06:53:13.336 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@358244e0
+[DEBUG] 2021-05-04 06:53:13.336 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@358244e0
+[DEBUG] 2021-05-04 06:53:13.336 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@358244e0
+[DEBUG] 2021-05-04 06:53:13.337 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1437541
+[DEBUG] 2021-05-04 06:53:13.337 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1437541
+[DEBUG] 2021-05-04 06:53:13.337 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1437541
+[DEBUG] 2021-05-04 06:53:13.337 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@4014c8aa
+[DEBUG] 2021-05-04 06:53:13.338 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@3a1637eb
+[DEBUG] 2021-05-04 06:53:13.339 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@1fa285c7
+[DEBUG] 2021-05-04 06:53:13.339 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@1fa285c7
+[DEBUG] 2021-05-04 06:53:13.339 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@1fa285c7
+[DEBUG] 2021-05-04 06:53:13.339 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@214658d6
+[DEBUG] 2021-05-04 06:53:13.339 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@214658d6
+[DEBUG] 2021-05-04 06:53:13.339 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@214658d6
+[DEBUG] 2021-05-04 06:53:13.340 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@72da103
+[DEBUG] 2021-05-04 06:53:13.340 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7f9b223d
+[DEBUG] 2021-05-04 06:53:13.341 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@3eb8d8a5
+[DEBUG] 2021-05-04 06:53:13.341 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3eb8d8a5
+[DEBUG] 2021-05-04 06:53:13.341 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7914b886
+[DEBUG] 2021-05-04 06:53:13.342 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6ad8cb7c
+[DEBUG] 2021-05-04 06:53:13.342 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6ad8cb7c
+[DEBUG] 2021-05-04 06:53:13.343 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@4d5f5565
+[DEBUG] 2021-05-04 06:53:13.343 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4d5f5565
+[DEBUG] 2021-05-04 06:53:13.343 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6906d5a9
+[DEBUG] 2021-05-04 06:53:13.343 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2cba38c7
+[DEBUG] 2021-05-04 06:53:13.344 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@35112162
+[DEBUG] 2021-05-04 06:53:13.347 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@263af1e3
+[DEBUG] 2021-05-04 06:53:13.347 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@263af1e3
+[DEBUG] 2021-05-04 06:53:13.347 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1d462616
+[DEBUG] 2021-05-04 06:53:13.347 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4c22ec51
+[DEBUG] 2021-05-04 06:53:13.347 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@465996fa
+[DEBUG] 2021-05-04 06:53:13.351 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3998b73a
+[DEBUG] 2021-05-04 06:53:13.354 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@15425089
+[DEBUG] 2021-05-04 06:53:13.357 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4e596614
+[DEBUG] 2021-05-04 06:53:13.357 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@443dd763
+[DEBUG] 2021-05-04 06:53:13.357 [http-nio-8080-exec-3] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@38e099b9
+[DEBUG] 2021-05-04 06:53:13.394 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-05-04 06:53:13.394 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-05-04 06:53:13.395 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-05-04 06:53:13.396 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-05-04 06:53:13.398 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-05-04 06:53:13.400 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-05-04 06:53:13.400 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-05-04 06:53:13.402 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-05-04 06:53:13.403 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-05-04 06:53:13.403 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-05-04 06:53:13.404 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-05-04 06:53:13.404 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-05-04 06:53:13.404 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-05-04 06:53:13.404 [http-nio-8080-exec-3] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-05-04 06:53:13.409 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/budget_tracker
+[INFO ] 2021-05-04 06:53:13.410 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-05-04 06:53:13.410 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-05-04 06:53:13.629 [http-nio-8080-exec-3] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-05-04 06:53:14.040 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.22
+      major : 8
+      minor : 0
+[DEBUG] 2021-05-04 06:53:14.055 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2021-05-04 06:53:14.055 [http-nio-8080-exec-3] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-05-04 06:53:14.110 [http-nio-8080-exec-3] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-05-04 06:53:14.137 [http-nio-8080-exec-3] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-05-04 06:53:14.183 [http-nio-8080-exec-3] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-05-04 06:53:14.262 [http-nio-8080-exec-3] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-05-04 06:53:14.267 [http-nio-8080-exec-3] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5b544870] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@28d6b796]
+[DEBUG] 2021-05-04 06:53:14.339 [http-nio-8080-exec-3] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Category
+[DEBUG] 2021-05-04 06:53:14.371 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-04 06:53:14.383 [http-nio-8080-exec-3] EntityBinder - Import with entity name Category
+[DEBUG] 2021-05-04 06:53:14.386 [http-nio-8080-exec-3] EntityBinder - Bind entity edu.matc.entity.Category on table category
+[DEBUG] 2021-05-04 06:53:14.425 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.427 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-04 06:53:14.430 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Category:id]
+[DEBUG] 2021-05-04 06:53:14.432 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-04 06:53:14.433 [http-nio-8080-exec-3] PropertyBinder - Building property id
+[DEBUG] 2021-05-04 06:53:14.436 [http-nio-8080-exec-3] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-04 06:53:14.437 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=category_description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.440 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property categoryDescription with lazy=false
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Category:categoryDescription]
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for categoryDescription
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] PropertyBinder - Building property categoryDescription
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=category_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property categoryName with lazy=false
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Category:categoryName]
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for categoryName
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] PropertyBinder - Building property categoryName
+[DEBUG] 2021-05-04 06:53:14.441 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=color, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.442 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property color with lazy=false
+[DEBUG] 2021-05-04 06:53:14.442 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Category:color]
+[DEBUG] 2021-05-04 06:53:14.442 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for color
+[DEBUG] 2021-05-04 06:53:14.442 [http-nio-8080-exec-3] PropertyBinder - Building property color
+[DEBUG] 2021-05-04 06:53:14.446 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='id', mappedBy=''}
+[DEBUG] 2021-05-04 06:53:14.446 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=userId, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.453 [http-nio-8080-exec-3] PropertyBinder - Building property userId
+[DEBUG] 2021-05-04 06:53:14.454 [http-nio-8080-exec-3] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Entry
+[DEBUG] 2021-05-04 06:53:14.454 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-04 06:53:14.454 [http-nio-8080-exec-3] EntityBinder - Import with entity name Entry
+[DEBUG] 2021-05-04 06:53:14.454 [http-nio-8080-exec-3] EntityBinder - Bind entity edu.matc.entity.Entry on table entry
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(entry), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Entry:id]
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] PropertyBinder - Building property id
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='category_id', referencedColumn='id', mappedBy=''}
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(entry), mappingColumn=categoryId, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.456 [http-nio-8080-exec-3] PropertyBinder - Building property categoryId
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(entry), mappingColumn=date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property date with lazy=false
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Entry:date]
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for date
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] PropertyBinder - Building property date
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(entry), mappingColumn=entry_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property entryName with lazy=false
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Entry:entryName]
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for entryName
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] PropertyBinder - Building property entryName
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(entry), mappingColumn=entry_type, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property entryType with lazy=false
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Entry:entryType]
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for entryType
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] PropertyBinder - Building property entryType
+[DEBUG] 2021-05-04 06:53:14.457 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='id', mappedBy=''}
+[DEBUG] 2021-05-04 06:53:14.458 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(entry), mappingColumn=userId, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.458 [http-nio-8080-exec-3] PropertyBinder - Building property userId
+[DEBUG] 2021-05-04 06:53:14.458 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(entry), mappingColumn=value, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.458 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property value with lazy=false
+[DEBUG] 2021-05-04 06:53:14.458 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Entry:value]
+[DEBUG] 2021-05-04 06:53:14.459 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for value
+[DEBUG] 2021-05-04 06:53:14.461 [http-nio-8080-exec-3] PropertyBinder - Building property value
+[DEBUG] 2021-05-04 06:53:14.461 [http-nio-8080-exec-3] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:14.461 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-04 06:53:14.461 [http-nio-8080-exec-3] EntityBinder - Import with entity name User
+[DEBUG] 2021-05-04 06:53:14.461 [http-nio-8080-exec-3] EntityBinder - Bind entity edu.matc.entity.User on table user
+[DEBUG] 2021-05-04 06:53:14.462 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.462 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-04 06:53:14.462 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:id]
+[DEBUG] 2021-05-04 06:53:14.462 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-04 06:53:14.462 [http-nio-8080-exec-3] PropertyBinder - Building property id
+[DEBUG] 2021-05-04 06:53:14.463 [http-nio-8080-exec-3] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-04 06:53:14.463 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=birthdate, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.463 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property birthdate with lazy=false
+[DEBUG] 2021-05-04 06:53:14.463 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:birthdate]
+[DEBUG] 2021-05-04 06:53:14.463 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for birthdate
+[DEBUG] 2021-05-04 06:53:14.463 [http-nio-8080-exec-3] PropertyBinder - Building property birthdate
+[DEBUG] 2021-05-04 06:53:14.463 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:email]
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - Building property email
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:firstName]
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - Building property firstName
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:lastName]
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - Building property lastName
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:password]
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - Building property password
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2021-05-04 06:53:14.464 [http-nio-8080-exec-3] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userName]
+[DEBUG] 2021-05-04 06:53:14.465 [http-nio-8080-exec-3] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2021-05-04 06:53:14.465 [http-nio-8080-exec-3] PropertyBinder - Building property userName
+[DEBUG] 2021-05-04 06:53:14.470 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-04 06:53:14.471 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for categoryDescription
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for categoryName
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for color
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for date
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for entryName
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for entryType
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for value
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-04 06:53:14.473 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for birthdate
+[DEBUG] 2021-05-04 06:53:14.474 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2021-05-04 06:53:14.474 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2021-05-04 06:53:14.474 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2021-05-04 06:53:14.474 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2021-05-04 06:53:14.474 [http-nio-8080-exec-3] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2021-05-04 06:53:14.477 [http-nio-8080-exec-3] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [category]
+[DEBUG] 2021-05-04 06:53:14.477 [http-nio-8080-exec-3] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [entry]
+[DEBUG] 2021-05-04 06:53:14.477 [http-nio-8080-exec-3] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2021-05-04 06:53:14.477 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:14.479 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.Category
+[DEBUG] 2021-05-04 06:53:14.479 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:14.480 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:14.480 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.Category
+[DEBUG] 2021-05-04 06:53:14.481 [http-nio-8080-exec-3] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:14.509 [http-nio-8080-exec-3] SessionFactoryImpl - Building session factory
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - SessionFactory name : null
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Statistics: disabled
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Default entity-mode: pojo
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Default batch fetch size: -1
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Default null ordering: NONE
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2021-05-04 06:53:14.510 [http-nio-8080-exec-3] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2021-05-04 06:53:14.513 [http-nio-8080-exec-3] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2021-05-04 06:53:14.513 [http-nio-8080-exec-3] Settings - JTA Track by Thread: enabled
+[DEBUG] 2021-05-04 06:53:14.513 [http-nio-8080-exec-3] Settings - Query language substitutions: {}
+[DEBUG] 2021-05-04 06:53:14.513 [http-nio-8080-exec-3] Settings - Named query checking : enabled
+[DEBUG] 2021-05-04 06:53:14.513 [http-nio-8080-exec-3] Settings - Second-level cache: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Second-level query cache: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Second-level query cache factory: null
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Second-level cache region prefix: null
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JDBC batch size: 15
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Scrollable result sets: enabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Wrap result sets: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JDBC result set fetch size: null
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - Generate SQL with comments: disabled
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JPA compliance - query : 
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JPA compliance - lists : 
+[DEBUG] 2021-05-04 06:53:14.514 [http-nio-8080-exec-3] Settings - JPA compliance - transactions : 
+[INFO ] 2021-05-04 06:53:14.593 [http-nio-8080-exec-3] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2021-05-04 06:53:14.632 [http-nio-8080-exec-3] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2021-05-04 06:53:14.633 [http-nio-8080-exec-3] SessionFactoryImpl - Instantiating session factory with properties: {awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, sun.arch.data.model=64, java.vendor.url=https://ubuntu.com/, catalina.useNaming=true, openejb.provider.default=org.apache.tomee, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, com.sun.management.jmxremote.ssl=false, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, openejb.embedder.source=ServerListener, java.version.date=2021-04-20, java.home=/usr/lib/jvm/java-11-openjdk-amd64, ignore.endorsed.dirs=, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, openejb.scan.webapp.container=true, com.sun.management.jmxremote.password.file=/home/student/.cache/JetBrains/IntelliJIdea2020.3/tomcat/29758963-d76b-4bdf-9324-ad10a65bfd40/jmxremote.password, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, jdk.tls.ephemeralDHKeySize=2048, java.util.logging.config.file=/home/student/.cache/JetBrains/IntelliJIdea2020.3/tomcat/29758963-d76b-4bdf-9324-ad10a65bfd40/conf/logging.properties, java.protocol.handler.pkgs=org.apache.catalina.webresources, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, openejb.scan.webapp.container.excludes=, java.runtime.version=11.0.11+9-Ubuntu-0ubuntu2.20.04, user.name=student, org.apache.johnzon.max-string-length=8192, file.encoding=UTF-8, derby.system.home=/home/student/tomcat/bin, org.apache.catalina.security.SecurityListener.UMASK=0027, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.io.tmpdir=/home/student/tomcat/temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, java.version=11.0.11, com.sun.management.jmxremote.port=1099, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-jmx-remote.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina-ws.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, tomcat.built=May 4 2019 09:17:16 UTC, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, tomee.version=7.1.1, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, sun.desktop=gnome, java.class.path=/home/student/tomcat/bin/bootstrap.jar:/home/student/tomcat/bin/tomcat-juli.jar, tomcat.version=8.5.41.0, java.vm.vendor=Ubuntu, openejb.home=/home/student/tomcat, openejb.system.apps=true, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, openejb.base=/home/student/.cache/JetBrains/IntelliJIdea2020.3/tomcat/29758963-d76b-4bdf-9324-ad10a65bfd40, com.sun.management.jmxremote=, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, openejb.deployments.classpath=false, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, com.sun.management.jmxremote.access.file=/home/student/.cache/JetBrains/IntelliJIdea2020.3/tomcat/29758963-d76b-4bdf-9324-ad10a65bfd40/jmxremote.access, hibernate.c3p0.max_size=20, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, path.separator=:, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, common.loader="/home/student/tomcat/lib","/home/student/tomcat/lib/*.jar","/home/student/tomcat/lib","/home/student/tomcat/lib/*.jar", hibernate.connection.username=****, os.version=5.4.0-72-generic, openejb.version=7.1.1, org.apache.security.jacc.EJBMethodPermission.methodInterfaces=BusinessLocalHome,BusinessRemoteHome,BusinessRemote,BusinessLocal, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/budget_tracker, java.vm.name=OpenJDK 64-Bit Server VM, openejb.scan.webapp.container.includes=.*(geronimo|mp-jwt|failsafe).*, tomee.remote.support=true, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, catalina.home=/home/student/tomcat, user.dir=/home/student/tomcat/bin, bval.in-container=true, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, hibernate.connection.password=****, tomee.serialization.class.blacklist=-, tomee.serialization.class.whitelist=, shared.loader=, catalina.base=/home/student/.cache/JetBrains/IntelliJIdea2020.3/tomcat/29758963-d76b-4bdf-9324-ad10a65bfd40, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@2a3e204d, noBanner=true, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, sharing, java.vm.version=11.0.11+9-Ubuntu-0ubuntu2.20.04, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.hostname=127.0.0.1, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, connection.url=jdbc:mysql://localhost:3306/budget_tracker, java.class.version=55.0, authconfigprovider.factory=false}
+[DEBUG] 2021-05-04 06:53:14.663 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2021-05-04 06:53:14.663 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:14.673 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Category] is safe
+[DEBUG] 2021-05-04 06:53:14.673 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Category
+[DEBUG] 2021-05-04 06:53:14.683 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Entry] is safe
+[DEBUG] 2021-05-04 06:53:14.684 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Entry
+[DEBUG] 2021-05-04 06:53:14.688 [http-nio-8080-exec-3] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2021-05-04 06:53:14.688 [http-nio-8080-exec-3] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2021-05-04 06:53:14.688 [http-nio-8080-exec-3] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5b544870] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1a809fe0]
+[DEBUG] 2021-05-04 06:53:14.733 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2021-05-04 06:53:14.734 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:14.756 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2021-05-04 06:53:14.756 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:15.003 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Category] is safe
+[DEBUG] 2021-05-04 06:53:15.003 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Category
+[DEBUG] 2021-05-04 06:53:15.005 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Category] is safe
+[DEBUG] 2021-05-04 06:53:15.005 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Category
+[DEBUG] 2021-05-04 06:53:15.045 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Entry] is safe
+[DEBUG] 2021-05-04 06:53:15.045 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Entry
+[DEBUG] 2021-05-04 06:53:15.045 [http-nio-8080-exec-3] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Entry] is safe
+[DEBUG] 2021-05-04 06:53:15.045 [http-nio-8080-exec-3] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Entry
+[DEBUG] 2021-05-04 06:53:15.095 [http-nio-8080-exec-3] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.User
+[DEBUG] 2021-05-04 06:53:15.095 [http-nio-8080-exec-3] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2021-05-04 06:53:15.095 [http-nio-8080-exec-3] AbstractEntityPersister -  Snapshot select: select user_.id, user_.birthdate as birthdat2_2_, user_.email as email3_2_, user_.first_name as first_na4_2_, user_.last_name as last_nam5_2_, user_.password as password6_2_, user_.username as username7_2_ from user user_ where user_.id=?
+[DEBUG] 2021-05-04 06:53:15.095 [http-nio-8080-exec-3] AbstractEntityPersister -  Insert 0: insert into user (birthdate, email, first_name, last_name, password, username, id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2021-05-04 06:53:15.095 [http-nio-8080-exec-3] AbstractEntityPersister -  Update 0: update user set birthdate=?, email=?, first_name=?, last_name=?, password=?, username=? where id=?
+[DEBUG] 2021-05-04 06:53:15.095 [http-nio-8080-exec-3] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2021-05-04 06:53:15.095 [http-nio-8080-exec-3] AbstractEntityPersister -  Identity insert: insert into user (birthdate, email, first_name, last_name, password, username) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2021-05-04 06:53:15.118 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@59bb73f5]
+[DEBUG] 2021-05-04 06:53:15.119 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : birthdate
+[DEBUG] 2021-05-04 06:53:15.119 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2021-05-04 06:53:15.120 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2021-05-04 06:53:15.120 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2021-05-04 06:53:15.120 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-05-04 06:53:15.120 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2021-05-04 06:53:15.120 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-05-04 06:53:15.130 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-05-04 06:53:15.133 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] EntityLoader - Static select for entity edu.matc.entity.User [NONE]: select user0_.id as id1_2_0_, user0_.birthdate as birthdat2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d3d3f4e]
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : birthdate
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2021-05-04 06:53:15.135 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-05-04 06:53:15.136 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-05-04 06:53:15.136 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+[DEBUG] 2021-05-04 06:53:15.136 [http-nio-8080-exec-3] EntityLoader - Static select for entity edu.matc.entity.User [READ]: select user0_.id as id1_2_0_, user0_.birthdate as birthdat2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-05-04 06:53:15.149 [http-nio-8080-exec-3] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.User: select user0_.id as id1_2_0_, user0_.birthdate as birthdat2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.User: select user0_.id as id1_2_0_, user0_.birthdate as birthdat2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Category
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] AbstractEntityPersister -  Version select: select id from category where id =?
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] AbstractEntityPersister -  Snapshot select: select category_.id, category_.category_description as category2_0_, category_.category_name as category3_0_, category_.color as color4_0_, category_.user_id as user_id5_0_ from category category_ where category_.id=?
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] AbstractEntityPersister -  Insert 0: insert into category (category_description, category_name, color, user_id, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] AbstractEntityPersister -  Update 0: update category set category_description=?, category_name=?, color=?, user_id=? where id=?
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] AbstractEntityPersister -  Delete 0: delete from category where id=?
+[DEBUG] 2021-05-04 06:53:15.150 [http-nio-8080-exec-3] AbstractEntityPersister -  Identity insert: insert into category (category_description, category_name, color, user_id) values (?, ?, ?, ?)
+[DEBUG] 2021-05-04 06:53:15.151 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f0faf2d]
+[DEBUG] 2021-05-04 06:53:15.154 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryDescription
+[DEBUG] 2021-05-04 06:53:15.156 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryName
+[DEBUG] 2021-05-04 06:53:15.156 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : color
+[DEBUG] 2021-05-04 06:53:15.156 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId
+[DEBUG] 2021-05-04 06:53:15.161 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@463ad5a4]
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.birthdate
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.email
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.firstName
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.lastName
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.password
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.userName
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-05-04 06:53:15.167 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Category)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Category, querySpaceUid=<gen:0>, path=edu.matc.entity.Category)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Category.userId)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(userId)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] EntityLoader - Static select for entity edu.matc.entity.Category [NONE]: select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_, user1_.id as id1_2_1_, user1_.birthdate as birthdat2_2_1_, user1_.email as email3_2_1_, user1_.first_name as first_na4_2_1_, user1_.last_name as last_nam5_2_1_, user1_.password as password6_2_1_, user1_.username as username7_2_1_ from category category0_ left outer join user user1_ on category0_.user_id=user1_.id where category0_.id=?
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@267945ce]
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryDescription
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryName
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : color
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6a9b8d57]
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.birthdate
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.email
+[DEBUG] 2021-05-04 06:53:15.169 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.firstName
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.lastName
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.password
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.userName
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Category)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Category, querySpaceUid=<gen:0>, path=edu.matc.entity.Category)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Category.userId)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(userId)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] EntityLoader - Static select for entity edu.matc.entity.Category [READ]: select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_, user1_.id as id1_2_1_, user1_.birthdate as birthdat2_2_1_, user1_.email as email3_2_1_, user1_.first_name as first_na4_2_1_, user1_.last_name as last_nam5_2_1_, user1_.password as password6_2_1_, user1_.username as username7_2_1_ from category category0_ left outer join user user1_ on category0_.user_id=user1_.id where category0_.id=?
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Category: select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_ from category category0_ where category0_.id=?
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Category: select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_ from category category0_ where category0_.id=?
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Entry
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] AbstractEntityPersister -  Version select: select id from entry where id =?
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] AbstractEntityPersister -  Snapshot select: select entry_.id, entry_.category_id as category6_1_, entry_.date as date2_1_, entry_.entry_name as entry_na3_1_, entry_.entry_type as entry_ty4_1_, entry_.user_id as user_id7_1_, entry_.value as value5_1_ from entry entry_ where entry_.id=?
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] AbstractEntityPersister -  Insert 0: insert into entry (category_id, date, entry_name, entry_type, user_id, value, id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] AbstractEntityPersister -  Update 0: update entry set category_id=?, date=?, entry_name=?, entry_type=?, user_id=?, value=? where id=?
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] AbstractEntityPersister -  Delete 0: delete from entry where id=?
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] AbstractEntityPersister -  Identity insert: insert into entry (category_id, date, entry_name, entry_type, user_id, value) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2021-05-04 06:53:15.170 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@648a5a2c]
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2cbc064a]
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.categoryDescription
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.categoryName
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.color
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b2f3913]
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.birthdate
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.email
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.firstName
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.lastName
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.password
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.userName
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : entryName
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : entryType
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1359f097]
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.birthdate
+[DEBUG] 2021-05-04 06:53:15.171 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.email
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.firstName
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.lastName
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.password
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.userName
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : value
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-05-04 06:53:15.172 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Entry)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Entry, querySpaceUid=<gen:0>, path=edu.matc.entity.Entry)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.Category, querySpaceUid=<gen:1>, path=edu.matc.entity.Entry.categoryId)
+             - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:2>, path=edu.matc.entity.Entry.categoryId.userId)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:3>, path=edu.matc.entity.Entry.userId)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Entry)
+          - SQL table alias mapping - entry0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(categoryId)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.Category)
+                - SQL table alias mapping - category1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+                - JOIN (JoinDefinedByMetadata(userId)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.User)
+                      - SQL table alias mapping - user2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_2_2_}
+          - JOIN (JoinDefinedByMetadata(userId)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user3_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_2_3_}
+
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] EntityLoader - Static select for entity edu.matc.entity.Entry [NONE]: select entry0_.id as id1_1_0_, entry0_.category_id as category6_1_0_, entry0_.date as date2_1_0_, entry0_.entry_name as entry_na3_1_0_, entry0_.entry_type as entry_ty4_1_0_, entry0_.user_id as user_id7_1_0_, entry0_.value as value5_1_0_, category1_.id as id1_0_1_, category1_.category_description as category2_0_1_, category1_.category_name as category3_0_1_, category1_.color as color4_0_1_, category1_.user_id as user_id5_0_1_, user2_.id as id1_2_2_, user2_.birthdate as birthdat2_2_2_, user2_.email as email3_2_2_, user2_.first_name as first_na4_2_2_, user2_.last_name as last_nam5_2_2_, user2_.password as password6_2_2_, user2_.username as username7_2_2_, user3_.id as id1_2_3_, user3_.birthdate as birthdat2_2_3_, user3_.email as email3_2_3_, user3_.first_name as first_na4_2_3_, user3_.last_name as last_nam5_2_3_, user3_.password as password6_2_3_, user3_.username as username7_2_3_ from entry entry0_ left outer join category category1_ on entry0_.category_id=category1_.id left outer join user user2_ on category1_.user_id=user2_.id left outer join user user3_ on entry0_.user_id=user3_.id where entry0_.id=?
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4eccabdf]
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@14cb4ddb]
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.categoryDescription
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.categoryName
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.color
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c1f4616]
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.birthdate
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.email
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.firstName
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.lastName
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.password
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : categoryId.userId.userName
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : entryName
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : entryType
+[DEBUG] 2021-05-04 06:53:15.173 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ca88e27]
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.birthdate
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.email
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.firstName
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.lastName
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.password
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : userId.userName
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] MetamodelGraphWalker - Visiting attribute path : value
+[DEBUG] 2021-05-04 06:53:15.174 [http-nio-8080-exec-3] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-05-04 06:53:15.176 [http-nio-8080-exec-3] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-05-04 06:53:15.178 [http-nio-8080-exec-3] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Entry)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Entry, querySpaceUid=<gen:0>, path=edu.matc.entity.Entry)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.Category, querySpaceUid=<gen:1>, path=edu.matc.entity.Entry.categoryId)
+             - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:2>, path=edu.matc.entity.Entry.categoryId.userId)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:3>, path=edu.matc.entity.Entry.userId)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Entry)
+          - SQL table alias mapping - entry0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(categoryId)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.Category)
+                - SQL table alias mapping - category1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+                - JOIN (JoinDefinedByMetadata(userId)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.User)
+                      - SQL table alias mapping - user2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_2_2_}
+          - JOIN (JoinDefinedByMetadata(userId)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user3_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_2_3_}
+
+[DEBUG] 2021-05-04 06:53:15.178 [http-nio-8080-exec-3] EntityLoader - Static select for entity edu.matc.entity.Entry [READ]: select entry0_.id as id1_1_0_, entry0_.category_id as category6_1_0_, entry0_.date as date2_1_0_, entry0_.entry_name as entry_na3_1_0_, entry0_.entry_type as entry_ty4_1_0_, entry0_.user_id as user_id7_1_0_, entry0_.value as value5_1_0_, category1_.id as id1_0_1_, category1_.category_description as category2_0_1_, category1_.category_name as category3_0_1_, category1_.color as color4_0_1_, category1_.user_id as user_id5_0_1_, user2_.id as id1_2_2_, user2_.birthdate as birthdat2_2_2_, user2_.email as email3_2_2_, user2_.first_name as first_na4_2_2_, user2_.last_name as last_nam5_2_2_, user2_.password as password6_2_2_, user2_.username as username7_2_2_, user3_.id as id1_2_3_, user3_.birthdate as birthdat2_2_3_, user3_.email as email3_2_3_, user3_.first_name as first_na4_2_3_, user3_.last_name as last_nam5_2_3_, user3_.password as password6_2_3_, user3_.username as username7_2_3_ from entry entry0_ left outer join category category1_ on entry0_.category_id=category1_.id left outer join user user2_ on category1_.user_id=user2_.id left outer join user user3_ on entry0_.user_id=user3_.id where entry0_.id=?
+[DEBUG] 2021-05-04 06:53:15.178 [http-nio-8080-exec-3] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Entry: select entry0_.id as id1_1_0_, entry0_.category_id as category6_1_0_, entry0_.date as date2_1_0_, entry0_.entry_name as entry_na3_1_0_, entry0_.entry_type as entry_ty4_1_0_, entry0_.user_id as user_id7_1_0_, entry0_.value as value5_1_0_ from entry entry0_ where entry0_.id=?
+[DEBUG] 2021-05-04 06:53:15.179 [http-nio-8080-exec-3] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Entry: select entry0_.id as id1_1_0_, entry0_.category_id as category6_1_0_, entry0_.date as date2_1_0_, entry0_.entry_name as entry_na3_1_0_, entry0_.entry_type as entry_ty4_1_0_, entry0_.user_id as user_id7_1_0_, entry0_.value as value5_1_0_ from entry entry0_ where entry0_.id=?
+[DEBUG] 2021-05-04 06:53:15.230 [http-nio-8080-exec-3] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2021-05-04 06:53:15.230 [http-nio-8080-exec-3] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2021-05-04 06:53:15.230 [http-nio-8080-exec-3] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2021-05-04 06:53:15.245 [http-nio-8080-exec-3] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-04 06:53:15.245 [http-nio-8080-exec-3] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2021-05-04 06:53:15.245 [http-nio-8080-exec-3] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2021-05-04 06:53:15.245 [http-nio-8080-exec-3] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2021-05-04 06:53:15.249 [http-nio-8080-exec-3] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@f7b8f30
+[DEBUG] 2021-05-04 06:53:15.252 [http-nio-8080-exec-3] SessionFactoryRegistry - Registering SessionFactory: 70b6be45-35cc-4194-b015-8af43e4d9cda (<unnamed>)
+[DEBUG] 2021-05-04 06:53:15.252 [http-nio-8080-exec-3] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2021-05-04 06:53:15.402 [http-nio-8080-exec-3] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2021-05-04 06:53:15.443 [http-nio-8080-exec-3] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-05-04 06:53:15.468 [http-nio-8080-exec-3] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7e068003
+[DEBUG] 2021-05-04 06:53:15.498 [http-nio-8080-exec-3] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-05-04 06:53:15.501 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:15.519 [http-nio-8080-exec-3] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'edu'
+    |  |     |  |  |  \-[IDENT] Node: 'matc'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'userName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-05-04 06:53:15.561 [http-nio-8080-exec-3] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:15.589 [http-nio-8080-exec-3] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2021-05-04 06:53:15.590 [http-nio-8080-exec-3] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-05-04 06:53:15.592 [http-nio-8080-exec-3] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2021-05-04 06:53:15.593 [http-nio-8080-exec-3] DotNode - getDataType() : userName -> org.hibernate.type.StringType@47b42e55
+[DEBUG] 2021-05-04 06:53:15.593 [http-nio-8080-exec-3] FromReferenceNode - Resolved : generatedAlias0.userName -> user0_.username
+[DEBUG] 2021-05-04 06:53:15.595 [http-nio-8080-exec-3] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:15.595 [http-nio-8080-exec-3] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( = ( user0_.username user0_.id userName ) ? ) ) )
+[DEBUG] 2021-05-04 06:53:15.601 [http-nio-8080-exec-3] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2021-05-04 06:53:15.601 [http-nio-8080-exec-3] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:15.601 [http-nio-8080-exec-3] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_2_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.birthdate as birthdat2_2_, user0_.email as email3_2_, user0_.first_name as first_na4_2_, user0_.last_name as last_nam5_2_, user0_.password as password6_2_, user0_.username as username7_2_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.username' {propertyName=userName,dereferenceType=PRIMITIVE,getPropertyPath=userName,path=generatedAlias0.userName,tableAlias=user0_,className=edu.matc.entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'userName' {originalText=userName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@47b42e55}
+
+[DEBUG] 2021-05-04 06:53:15.602 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:15.606 [http-nio-8080-exec-3] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-05-04 06:53:15.614 [http-nio-8080-exec-3] QueryTranslatorImpl - SQL: select user0_.id as id1_2_, user0_.birthdate as birthdat2_2_, user0_.email as email3_2_, user0_.first_name as first_na4_2_, user0_.last_name as last_nam5_2_, user0_.password as password6_2_, user0_.username as username7_2_ from user user0_ where user0_.username=?
+[DEBUG] 2021-05-04 06:53:15.614 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:15.630 [http-nio-8080-exec-3] SQL - select user0_.id as id1_2_, user0_.birthdate as birthdat2_2_, user0_.email as email3_2_, user0_.first_name as first_na4_2_, user0_.last_name as last_nam5_2_, user0_.password as password6_2_, user0_.username as username7_2_ from user user0_ where user0_.username=?
+[DEBUG] 2021-05-04 06:53:15.655 [http-nio-8080-exec-3] Loader - Result set row: 0
+[DEBUG] 2021-05-04 06:53:15.658 [http-nio-8080-exec-3] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `birthdate` : value = 1987-03-21
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`birthdate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `email` : value = kingjones999@gmail.com
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `firstName` : value = Mike
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `lastName` : value = Jones
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `password` : value = yoyojojo123
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `userName` : value = mikeyjones123
+[DEBUG] 2021-05-04 06:53:15.672 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.677 [http-nio-8080-exec-3] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:15.683 [http-nio-8080-exec-3] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-05-04 06:53:15.689 [http-nio-8080-exec-3] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-05-04 06:53:15.689 [http-nio-8080-exec-3] TransactionImpl - begin
+[DEBUG] 2021-05-04 06:53:15.693 [http-nio-8080-exec-3] QueryTranslatorImpl - parse() - HQL: FROM edu.matc.entity.User WHERE userName = :username
+[DEBUG] 2021-05-04 06:53:15.694 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:15.694 [http-nio-8080-exec-3] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'FROM'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[IDENT] Node: 'edu'
+    |           |  |  \-[IDENT] Node: 'matc'
+    |           |  \-[IDENT] Node: 'entity'
+    |           \-[IDENT] Node: 'User'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'userName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'username'
+
+[DEBUG] 2021-05-04 06:53:15.694 [http-nio-8080-exec-3] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:15.694 [http-nio-8080-exec-3] FromElement - FromClause{level=1} : edu.matc.entity.User (<no alias>) -> user0_
+[DEBUG] 2021-05-04 06:53:15.694 [http-nio-8080-exec-3] FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+[DEBUG] 2021-05-04 06:53:15.694 [http-nio-8080-exec-3] DotNode - getDataType() : userName -> org.hibernate.type.StringType@47b42e55
+[DEBUG] 2021-05-04 06:53:15.694 [http-nio-8080-exec-3] FromReferenceNode - Resolved : {synthetic-alias}.userName -> user0_.username
+[DEBUG] 2021-05-04 06:53:15.695 [http-nio-8080-exec-3] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:15.695 [http-nio-8080-exec-3] HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} user user0_ ) ( WHERE ( = ( user0_.username {synthetic-alias} userName ) ? ) ) )
+[DEBUG] 2021-05-04 06:53:15.695 [http-nio-8080-exec-3] HqlSqlWalker - Derived SELECT clause created.
+[DEBUG] 2021-05-04 06:53:15.695 [http-nio-8080-exec-3] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2021-05-04 06:53:15.695 [http-nio-8080-exec-3] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:15.696 [http-nio-8080-exec-3] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'user0_.id as id1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.birthdate as birthdat2_2_, user0_.email as email3_2_, user0_.first_name as first_na4_2_, user0_.last_name as last_nam5_2_, user0_.password as password6_2_, user0_.username as username7_2_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.username' {propertyName=userName,dereferenceType=PRIMITIVE,getPropertyPath=userName,path={synthetic-alias}.userName,tableAlias=user0_,className=edu.matc.entity.User,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'userName' {originalText=userName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=username, expectedType=org.hibernate.type.StringType@47b42e55}
+
+[DEBUG] 2021-05-04 06:53:15.696 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:15.696 [http-nio-8080-exec-3] QueryTranslatorImpl - HQL: FROM edu.matc.entity.User WHERE userName = :username
+[DEBUG] 2021-05-04 06:53:15.696 [http-nio-8080-exec-3] QueryTranslatorImpl - SQL: select user0_.id as id1_2_, user0_.birthdate as birthdat2_2_, user0_.email as email3_2_, user0_.first_name as first_na4_2_, user0_.last_name as last_nam5_2_, user0_.password as password6_2_, user0_.username as username7_2_ from user user0_ where user0_.username=?
+[DEBUG] 2021-05-04 06:53:15.696 [http-nio-8080-exec-3] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:15.697 [http-nio-8080-exec-3] SQL - select user0_.id as id1_2_, user0_.birthdate as birthdat2_2_, user0_.email as email3_2_, user0_.first_name as first_na4_2_, user0_.last_name as last_nam5_2_, user0_.password as password6_2_, user0_.username as username7_2_ from user user0_ where user0_.username=?
+[DEBUG] 2021-05-04 06:53:15.702 [http-nio-8080-exec-3] Loader - Result set row: 0
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `birthdate` : value = 1987-03-21
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`birthdate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `email` : value = kingjones999@gmail.com
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `firstName` : value = Mike
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `lastName` : value = Jones
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `password` : value = yoyojojo123
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Processing attribute `userName` : value = mikeyjones123
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:15.703 [http-nio-8080-exec-3] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.258 [http-nio-8080-exec-5] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2021-05-04 06:53:17.258 [http-nio-8080-exec-5] SQL - select user0_.id as id1_2_, user0_.birthdate as birthdat2_2_, user0_.email as email3_2_, user0_.first_name as first_na4_2_, user0_.last_name as last_nam5_2_, user0_.password as password6_2_, user0_.username as username7_2_ from user user0_ where user0_.username=?
+[DEBUG] 2021-05-04 06:53:17.260 [http-nio-8080-exec-5] Loader - Result set row: 0
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `birthdate` : value = 1987-03-21
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`birthdate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `email` : value = kingjones999@gmail.com
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `firstName` : value = Mike
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `lastName` : value = Jones
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `password` : value = yoyojojo123
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userName` : value = mikeyjones123
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.261 [http-nio-8080-exec-5] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-05-04 06:53:17.274 [http-nio-8080-exec-5] SQL - select user0_.id as id1_2_0_, user0_.birthdate as birthdat2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-05-04 06:53:17.287 [http-nio-8080-exec-5] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-05-04 06:53:17.288 [http-nio-8080-exec-5] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `birthdate` : value = 1987-03-21
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`birthdate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `email` : value = kingjones999@gmail.com
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `firstName` : value = Mike
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `lastName` : value = Jones
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `password` : value = yoyojojo123
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userName` : value = mikeyjones123
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#1
+[DEBUG] 2021-05-04 06:53:17.289 [http-nio-8080-exec-5] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-05-04 06:53:17.290 [http-nio-8080-exec-5] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Entry as generatedAlias0 where generatedAlias0.userId=:param0
+[DEBUG] 2021-05-04 06:53:17.291 [http-nio-8080-exec-5] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.Entry as generatedAlias0 where generatedAlias0.userId=:param0
+[DEBUG] 2021-05-04 06:53:17.293 [http-nio-8080-exec-5] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:17.294 [http-nio-8080-exec-5] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'edu'
+    |  |     |  |  |  \-[IDENT] Node: 'matc'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'Entry'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'userId'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-05-04 06:53:17.294 [http-nio-8080-exec-5] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:17.294 [http-nio-8080-exec-5] FromElement - FromClause{level=1} : edu.matc.entity.Entry (generatedAlias0) -> entry0_
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] FromReferenceNode - Resolved : generatedAlias0 -> entry0_.id
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] FromReferenceNode - Resolved : generatedAlias0 -> entry0_.id
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] DotNode - getDataType() : userId -> org.hibernate.type.ManyToOneType(edu.matc.entity.User)
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] DotNode - dereferenceShortcut() : property userId in edu.matc.entity.Entry does not require a join.
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] DotNode - Terminal getPropertyPath = [userId]
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] FromReferenceNode - Resolved : generatedAlias0.userId -> entry0_.user_id
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} entry0_.id ) ( FromClause{level=1} entry entry0_ ) ( where ( = ( entry0_.user_id entry0_.id userId ) ? ) ) )
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] JoinProcessor - Using FROM fragment [entry entry0_]
+[DEBUG] 2021-05-04 06:53:17.295 [http-nio-8080-exec-5] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:17.297 [http-nio-8080-exec-5] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (entry)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'entry0_.id as id1_1_' {alias=generatedAlias0, className=edu.matc.entity.Entry, tableAlias=entry0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'entry0_.category_id as category6_1_, entry0_.date as date2_1_, entry0_.entry_name as entry_na3_1_, entry0_.entry_type as entry_ty4_1_, entry0_.user_id as user_id7_1_, entry0_.value as value5_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[entry0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'entry entry0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=entry,tableAlias=entry0_,origin=null,columns={,className=edu.matc.entity.Entry}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'entry0_.user_id' {propertyName=userId,dereferenceType=UNKNOWN,getPropertyPath=userId,path=generatedAlias0.userId,tableAlias=entry0_,className=edu.matc.entity.Entry,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'entry0_.id' {alias=generatedAlias0, className=edu.matc.entity.Entry, tableAlias=entry0_}
+          |  \-[IDENT] IdentNode: 'userId' {originalText=userId}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.ManyToOneType(edu.matc.entity.User)}
+
+[DEBUG] 2021-05-04 06:53:17.297 [http-nio-8080-exec-5] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:17.298 [http-nio-8080-exec-5] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.Entry as generatedAlias0 where generatedAlias0.userId=:param0
+[DEBUG] 2021-05-04 06:53:17.298 [http-nio-8080-exec-5] QueryTranslatorImpl - SQL: select entry0_.id as id1_1_, entry0_.category_id as category6_1_, entry0_.date as date2_1_, entry0_.entry_name as entry_na3_1_, entry0_.entry_type as entry_ty4_1_, entry0_.user_id as user_id7_1_, entry0_.value as value5_1_ from entry entry0_ where entry0_.user_id=?
+[DEBUG] 2021-05-04 06:53:17.298 [http-nio-8080-exec-5] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:17.298 [http-nio-8080-exec-5] SQL - select entry0_.id as id1_1_, entry0_.category_id as category6_1_, entry0_.date as date2_1_, entry0_.entry_name as entry_na3_1_, entry0_.entry_type as entry_ty4_1_, entry0_.user_id as user_id7_1_, entry0_.value as value5_1_ from entry entry0_ where entry0_.user_id=?
+[DEBUG] 2021-05-04 06:53:17.301 [http-nio-8080-exec-5] Loader - Result set row: 0
+[DEBUG] 2021-05-04 06:53:17.301 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Entry#1]
+[DEBUG] 2021-05-04 06:53:17.303 [http-nio-8080-exec-5] Loader - Result set row: 1
+[DEBUG] 2021-05-04 06:53:17.303 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Entry#2]
+[DEBUG] 2021-05-04 06:53:17.303 [http-nio-8080-exec-5] Loader - Result set row: 2
+[DEBUG] 2021-05-04 06:53:17.303 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Entry#3]
+[DEBUG] 2021-05-04 06:53:17.304 [http-nio-8080-exec-5] Loader - Result set row: 3
+[DEBUG] 2021-05-04 06:53:17.304 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Entry#4]
+[DEBUG] 2021-05-04 06:53:17.307 [http-nio-8080-exec-5] Loader - Result set row: 4
+[DEBUG] 2021-05-04 06:53:17.308 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Entry#16]
+[DEBUG] 2021-05-04 06:53:17.311 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Entry#1]
+[DEBUG] 2021-05-04 06:53:17.311 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.311 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.311 [http-nio-8080-exec-5] SQL - select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_, user1_.id as id1_2_1_, user1_.birthdate as birthdat2_2_1_, user1_.email as email3_2_1_, user1_.first_name as first_na4_2_1_, user1_.last_name as last_nam5_2_1_, user1_.password as password6_2_1_, user1_.username as username7_2_1_ from category category0_ left outer join user user1_ on category0_.user_id=user1_.id where category0_.id=?
+[DEBUG] 2021-05-04 06:53:17.314 [http-nio-8080-exec-5] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-05-04 06:53:17.314 [http-nio-8080-exec-5] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#1]
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = Dining out
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Food - Dine Out
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #FFFFFF
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.317 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.318 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#1]
+[DEBUG] 2021-05-04 06:53:17.318 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `birthdate` : value = 1987-03-21
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`birthdate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `email` : value = kingjones999@gmail.com
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `firstName` : value = Mike
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `lastName` : value = Jones
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `password` : value = yoyojojo123
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userName` : value = mikeyjones123
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.Category#1
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `date` : value = 2021-02-22
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryName` : value = Walmart - Pizzas
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryType` : value = Expense
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryType`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.320 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.321 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `value` : value = 10.5
+[DEBUG] 2021-05-04 06:53:17.321 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`value`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.321 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Entry#1]
+[DEBUG] 2021-05-04 06:53:17.321 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Entry#2]
+[DEBUG] 2021-05-04 06:53:17.321 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryId` : value = 2
+[DEBUG] 2021-05-04 06:53:17.321 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.321 [http-nio-8080-exec-5] SQL - select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_, user1_.id as id1_2_1_, user1_.birthdate as birthdat2_2_1_, user1_.email as email3_2_1_, user1_.first_name as first_na4_2_1_, user1_.last_name as last_nam5_2_1_, user1_.password as password6_2_1_, user1_.username as username7_2_1_ from category category0_ left outer join user user1_ on category0_.user_id=user1_.id where category0_.id=?
+[DEBUG] 2021-05-04 06:53:17.323 [http-nio-8080-exec-5] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-05-04 06:53:17.323 [http-nio-8080-exec-5] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-05-04 06:53:17.323 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#2]
+[DEBUG] 2021-05-04 06:53:17.323 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = Anything that involves hobbies
+[DEBUG] 2021-05-04 06:53:17.329 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Hobby
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #FF8080
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#2]
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.Category#2
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `date` : value = 2021-02-21
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryName` : value = Target - Board Games
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryType` : value = Expense
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryType`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `value` : value = 25.55
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`value`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Entry#2]
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Entry#3]
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryId` : value = 3
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.330 [http-nio-8080-exec-5] SQL - select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_, user1_.id as id1_2_1_, user1_.birthdate as birthdat2_2_1_, user1_.email as email3_2_1_, user1_.first_name as first_na4_2_1_, user1_.last_name as last_nam5_2_1_, user1_.password as password6_2_1_, user1_.username as username7_2_1_ from category category0_ left outer join user user1_ on category0_.user_id=user1_.id where category0_.id=?
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#3]
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = House bills, utilities, internet, etc.
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Bills - House
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #CCFF99
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#3]
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.Category#3
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `date` : value = 2021-01-31
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryName` : value = Apartment Rent
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryType` : value = Expense
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryType`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `value` : value = 999.99
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`value`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Entry#3]
+[DEBUG] 2021-05-04 06:53:17.332 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Entry#4]
+[DEBUG] 2021-05-04 06:53:17.333 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryId` : value = 4
+[DEBUG] 2021-05-04 06:53:17.333 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.333 [http-nio-8080-exec-5] SQL - select category0_.id as id1_0_0_, category0_.category_description as category2_0_0_, category0_.category_name as category3_0_0_, category0_.color as color4_0_0_, category0_.user_id as user_id5_0_0_, user1_.id as id1_2_1_, user1_.birthdate as birthdat2_2_1_, user1_.email as email3_2_1_, user1_.first_name as first_na4_2_1_, user1_.last_name as last_nam5_2_1_, user1_.password as password6_2_1_, user1_.username as username7_2_1_ from category category0_ left outer join user user1_ on category0_.user_id=user1_.id where category0_.id=?
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#4]
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = Paychecks, Bonuses, etc.
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Work-Income
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #00A63D
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.335 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#4]
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.Category#4
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `date` : value = 2021-01-31
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryName` : value = Paycheck
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryType` : value = Income
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryType`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `value` : value = 1500.0
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`value`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Entry#4]
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Entry#16]
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `date` : value = 2021-04-30
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryName` : value = Paycheck
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `entryType` : value = Expense
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`entryType`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `value` : value = 1321.0
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`value`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Entry#16]
+[DEBUG] 2021-05-04 06:53:17.336 [http-nio-8080-exec-5] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-05-04 06:53:17.339 [http-nio-8080-exec-5] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Category as generatedAlias0 where generatedAlias0.userId=:param0
+[DEBUG] 2021-05-04 06:53:17.339 [http-nio-8080-exec-5] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.Category as generatedAlias0 where generatedAlias0.userId=:param0
+[DEBUG] 2021-05-04 06:53:17.347 [http-nio-8080-exec-5] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:17.347 [http-nio-8080-exec-5] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'edu'
+    |  |     |  |  |  \-[IDENT] Node: 'matc'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'Category'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'userId'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-05-04 06:53:17.347 [http-nio-8080-exec-5] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] FromElement - FromClause{level=1} : edu.matc.entity.Category (generatedAlias0) -> category0_
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] FromReferenceNode - Resolved : generatedAlias0 -> category0_.id
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] FromReferenceNode - Resolved : generatedAlias0 -> category0_.id
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] DotNode - getDataType() : userId -> org.hibernate.type.ManyToOneType(edu.matc.entity.User)
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] DotNode - dereferenceShortcut() : property userId in edu.matc.entity.Category does not require a join.
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] DotNode - Terminal getPropertyPath = [userId]
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] FromReferenceNode - Resolved : generatedAlias0.userId -> category0_.user_id
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} category0_.id ) ( FromClause{level=1} category category0_ ) ( where ( = ( category0_.user_id category0_.id userId ) ? ) ) )
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] JoinProcessor - Using FROM fragment [category category0_]
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (category)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'category0_.id as id1_0_' {alias=generatedAlias0, className=edu.matc.entity.Category, tableAlias=category0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'category0_.category_description as category2_0_, category0_.category_name as category3_0_, category0_.color as color4_0_, category0_.user_id as user_id5_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[category0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'category category0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=category,tableAlias=category0_,origin=null,columns={,className=edu.matc.entity.Category}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'category0_.user_id' {propertyName=userId,dereferenceType=UNKNOWN,getPropertyPath=userId,path=generatedAlias0.userId,tableAlias=category0_,className=edu.matc.entity.Category,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'category0_.id' {alias=generatedAlias0, className=edu.matc.entity.Category, tableAlias=category0_}
+          |  \-[IDENT] IdentNode: 'userId' {originalText=userId}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.ManyToOneType(edu.matc.entity.User)}
+
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.Category as generatedAlias0 where generatedAlias0.userId=:param0
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] QueryTranslatorImpl - SQL: select category0_.id as id1_0_, category0_.category_description as category2_0_, category0_.category_name as category3_0_, category0_.color as color4_0_, category0_.user_id as user_id5_0_ from category category0_ where category0_.user_id=?
+[DEBUG] 2021-05-04 06:53:17.348 [http-nio-8080-exec-5] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-05-04 06:53:17.349 [http-nio-8080-exec-5] SQL - select category0_.id as id1_0_, category0_.category_description as category2_0_, category0_.category_name as category3_0_, category0_.color as color4_0_, category0_.user_id as user_id5_0_ from category category0_ where category0_.user_id=?
+[DEBUG] 2021-05-04 06:53:17.351 [http-nio-8080-exec-5] Loader - Result set row: 0
+[DEBUG] 2021-05-04 06:53:17.351 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Category#1]
+[DEBUG] 2021-05-04 06:53:17.351 [http-nio-8080-exec-5] Loader - Result set row: 1
+[DEBUG] 2021-05-04 06:53:17.351 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Category#2]
+[DEBUG] 2021-05-04 06:53:17.352 [http-nio-8080-exec-5] Loader - Result set row: 2
+[DEBUG] 2021-05-04 06:53:17.352 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Category#3]
+[DEBUG] 2021-05-04 06:53:17.352 [http-nio-8080-exec-5] Loader - Result set row: 3
+[DEBUG] 2021-05-04 06:53:17.352 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Category#4]
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] Loader - Result set row: 4
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] Loader - Result row: EntityKey[edu.matc.entity.Category#14]
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#1]
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = Dining out
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Food - Dine Out
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #FFFFFF
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.353 [http-nio-8080-exec-5] SQL - select user0_.id as id1_2_0_, user0_.birthdate as birthdat2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.username as username7_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2021-05-04 06:53:17.354 [http-nio-8080-exec-5] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-05-04 06:53:17.354 [http-nio-8080-exec-5] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `birthdate` : value = 1987-03-21
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`birthdate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `email` : value = kingjones999@gmail.com
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `firstName` : value = Mike
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `lastName` : value = Jones
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `password` : value = yoyojojo123
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userName` : value = mikeyjones123
+[DEBUG] 2021-05-04 06:53:17.355 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#1
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#1]
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#2]
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = Anything that involves hobbies
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Hobby
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #FF8080
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#2]
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#3]
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = House bills, utilities, internet, etc.
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Bills - House
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #CCFF99
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#3]
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#4]
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = Paychecks, Bonuses, etc.
+[DEBUG] 2021-05-04 06:53:17.356 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Work-Income
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #00A63D
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#4]
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.Category#14]
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryDescription` : value = Testing Category
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryDescription`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `categoryName` : value = Test
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`categoryName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `color` : value = #673ab7
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`color`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Processing attribute `userId` : value = 1
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Attribute (`userId`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] TwoPhaseLoad - Done materializing entity [edu.matc.entity.Category#14]
+[DEBUG] 2021-05-04 06:53:17.357 [http-nio-8080-exec-5] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

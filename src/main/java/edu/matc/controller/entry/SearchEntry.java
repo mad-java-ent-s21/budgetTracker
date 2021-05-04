@@ -16,40 +16,41 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+@WebServlet ("/searchEntry")
 
-@WebServlet(
-        urlPatterns = {"/userEntry"}
-)
-
-public class Entries extends HttpServlet {
-    final Logger logger = LogManager.getLogger(PropertiesLoader.class);
+public class SearchEntry extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(PropertiesLoader.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao entryDao = new GenericDao(Entry.class);
-        GenericDao categoryDao = new GenericDao(Category.class);
 
         // retrieve user
         UserDao userDao = new UserDao();
         User user = userDao.getUserFromSession(req);
 
-        // retrieve entries by user id
-        List<Entry> userEntries = entryDao.findByPropertyEqual("userId", user);
+        // Retrieve from form
+        String startDate = req.getParameter("startDate");
+        String endDate = req.getParameter("endDate");
 
-        req.setAttribute("entry", userEntries);
-        logger.debug("Retrieving user entries.");
+        try {
+            // search date range and user
+            List<Entry> entriesByDate = entryDao.findByPropertyLocalDateRange("date", startDate, endDate,
+                    "userId", user);
 
+            req.setAttribute("entry", entriesByDate);
+            logger.debug("Retrieving user entries by date range.");
 
-        // retrieve categories for form
-        List<Category> categoryList = categoryDao.findByPropertyEqual("userId", user);
+            } catch (ParseException e) {
+                logger.debug(e);
+            }
 
-        req.setAttribute("category", categoryList);
-        logger.debug("Retrieving user categories");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/entry.jsp");
         dispatcher.forward(req, resp);
+
     }
 }

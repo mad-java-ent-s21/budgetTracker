@@ -9,15 +9,15 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.text.ParseException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class GenericDao<T> {
 
     private Class<T> type;
     private final Logger logger = LogManager.getLogger(this.getClass());
-
 
     public GenericDao(Class<T> type) {
         this.type = type;
@@ -92,6 +92,37 @@ public class GenericDao<T> {
             predicates.add(builder.equal(root.get((String) entry.getKey()), entry.getValue()));
         }
         query.select(root).where(builder.and(predicates.toArray(new Predicate[predicates.size()])));
+
+        return session.createQuery(query).getResultList();
+    }
+
+    public List<T> findByTwoPropertiesEqual(String propertyName, Object value, String propertyNameTwo, Object valueTwo) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root);
+        query.where(builder.equal(root.get(propertyName),value), builder.equal(root.get(propertyNameTwo),valueTwo));
+
+        return session.createQuery(query).getResultList();
+    }
+
+    public List<T> findByPropertyLocalDateRange(String propertyName, Object value, Object valueTwo,
+                                                String propertyNameTwo, Object valueThree) throws ParseException {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+
+        // Adjust objects for local date
+        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate beginDate = LocalDate.parse(value.toString(), dateFormat);
+        LocalDate endDate = LocalDate.parse(valueTwo.toString(), dateFormat);
+
+        query.select(root);
+        query.where(builder.between(root.get(propertyName), beginDate, endDate),
+                builder.equal(root.get(propertyNameTwo), valueThree));
+        query.orderBy(builder.desc(root.get(propertyName)));
 
         return session.createQuery(query).getResultList();
     }

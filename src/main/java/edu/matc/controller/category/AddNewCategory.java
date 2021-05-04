@@ -38,14 +38,15 @@ public class AddNewCategory extends HttpServlet {
 
         // TODO grab categories by user only -- connects with AddNewEntry
         // Category name has to be unique
-        List<Category> allCategoryList = categoryDao.getAll();
+//        List<Category> allCategoryList = categoryDao.getAll();
+        List<Category> allCategoryList = categoryDao.findByPropertyEqual("userId", user);
         List<String> categoryList = new ArrayList<>();
         for (Category list : allCategoryList) {
             categoryList.add(list.getCategoryName());
         }
 
         if (categoryList.contains(categoryName)) {
-            logger.debug("Failed to add a new category");
+            logger.debug("Failed to add a new category, category name is not unique.");
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("addCategoryFailure.jsp");
             dispatcher.forward(req, resp);

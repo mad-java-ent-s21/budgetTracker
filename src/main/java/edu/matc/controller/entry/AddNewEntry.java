@@ -42,7 +42,8 @@ public class AddNewEntry extends HttpServlet {
         String category = req.getParameter("categoryName");
         // TODO retrieve category based on user -- other users may have same category name
         // find category by categoryName
-        List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
+//        List<Category> findCategory = categoryDao.findByPropertyEqual("categoryName", category);
+        List<Category> findCategory = categoryDao.findByTwoPropertiesEqual("categoryName", category, "userId", user);
         // find category object by the category id
         int categoryId = findCategory.get(0).getId();
         Category useCategory = (Category) categoryDao.getById(categoryId);

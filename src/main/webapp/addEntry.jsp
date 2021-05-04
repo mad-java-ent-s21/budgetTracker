@@ -16,6 +16,7 @@
 
 <div class="row">
     <div class="log-form center-align col s6 push-s3">
+        <br>
         <a href="userEntry" class="waves-effect waves-light btn">Return to Entries</a>
         <br><br>
         <h2>Add an entry</h2>
