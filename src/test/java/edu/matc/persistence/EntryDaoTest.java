@@ -40,13 +40,6 @@ class EntryDaoTest {
 
         User user = new User();
         user.setId(1);
-
-//        Entry newEntry;
-//        newEntry = new Entry(LocalDate.parse("2021-02-24"), "Something", "Expense", 20.00, category, user);
-//        int id = dao.insert(newEntry);
-//        assertNotEquals(0,id);
-//        Entry insertedEntry = dao.getById(id);
-//        assertEquals(id, insertedEntry.getId());
     }
 
     @Test

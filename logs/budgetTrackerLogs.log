@@ -520,3 +520,114 @@
 [ERROR] 2021-05-04 17:30:52.002 [main] Database - java.sql.SQLException: Can not issue empty query.
 [ERROR] 2021-05-04 17:30:52.106 [main] Database - java.sql.SQLException: Can not issue empty query.
 [ERROR] 2021-05-04 17:30:52.189 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2021-05-04 17:35:46.611 [http-nio-8080-exec-1] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-04 17:35:48.460 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:35:48.488 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:35:51.922 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-05-04 17:36:09.927 [http-nio-8080-exec-7] PropertiesLoader - Entry added: Walmart - Pokemon Cards
+[DEBUG] 2021-05-04 17:36:11.124 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:36:11.138 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:36:31.449 [http-nio-8080-exec-2] PropertiesLoader - Retrieving entry.
+[DEBUG] 2021-05-04 17:36:31.471 [http-nio-8080-exec-2] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-05-04 17:36:42.073 [http-nio-8080-exec-1] PropertiesLoader - Entry updated: Target - Board Games
+[DEBUG] 2021-05-04 17:36:43.452 [http-nio-8080-exec-3] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:36:43.467 [http-nio-8080-exec-3] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:36:57.885 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries by date range.
+[DEBUG] 2021-05-04 17:37:02.042 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:37:02.049 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:37:03.156 [http-nio-8080-exec-7] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-04 17:37:04.210 [http-nio-8080-exec-8] PropertiesLoader - Retrieving categories by mikeyjones123
+[DEBUG] 2021-05-04 17:37:08.739 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:37:08.755 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:37:18.368 [http-nio-8080-exec-10] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-04 17:37:19.437 [http-nio-8080-exec-1] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-04 17:37:19.953 [http-nio-8080-exec-3] PropertiesLoader - Retrieving categories by mikeyjones123
+[DEBUG] 2021-05-04 17:37:23.378 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:37:23.388 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:37:25.521 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:37:25.529 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:37:27.998 [http-nio-8080-exec-7] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:37:28.005 [http-nio-8080-exec-7] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:37:31.696 [http-nio-8080-exec-8] PropertiesLoader - Retrieving entry.
+[DEBUG] 2021-05-04 17:37:32.962 [http-nio-8080-exec-9] PropertiesLoader - Deleted entry: null
+[DEBUG] 2021-05-04 17:37:33.972 [http-nio-8080-exec-10] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:37:33.984 [http-nio-8080-exec-10] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:37:35.259 [http-nio-8080-exec-2] Logout - Removed user from session.
+[DEBUG] 2021-05-04 17:37:35.260 [http-nio-8080-exec-2] Logout - java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+[DEBUG] 2021-05-04 17:38:05.283 [http-nio-8080-exec-5] SignUp - User{id=72, username='cvang', password='c.v.', firstName='chris', lastName='vang', birthdate='0001-01-01'} user added.
+[DEBUG] 2021-05-04 17:38:10.979 [http-nio-8080-exec-7] Login - setting cvang and User{id=72, username='cvang', password='c.v.', firstName='chris', lastName='vang', birthdate='0001-01-01'} to session.
+[DEBUG] 2021-05-04 17:38:12.955 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-04 17:38:12.957 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-04 17:38:14.827 [http-nio-8080-exec-10] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-05-04 17:38:41.185 [http-nio-8080-exec-4] Logout - Removed user from session.
+[DEBUG] 2021-05-04 17:38:41.187 [http-nio-8080-exec-4] Logout - java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+[ERROR] 2021-05-04 17:40:58.999 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:01.406 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:01.480 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:01.669 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:01.734 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:01.810 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:01.877 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:01.929 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:02.017 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:02.075 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2021-05-04 17:41:02.148 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2021-05-09 12:12:37.877 [http-nio-8080-exec-7] Login - org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[DEBUG] 2021-05-09 12:13:00.920 [http-nio-8080-exec-2] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-09 12:13:03.711 [http-nio-8080-exec-1] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-09 12:13:03.731 [http-nio-8080-exec-1] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-09 12:14:40.588 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user categories.
+[DEBUG] 2021-05-09 12:14:51.463 [http-nio-8080-exec-9] PropertiesLoader - Entry added: Walmart - Pokemon Cards
+[DEBUG] 2021-05-09 12:14:52.748 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-09 12:14:52.765 [http-nio-8080-exec-8] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-09 12:18:12.300 [http-nio-8080-exec-3] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-09 12:18:12.308 [http-nio-8080-exec-3] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-09 12:18:12.884 [http-nio-8080-exec-1] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-09 12:18:13.785 [http-nio-8080-exec-4] PropertiesLoader - Retrieving categories by mikeyjones123
+[DEBUG] 2021-05-09 12:18:17.841 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-09 12:18:17.849 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-09 12:18:19.754 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-09 12:18:19.764 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-09 12:18:20.208 [http-nio-8080-exec-8] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-09 12:18:21.810 [http-nio-8080-exec-7] PropertiesLoader - Retrieving categories by mikeyjones123
+[DEBUG] 2021-05-10 06:01:48.565 [http-nio-8080-exec-7] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 06:01:48.566 [http-nio-8080-exec-6] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 06:01:50.925 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-10 06:01:50.974 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-10 06:05:08.278 [http-nio-8080-exec-7] PropertiesLoader - java.io.FileNotFoundException: /home (Is a directory)
+[DEBUG] 2021-05-10 08:30:57.651 [http-nio-8080-exec-3] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 08:30:57.652 [http-nio-8080-exec-2] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 08:30:59.808 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-10 08:30:59.849 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-10 08:32:38.779 [http-nio-8080-exec-1] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 08:32:49.211 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-10 08:32:49.247 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-10 08:32:56.163 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries by date range.
+[DEBUG] 2021-05-10 08:33:35.158 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-10 08:33:35.174 [http-nio-8080-exec-9] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-10 08:33:49.626 [http-nio-8080-exec-2] PropertiesLoader - Retrieving user entries by date range.
+[DEBUG] 2021-05-10 08:42:18.165 [http-nio-8080-exec-1] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 08:42:18.165 [http-nio-8080-exec-3] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 08:42:18.175 [http-nio-8080-exec-4] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 08:42:20.252 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-10 08:42:20.287 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-10 08:42:30.384 [http-nio-8080-exec-7] PropertiesLoader - Retrieving user entries by date range.
+[DEBUG] 2021-05-10 08:50:59.768 [http-nio-8080-exec-2] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 08:51:16.678 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-10 08:51:16.706 [http-nio-8080-exec-5] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-10 08:51:25.148 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries by date range.
+[DEBUG] 2021-05-10 09:06:22.711 [http-nio-8080-exec-1] Login - setting mikeyjones123 and User{id=1, username='mikeyjones123', password='yoyojojo123', firstName='Mike', lastName='Jones', birthdate='1987-03-21'} to session.
+[DEBUG] 2021-05-10 09:06:25.461 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user entries.
+[DEBUG] 2021-05-10 09:06:25.501 [http-nio-8080-exec-4] PropertiesLoader - Retrieving user categories
+[DEBUG] 2021-05-10 09:06:34.526 [http-nio-8080-exec-6] PropertiesLoader - Retrieving user entries by date range.
+[DEBUG] 2021-05-10 11:01:11.056 [http-nio-8080-exec-5] PropertiesLoader - Retrieving users profile information.
+[DEBUG] 2021-05-10 11:01:12.619 [http-nio-8080-exec-6] PropertiesLoader - Retrieving users profile information.
+[ERROR] 2021-05-11 13:38:36.375 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 13:39:33.389 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 13:43:13.676 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 13:53:50.370 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 13:54:58.722 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 14:00:33.201 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 14:01:00.136 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 14:01:58.920 [main] Database - java.lang.NullPointerException
+[ERROR] 2021-05-11 14:04:10.262 [main] Database - java.lang.NullPointerException

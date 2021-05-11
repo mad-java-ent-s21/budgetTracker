@@ -96,3 +96,34 @@ Used the wrong db (used the example one) when granting access.
 ### 04/30/2021
 1. Able to implement uniqueness into sign up, it will require a unique username and email
 
+## Week 15
+### 05/1/2021
+1. Added functionality to entries.jsp. Now able to edit and delete each entries. 
+1. Added function to category.jsp. Able to add a category.
+### 05/2/2021
+1. Fix code for presentation.
+1. Fixed up some code for junit testing.
+1. Work on javadoc.
+1. Fixed unused codes.
+1. Fixed any known issues.
+### 05/3/2021
+1. Worked on adding search by date range for entry search. I struggled with determining how to make a method within the genericdao to help me with this.
+1. I asked for help via slack, gave some good answers but still couldn't work. I google online and found a source that would guide me in the right direction.
+1. Looked at Google Drive api.
+1. Started adding some code to implement Google Drive api.
+### 05/4/2021
+1. Finish any presentation notes / issues prior to presentation.
+1. Able to get search entries by date range to work, using 'between'.
+### 05/6/2021
+1. Continue to work on Google Drive api.
+1. The more I look into it, the more confusing it gets.
+### 05/9/2021
+1. Added code to try to implement Google Drive api.
+1. Entered developer mode in Google account to work with developer codes.
+1. Still not functionable, or unable to export data to drive.
+### 05/9/2021 - 05/11/2021
+1. Google Drive api is very confusing. I am not sure where to continue.
+1. Unable to find where I can call authorization to allow user to login into their accounts to export file.
+1. Confused and lost when looking through multiple resources online.
+1. Fixed readme
+

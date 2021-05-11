@@ -54,7 +54,7 @@
   - [x] Entries
   - [x] Add Entry
 - [x] Add code for Entries page
-  - [ ] Design Entries page
+  - [x] Design Entries page
 - [x] Add jsp file for Profile page
 
 
@@ -71,19 +71,20 @@
 
 ### Week 14
 - [x] Signup (username & email) uniqueness
-- [ ] Entries controller
-  - [ ] Add
+- [x] Entries controller
+  - [x] Add
+  - [x] Delete
+  - [x] Edit
+- [x] Category controller
+  - [x] Add
   - [ ] Delete
   - [ ] Edit
-- [ ] Category controller
-  - [ ] Add
-  - [ ] Delete
-  - [ ] Edit
-- [ ] User controller
+- [x] User controller
   - [ ] Edit Profile
-- [ ] Prep for presentation
+- [x] Prep for presentation
 - [ ] Implement API
   
 ### Week 15
-- [ ] Work on API
+- [ ] Work on API - connect to google api
 - [ ] Finish all projects
+- [x] Fix Readme file

@@ -15,8 +15,7 @@
     <jsp:include page="bodyTop.jsp" />
 
     <h1 class="center-align">Entries</h1>
-        <br>
-<%--    TODO Buttons for all the controls in ENTRY | grid --%>
+    <br>
     <div class="row">
         <div class="center-align">
             <!-- Modal Trigger -->
@@ -25,6 +24,7 @@
             <!-- Modal Structure -->
             <div id="entrySearch" class="modal">
                 <form id="searchEntries" method="get" action="searchEntry" >
+                    <legend>Select your dates:</legend>
                     <label for="startDate">Start Date: </label>
                     <input id="startDate" name="startDate" type="date" title="startDate" placeholder="Start Date" required />
                     <br>
@@ -43,20 +43,20 @@
         </div>
         <div class="col s8"></div>
         <div class="col s2 center-align">
-<%--            <a class="waves-effect waves-light btn disabled">Export Data</a>--%>
             <!-- Modal Trigger -->
             <a class="waves-effect waves-light btn modal-trigger center-align" href="#exportCSVSearch">Export Data</a>
 
             <!-- Modal Structure -->
             <div id="exportCSVSearch" class="modal">
-                <form id="exportCSV" method="get" action="exportCSV" >
+                <form id="createCSV" method="get" action="createCSV" >
+                    <h4>Export Data:</h4>
                     <label for="exportStartDate">Start Date: </label>
                     <input id="exportStartDate" name="startDate" type="date" title="startDate" placeholder="Start Date" required />
                     <br>
                     <label for="exportEndDate">End Date:</label>
                     <input id="exportEndDate" name="endDate" type="date" title="endDate" placeholder="End Date" required />
                     <br>
-                    <button type="submit" class="btn">Export CSV</button>
+                    <button type="submit" class="btn">See Data</button>
                 </form>
             </div>
         </div>
@@ -80,9 +80,8 @@
 
         <tbody>
 
-<%--        TODO --not working-- trying query the user's data --%>
         <c:forEach var="entry" items="${entry}">
-<%--  TODO - "if statement" that adjust according to Category color  --%>
+<%--  TODO - adjust according to Category color  --%>
 <%--            <tr class="green">   --%>
             <tr>
                 <td>

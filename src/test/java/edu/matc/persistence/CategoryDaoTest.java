@@ -26,17 +26,30 @@ class CategoryDaoTest {
     @Test
     void getByIdSuccess() {
         Category retrievedCategory = (Category) dao.getById(1);
-        assertEquals("Food - Dine Out", retrievedCategory.getCategoryName());
-        assertEquals("Dining out", retrievedCategory.getCategoryDescription());
-        assertEquals("#FFFFFF", retrievedCategory.getColor());
+        assertEquals(dao.getById(1).toString(), retrievedCategory.toString());
     }
 
     @Test
     void saveOrUpdateSuccess() {
+        String categoryName = "New Category";
+
+        Category categoryUpdate = (Category) dao.getById(1);
+        categoryUpdate.setCategoryName(categoryName);
+        dao.saveOrUpdate(categoryUpdate);
+        Category retrieveCategory = (Category) dao.getById(1);
+        assertEquals(categoryName, retrieveCategory.getCategoryName());
     }
 
     @Test
     void insertSuccess() {
+        GenericDao userDao = new GenericDao(User.class);
+        User user = (User) userDao.getById(1);
+        Category newCategory = new Category("asdf", "asdf", "Red", user);
+        dao.insert(newCategory);
+        int id = newCategory.getId();
+
+        Category retrieveCategory = (Category) dao.getById(id);
+        assertEquals(newCategory.toString(), retrieveCategory.toString());
     }
 
     @Test
@@ -50,10 +63,5 @@ class CategoryDaoTest {
         List<Category> category = dao.findByPropertyEqual("categoryName", "Hobby");
         assertEquals(1, category.size());
         assertEquals(2, category.get(0).getId());
-    }
-
-    @Test
-    void getByPropertyLikeByUsernameSuccess() {
-
     }
 }

@@ -2,7 +2,6 @@ const {google} = require('googleapis');
 const path = require('path');
 const fs = require('fs');
 
-
 const CLIENT_ID = '797480132712-kh0sfs9uaukcrsqnnshvcnkoa4ms89jq.apps.googleusercontent.com';
 const CLIENT_SECRET = 'QjZITi2PM_s7wZOKFqFXplDQ';
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
@@ -29,7 +28,7 @@ async function uploadFile() {
         const response = await drive.files.create({
             requestBody: {
                 name: 'filename.csv',
-                mimeType: ''
+                mimeType: 'text/csv'
             },
             media: {
                 mimeType: '',
